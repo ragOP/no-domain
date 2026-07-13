@@ -80,12 +80,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   display:inline-flex;align-items:center;gap:0;flex:none;white-space:nowrap;
 }
 .logo em{font-style:normal;color:var(--teal)}
+.logo__mark{display:inline-flex;align-items:center;position:relative}
 .logo__dose{
   display:inline-flex;align-items:center;justify-content:center;
-  margin-left:6px;background:var(--navy);color:#fff;
+  margin-left:5px;background:var(--navy);color:#fff;
   font-family:'Manrope',sans-serif;font-size:11px;font-weight:800;
   letter-spacing:.01em;line-height:1;
-  padding:5px 9px;border-radius:99px;vertical-align:middle;
+  padding:5px 9px;border-radius:99px;
 }
 .minicta{
   display:inline-flex;align-items:center;justify-content:center;gap:6px;
@@ -228,9 +229,15 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .metric{text-align:center;padding:6px 4px;position:relative}
 .metric+.metric::before{content:"";position:absolute;left:0;top:14%;bottom:14%;width:1px;background:var(--line);display:none}
 @media (min-width:640px){.metric+.metric::before{display:block}}
-.metric .v{font-family:'Sora';font-weight:800;font-size:clamp(22px,5.4vw,28px);color:var(--navy);letter-spacing:-.02em;line-height:1}
+.metric .v{font-family:'Sora';font-weight:800;font-size:clamp(22px,5.4vw,28px);color:var(--navy);letter-spacing:-.02em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}
 .metric .l{margin-top:6px;font-size:12.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
 .metric .v em{font-style:normal;color:var(--teal-deep)}
+.metric .dose-pill{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--navy);color:#fff;font-family:'Manrope',sans-serif;
+  font-size:clamp(11px,2.8vw,13px);font-weight:800;line-height:1;
+  padding:5px 9px;border-radius:99px;letter-spacing:0;
+}
 
 /* ---------- Benefit trio ---------- */
 .trio{display:grid;grid-template-columns:1fr;gap:14px}
@@ -281,14 +288,33 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 @media (min-width:800px){.formula{grid-template-columns:.9fr 1.1fr;padding:44px}}
 .formula::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(78,187,171,.16);pointer-events:none}
 .formula__badge{
-  display:inline-flex;align-items:center;gap:10px;
-  background:var(--navy);color:#fff;
-  padding:14px 22px;border-radius:99px;
-  font-family:'Sora';font-weight:800;font-size:clamp(20px,5vw,26px);letter-spacing:-.02em;
-  box-shadow:0 8px 20px rgba(30,58,82,.28);
-  margin-bottom:14px;
+  display:inline-grid;
+  grid-template-columns:auto auto;
+  grid-template-rows:auto auto;
+  column-gap:8px;row-gap:5px;
+  align-items:center;
+  margin-bottom:16px;
 }
-.formula__badge .dot{width:8px;height:8px;border-radius:50%;background:var(--teal)}
+.formula__badge-name{
+  grid-column:1;grid-row:1;
+  font-family:'Sora';font-weight:800;font-size:clamp(28px,7vw,36px);
+  color:var(--navy);letter-spacing:-.03em;line-height:1;
+}
+.formula__badge-name em{font-style:normal;color:var(--teal)}
+.formula__badge-dose{
+  grid-column:2;grid-row:1;
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--navy);color:#fff;
+  font-family:'Manrope',sans-serif;font-weight:800;
+  font-size:clamp(13px,3.4vw,15px);line-height:1;
+  padding:7px 12px;border-radius:99px;
+  box-shadow:0 6px 16px rgba(30,58,82,.22);
+}
+.formula__badge-sub{
+  grid-column:2;grid-row:2;justify-self:center;
+  font-family:'Manrope',sans-serif;font-weight:700;
+  font-size:13.5px;color:var(--navy);line-height:1;
+}
 .formula h2{font-size:clamp(23px,5.5vw,30px);margin-bottom:10px}
 .formula h2 .hl{color:var(--teal-deep)}
 .formula p{color:var(--muted);font-weight:700;font-size:15px;margin-bottom:16px;position:relative}
@@ -405,7 +431,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   background:var(--teal-ice);display:flex;align-items:center;justify-content:center;
 }
 .stickybar .sb-mini svg{width:28px;height:28px}
-.stickybar .sb-title{font-family:'Sora';font-weight:800;font-size:14px;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}
+.stickybar .sb-title{font-family:'Sora';font-weight:800;font-size:14px;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2;display:inline-flex;align-items:center;gap:6px}
+.stickybar .sb-title .dose-pill{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--navy);color:#fff;font-family:'Manrope',sans-serif;
+  font-size:10px;font-weight:800;line-height:1;padding:4px 7px;border-radius:99px;
+}
 .stickybar .sb-timer{font-size:12px;font-weight:800;color:var(--muted);line-height:1.2}
 .stickybar .sb-timer b{color:var(--orange-deep);font-variant-numeric:tabular-nums}
 .stickybar .btn{min-height:50px;padding:0 18px;font-size:15px;flex:none}
@@ -432,13 +463,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
       <path d="M70 70 Q 110 130 78 200 T 92 330 L 70 350 Z" fill="#4EBBAB" opacity=".9"/>
       <path d="M70 70 Q 130 140 90 200 T 108 330 L 70 350 Z" fill="#4EBBAB" opacity=".35"/>
       <!-- Metabolism Support Formula -->
-      <text x="320" y="128" text-anchor="middle" font-family="Manrope, sans-serif" font-size="19" fill="#1E3A52" font-weight="600" letter-spacing="0.02em">Metabolism Support  Formula</text>
-      <!-- wego6 groot — 387mg badge sits on the right of the 6 -->
-      <text x="210" y="228" text-anchor="middle" font-family="Sora, sans-serif" font-size="86" fill="#1E3A52" font-weight="800" letter-spacing="-0.03em">wego6</text>
-      <rect x="348" y="198" width="128" height="36" rx="18" fill="#1E3A52"/>
-      <text x="412" y="223" text-anchor="middle" font-family="Manrope, sans-serif" font-size="18" fill="#FFFFFF" font-weight="800">387mg</text>
-      <!-- Daily Dose (under the badge) -->
-      <text x="412" y="260" text-anchor="middle" font-family="Manrope, sans-serif" font-size="17" fill="#1E3A52" font-weight="700">Daily Dose</text>
+      <text x="320" y="126" text-anchor="middle" font-family="Manrope, sans-serif" font-size="18" fill="#1E3A52" font-weight="600" letter-spacing="0.02em">Metabolism Support Formula</text>
+      <!-- wego6 (fixed width) + 387mg clearly to the RIGHT — no overlap -->
+      <text x="128" y="230" text-anchor="start" font-family="Sora, sans-serif" font-size="78" font-weight="800" letter-spacing="-0.03em" fill="#1E3A52" textLength="252" lengthAdjust="spacingAndGlyphs">wego6</text>
+      <rect x="388" y="200" width="118" height="34" rx="17" fill="#1E3A52"/>
+      <text x="447" y="223" text-anchor="middle" font-family="Manrope, sans-serif" font-size="17" fill="#FFFFFF" font-weight="800">387mg</text>
+      <text x="447" y="256" text-anchor="middle" font-family="Manrope, sans-serif" font-size="16" fill="#1E3A52" font-weight="700">Daily Dose</text>
       <!-- 30 Capsules -->
       <text x="320" y="315" text-anchor="middle" font-family="Manrope, sans-serif" font-size="17" fill="#1E3A52" font-weight="600" letter-spacing="0.02em">30 Capsules / Kapseln</text>
       <!-- capsule icoontje -->
@@ -525,7 +555,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   <div class="wrap reveal">
     <div class="metrics">
       <div class="metric"><div class="v">50.000+</div><div class="l">Tevreden klanten</div></div>
-      <div class="metric"><div class="v">387<em>mg</em></div><div class="l">Daily Dose</div></div>
+      <div class="metric"><div class="v">weg<em>o</em>6 <span class="dose-pill">387mg</span></div><div class="l">Daily Dose</div></div>
       <div class="metric"><div class="v">1×</div><div class="l">Per dag · 10 sec.</div></div>
       <div class="metric"><div class="v">30<em> dgn</em></div><div class="l">Geld-terug-garantie</div></div>
     </div>
@@ -599,7 +629,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
     <div class="formula reveal">
       <div>
         <span class="eyebrow eyebrow--orange">De formule</span>
-        <div class="formula__badge"><span class="dot"></span>387mg Daily Dose</div>
+        <div class="formula__badge" aria-label="wego6 387mg Daily Dose">
+          <span class="formula__badge-name">weg<em>o</em>6</span>
+          <span class="formula__badge-dose">387mg</span>
+          <span class="formula__badge-sub">Daily Dose</span>
+        </div>
         <h2>Zorgvuldig samengesteld. <span class="hl">Dagelijks verantwoord.</span></h2>
         <p>Elke capsule bevat 387mg van de Wego6-formule — een dosering die past bij dagelijks gebruik en die je stofwisseling en energiebalans ondersteunt zonder je routine op de kop te zetten.</p>
         <div class="fpills">
@@ -841,7 +875,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   <div class="sb-info">
     <div class="sb-mini"><svg viewBox="0 0 640 420" role="img" aria-label="Wego6"><use href="#wego6box"/></svg></div>
     <div>
-      <div class="sb-title">Wego6 · 30 caps</div>
+      <div class="sb-title">wego6 <span class="dose-pill">387mg</span></div>
       <div class="sb-timer" id="sbTimer">Verzending vandaag · <b id="clockSticky">--:--:--</b></div>
     </div>
   </div>

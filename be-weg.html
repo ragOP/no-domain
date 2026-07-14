@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Zo ziet het nieuwe Wegovy-alternatief eruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index_files/Main.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Open Sans }
+        .bg-danger { background-color: #d9534f !important }
+        .text-danger { color: #d9534f !important }
+        .bg-success { background-color: #c1e2b2 !important }
+        .text-success { color: #c1e2b2 !important }
+        .bg-warning { background-color: #fffdaf !important }
+        .text-warning { color: #fffdaf !important }
+        .bg-info { background-color: #5bc0de !important }
+        .text-info { color: #5bc0de !important }
+        :root {
+            --primary: #003a5a;
+            --secondary: #f18825;
+            --bodyColor: #1d1d1d;
+        }
+        body {
+            background-color: #f9f9f8;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            font-family: "Open Sans", serif;
+        }
+        a { color: var(--bodyColor); text-decoration: none; }
+        a:hover { color: var(--secondary); text-decoration: none; }
+        p { margin-bottom: 1.8rem; color: var(--bodyColor); font-family: "Open Sans", serif; }
+        h1, h2, h3, h4, h5 { color: var(--bodyColor); margin-bottom: 1.8rem; font-family: "Open Sans", serif; }
+        figure { margin: 0 }
+        #content figure { margin-bottom: 1.8rem; }
+        #content .text a { color: var(--secondary); text-decoration: none; }
+        #content .text a:hover { text-decoration: underline; }
+        .page { max-width: 992px; margin: auto; position: relative; z-index: 10; }
+        .page #content { padding: 2rem 10rem }
+        @media all and (max-width: 768px) { .page #content { padding: 1rem 0; } }
+        #header { top: 0; z-index: 999; transition-delay: 1s; transition: transform 0.5s; margin-bottom: 0 !important; }
+        #header .neos-contentcollection figure { padding: 10px; }
+        #content figure > figcaption {
+            background-color: #cee8f7;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+        #content figure > figcaption p { font-size: 0.85rem; font-family: "Open Sans", serif; }
+        #content figure > figcaption p:last-child { margin: 0; }
+        .btn.bg-primary-color {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #E1A600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .bg-primary-color {
+            background: #5ea22e !important;
+            padding: 0.5rem 2rem !important;
+            border-radius: 1.5rem !important;
+            display: block;
+            width: 400px;
+            margin: 0 auto 1.5rem auto;
+            display: block !important;
+        }
+        .main-nav {
+            background: white;
+            border-bottom: 2px #235fa0 solid;
+            top: 0;
+            z-index: 1000;
+            padding: 0;
+        }
+        .nav-container {
+            max-width: 992px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+        .nav-logo { padding: 0.5rem 0; }
+        .nav-logo img { height: 50px; width: auto; }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 0.5rem;
+        }
+        .nav-menu a {
+            color: black;
+            text-decoration: none;
+            padding: 1rem 0.75rem;
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        .nav-menu a:hover { background: var(--secondary); color: white; }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .nav-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #235fa0;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-toggle.active span:nth-child(2) { opacity: 0; }
+        .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+        @media (max-width: 768px) {
+            .nav-toggle { display: block; }
+            .nav-menu {
+                position: fixed;
+                top: 66px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 66px);
+                background: white;
+                flex-direction: column;
+                padding: 1rem 0;
+                transition: left 0.3s ease;
+                gap: 0;
+            }
+            .nav-menu.active { left: 0; }
+            .nav-menu a { padding: 1rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 1rem; }
+            .nav-logo img { height: 40px; }
+            body.nav-open { overflow: hidden; }
+            .btn.bg-primary-color { width: 100%; padding: 10px; font-size: 17px; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.95rem; }
+            h3 { font-size: 1.6rem; }
+        }
+        html { scroll-behavior: smooth; }
+        section[id] { scroll-margin-top: 70px; }
+        @media (max-width: 576px) {
+            body { font-size: 1rem; }
+            .page #content { padding: 1rem 0.75rem; }
+            h1 { font-size: 1.75rem; line-height: 1.3; }
+            h2 { font-size: 1.5rem; }
+            h3 { font-size: 1.25rem; }
+            p { margin-bottom: 1.2rem; }
+            .bg-primary-color { width: 100%; padding: 0.75rem 1.5rem !important; }
+        }
+
+        /* ---------- CTA buttons (same as first.html) ---------- */
+        body { padding-bottom: 96px; }
+        .btn.bg-primary-color,
+        a.btn.bg-primary-color {
+            background: linear-gradient(180deg, #FF6B33, #C94515) !important;
+            color: #fff !important;
+            box-shadow: 0 10px 26px rgba(232, 90, 44, .42);
+            border: none;
+            font-weight: 800;
+            text-align: center;
+            transition: transform .14s, box-shadow .14s, filter .14s;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn.bg-primary-color:hover,
+        a.btn.bg-primary-color:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+            color: #fff !important;
+            box-shadow: 0 14px 32px rgba(232, 90, 44, .55);
+        }
+        #content .text a.cta-inline,
+        #content .text a[href*="trk.validchoice"] {
+            color: #C94515;
+            font-weight: 800;
+        }
+
+        /* ---------- Sticky order bar ---------- */
+        .stickybar {
+            position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+            display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            background: rgba(255, 255, 255, .96); backdrop-filter: blur(12px);
+            border-top: 1px solid #D8E4EE;
+            padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+            box-shadow: 0 -6px 22px rgba(30, 58, 82, .10);
+            font-family: "Open Sans", sans-serif;
+        }
+        .stickybar .sb-info { min-width: 0; display: flex; align-items: center; gap: 10px; }
+        .stickybar .sb-mini {
+            flex: none; width: 38px; height: 38px; border-radius: 10px;
+            background: #E8F5F2; display: flex; align-items: center; justify-content: center;
+            overflow: hidden;
+        }
+        .stickybar .sb-mini img { width: 100%; height: 100%; object-fit: cover; }
+        .stickybar .sb-title {
+            font-weight: 800; font-size: 14px; color: #1E3A52;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2;
+            display: inline-flex; align-items: center; gap: 6px;
+        }
+        .stickybar .sb-title .dose-pill {
+            display: inline-flex; align-items: center; justify-content: center;
+            background: #1E3A52; color: #fff;
+            font-size: 10px; font-weight: 800; line-height: 1; padding: 4px 7px; border-radius: 99px;
+        }
+        .stickybar .sb-timer { font-size: 12px; font-weight: 800; color: #5A7085; line-height: 1.2; }
+        .stickybar .sb-timer b { color: #C94515; font-variant-numeric: tabular-nums; }
+        .stickybar .btn-sticky {
+            display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+            flex: none; white-space: nowrap;
+            min-height: 50px; padding: 0 18px; font-size: 15px; font-weight: 800;
+            border-radius: 14px;
+            background: linear-gradient(180deg, #FF6B33, #C94515);
+            color: #fff !important;
+            box-shadow: 0 10px 26px rgba(232, 90, 44, .42);
+            text-decoration: none;
+        }
+        .stickybar .btn-sticky:hover { color: #fff !important; filter: brightness(1.05); }
+        @media (max-width: 420px) { .stickybar .sb-mini { display: none; } }
+    </style>
+</head>
+<body class="">
+
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">
+            <img src="./index_files/logo.png" alt="Fit in het leven" />
+        </a>
+        <button class="nav-toggle" aria-label="Menu openen">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="https://trk.validchoice.online/click">Start</a></li>
+            <li><a href="https://trk.validchoice.online/click">Artsen</a></li>
+            <li><a href="https://trk.validchoice.online/click">Ervaringen</a></li>
+            <li><a href="https://trk.validchoice.online/click">Studies</a></li>
+            <li><a href="https://trk.validchoice.online/click">Bestellen</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page container">
+    <section id="content">
+        <div class="neos-contentcollection">
+
+            <div id="intro" class="text">
+                <h2 style="margin-bottom: 0.5rem; font-weight: bold;">Zonder naald, zonder €&nbsp;1.200:&nbsp;</h2>
+                <h1 style="line-height: 2.3rem; font-weight: bold; margin-bottom: 1rem">Zo ziet het nieuwe Wegovy-alternatief eruit</h1>
+            </div>
+
+            <div class="text">
+                <p><em>2 dagen geleden | Door Michaela Fuhrmann, redacteur Gezondheid &amp; Leven</em></p>
+            </div>
+
+            <div class="text">
+                <p>Waarom deze innovatieve capsule sinds oktober 2025 tot de populairste afslankpreparaten op de markt behoort – als bijwerkingsvrij alternatief voor Wegovy®-injecties (semaglutide).</p>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="./index_files/headm-700x700.jpg" alt="">
+                <figcaption>
+                    <p>Als bijwerkingsvrij capsule-alternatief voor Wegovy® wordt momenteel WEGO6 gezien.</p>
+                </figcaption>
+            </figure>
+
+            <div class="default"><h3>Het begon met een paar Instagram-stories...</h3></div>
+
+            <div class="text">
+                <p>...toen explodeerde het internet: een innovatieve capsule met de naam „<strong>WEGO6</strong>“ wordt momenteel gevierd als het eerste echte natuurlijke <strong>alternatief voor Wegovy®-injecties</strong> (semaglutide).</p>
+                <p>Zonder spuit, zonder recept en <strong>zonder maandelijks duizenden euro’s uit te geven.</strong></p>
+            </div>
+
+            <figure>
+                <a href="https://trk.validchoice.online/click"><img class="img-fluid" src="./index_files/baa0-700x700.jpg" alt=""></a>
+            </figure>
+
+            <div class="text">
+                <p>Binnen slechts zes weken is de website van de fabrikant soms urenlang niet bereikbaar.&nbsp;</p>
+                <p>Duizenden gebruikers delen dagelijks hun resultaten: <strong>10, 15, 20 kilo minder</strong> – en dat bij volledig normale voeding en <strong>slechts 1× daagse inname.</strong></p>
+            </div>
+
+            <div id="arzt" class="default">
+                <h1>Wat zeggen artsen? Kan een capsule een effectief alternatief zijn voor Wegovy®-injecties?</h1>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="./index_files/baa3-650x450.jpg" alt="">
+            </figure>
+
+            <div class="text">
+                <p>Endocrinoloog Dr. Elias Schwarz test WEGO6 sinds het voorjaar van 2025 in zijn praktijk bij meer dan 180 patiënten.<br><br>De tot nu toe (nog niet gepubliceerde) resultaten:</p>
+                <ul>
+                    <li>Gemiddeld <strong>11,6 kg verlies in 12 weken</strong></li>
+                    <li><strong>9 van de 10 gebruikers</strong> melden <strong>volledig verdwenen</strong> emotioneel eten en <strong>eetbuien</strong></li>
+                    <li><strong>Geen bijwerkingen</strong> zoals misselijkheid, braken of diarree (bij Wegovy® heeft ongeveer 1 op de 5 gebruikers hier last van. Bij WEGO6 komen deze bijwerkingen niet voor).</li>
+                    <li>Werkt ook bij PCOS, een trage schildklier en mensen boven de 55</li>
+                </ul>
+            </div>
+
+            <div class="text">
+                <p>Volgens Dr. Schwarz is het effect gebaseerd op het <strong>gepatenteerde „MS-Phase-Complex“:</strong>&nbsp;</p>
+                <p>De formule <strong>lost gericht de buitenste schil van overvolle vetcellen op</strong>, zodat het lichaam het opgeslagen vet op natuurlijke wijze kan afbreken en verbranden – zonder de stofwisseling te vertragen, zoals bij Wegovy®-injecties het geval is.</p>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="./index_files/wirkung-1536x910.jpg" alt="">
+            </figure>
+
+            <div class="text">
+                <p>Een tweede werkzame stof blokkeert de ghreline-signalen in de hersenen – <strong>de eetlust normaliseert vanzelf.</strong><br><br><em>(Ghreline is het „hongerhormoon“ dat in de lege maag wordt aangemaakt en de hersenen voortdurend het signaal „Eet nu!“ geeft.)</em></p>
+            </div>
+
+            <div class="default"><h1>Al meer dan 100.000 gebruikers sinds oktober 2025</h1></div>
+
+            <figure>
+                <a href="https://trk.validchoice.online/click"><img class="img-fluid" src="./index_files/m23-700x700.jpg" alt=""></a>
+                <figcaption><p>De eerste zichtbare verandering kwam al na de tweede week.</p></figcaption>
+            </figure>
+
+            <blockquote class="blockquote"><p>Maja (24) uit Utrecht</p></blockquote>
+
+            <div class="text">
+                <p>"Jarenlang heb ik tevergeefs met mijn gewicht geworsteld, tot ik er bijna mee wilde stoppen."</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <figure><img class="img-fluid" src="./index_files/s77.jpg" alt=""></figure>
+                </div>
+                <div class="col-sm-8">
+                    <p>"WEGO6 werd mij aangeraden als alternatief voor Wegovy®-injecties, omdat het hetzelfde effect zou hebben, maar met veel minder bijwerkingen. En omdat ik een enorme angst voor naalden heb, kwam de spuit voor mij nooit in aanmerking."</p>
+                    <p>"Ik heb <strong>WEGO6 3 maanden lang</strong> genomen (1× per dag) en <strong>24 kilo verloren</strong>. Bijwerkingen had ik helemaal niet."</p>
+                </div>
+            </div>
+
+            <figure>
+                <a href="https://trk.validchoice.online/click"><img class="img-fluid" src="./index_files/baa2-700x700.jpg" alt=""></a>
+                <figcaption><p>Maja na 3 maanden WEGO6</p></figcaption>
+            </figure>
+
+            <div class="default"><h1>Waarom geldt WEGO6 als natuurlijk alternatief voor Wegovy®?</h1></div>
+
+            <div class="text">
+                <p>Omdat het precies dezelfde verzadigings- en vetverbrandingsmechanismen activeert als semaglutide (Wegovy®), maar op een natuurlijke manier – zonder synthetische injecties, zonder recept en <strong>zonder</strong> de typische sterke bijwerkingen.</p>
+                <p>In plaats van wekelijks een spuit in je buik te zetten, volstaat <strong>1 capsule per dag</strong>. Een maandverpakking kost momenteel slechts €&nbsp;55 – in plaats van €&nbsp;1.200+ zoals bij Wegovy®.</p>
+                <p>→ <a href="https://trk.validchoice.online/click"><strong>Naar de WEGO6-fabrikantspagina</strong></a></p>
+            </div>
+
+            <div class="default"><h1>Waarom deze capsule alles overtreft – volgens studies</h1></div>
+
+            <div class="text">
+                <p>Klinische studies met in totaal 1.800 deelnemers werden in de zomer van 2025 gepubliceerd.</p>
+                <p>In een verdere studie met meer dan 500 personen verloren WEGO6-gebruikers gemiddeld <strong>7,5 kg meer per maand</strong> dan de controlegroep.</p>
+            </div>
+
+            <figure><img class="img-fluid" src="./index_files/max4-1282x858.jpg" alt=""></figure>
+
+            <div class="text">
+                <p>Ook Deense studies met 1.300 deelnemers toonden een gemiddelde reductie van <strong>8,3 kg per maand</strong> bij regelmatige inname.</p>
+            </div>
+
+            <figure>
+                <a href="https://trk.validchoice.online/click"><img class="img-fluid" src="./index_files/ASPRY-NWWMNIMGFRWEB-V5-700x700.jpg" alt=""></a>
+                <figcaption><p>Anne-Marie (Rotterdam) – 22 kg</p></figcaption>
+            </figure>
+
+            <div class="default"><h3>Social media staat vol met echte voor-en-na-foto’s</h3></div>
+
+            <figure>
+                <a href="https://trk.validchoice.online/click"><img class="img-fluid" src="./index_files/ASPRY-NWWMNIMGFRWEB-V7-700x700.jpg" alt=""></a>
+                <figcaption><p>Anna (Amsterdam) – 21 kg</p></figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://trk.validchoice.online/click"><img class="img-fluid" src="./index_files/ASPRY-NWWMNIMGFRWEB-V8-700x700.jpg" alt=""></a>
+                <figcaption><p>Maria (Den Haag) – 21 kg</p></figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://trk.validchoice.online/click"><img class="img-fluid" src="./index_files/NSLIM-NWWMNIMGFRWEB-V9-700x700.jpg" alt=""></a>
+                <figcaption><p>Violetta (Eindhoven) – 24 kg</p></figcaption>
+            </figure>
+
+            <div class="default"><h2>WEGO6 is zonder recept verkrijgbaar in Nederland</h2></div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <figure>
+                        <a href="https://trk.validchoice.online/click"><img class="img-fluid" src="./index_files/product-1000x1000.png" alt=""></a>
+                    </figure>
+                </div>
+                <div class="col-sm-6">
+                    <figure><img class="img-fluid" src="./index_files/rating-782x396.jpg" alt=""></figure>
+                    <a href="https://trk.validchoice.online/click" class="btn bg-primary-color btn-lg">Naar de fabrikant →</a>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>Momenteel vanaf <strong>€&nbsp;36,95</strong> per maandverpakking → <a href="https://trk.validchoice.online/click"><strong>direct bij de fabrikant van WEGO6</strong></a></p>
+                <p>Geen recept nodig.<br><em>Stand: maart 2026</em></p>
+            </div>
+
+            <div id="facebook-comments">
+                <div class="facebook-comments-top">
+                    <strong>13 reacties</strong>
+                    <a href="https://trk.validchoice.online/click">Reactie toevoegen</a>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/0-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Antonia de Vries</span>
+                        <p>Laatst in een vrouwenblad gelezen dat een actrice vanwege naaldangst geen Wegovy-injecties wilde en in plaats daarvan WEGO6 heeft geprobeerd. Heeft bij haar echt goed gewerkt.</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 12 · 01.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/7-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Sophie Bakker</span>
+                        <p>WEGO6 3 dagen geleden van een vriendin gekregen – merk je meteen: geen eetbuien meer en duidelijk minder honger de hele dag. ❤️</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 15 · 02.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/19-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Ines Jansen</span>
+                        <p>6 kg in één maand eraf – en ik ben vast 4× vergeten te nemen 😂</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 6 · 03.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/3 (1)-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Magdalena Theiss</span>
+                        <p>Net besteld… benieuwd wat er gebeurt…</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 2 · 03.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/38-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Tanja Vermeer</span>
+                        <p>Moet je tijdens de kuur bepaalde voedingsmiddelen laten staan?</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 1 · 04.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/407.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Cornelia Langenfeldt</span>
+                        <p>Ik heb WEGO6 genomen en 19 kg afgevallen. Daarna niet weer aangekomen – echt top!</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 4 · 05.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/82-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Michelle Meyer</span>
+                        <p>Aangeraden door een vriendin – supertevreden. Geen bijwerkingen, makkelijk in te nemen.</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 8 · 05.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/65-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Viktoria Lammert</span>
+                        <p>Nu 15 dagen bezig – al 4 kg eraf zonder sport. Met meer beweging wordt het vast nog makkelijker.</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 2 · 06.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/32-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Thorsten Keul</span>
+                        <p>Kan een man dit ook nemen?</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 1 · 06.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/94-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Lisa Schmidt</span>
+                        <p>Zeker – mijn vriend gebruikt het ook en het heeft bij hem super gewerkt. Nu neem ik het zelf ook.</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 1 · 06.03.2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="./index_files/93-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Jessi Mauer</span>
+                        <p>Ik kan geen tabletten slikken en naalden al helemaal niet… maar WEGO6 is easy en ik ben al 3 kg kwijt.</p>
+                        <p class="facebook-comment-bottom">Beantwoorden · <i class="thumbs-up"></i> 1 · 06.03.2026</p>
+                    </div>
+                </div>
+
+                <a class="facebook-comments-footer" href="https://developers.facebook.com/docs/plugins/" target="_blank">
+                    Sociale plug-in van Facebook
+                </a>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<!-- Sticky order bar -->
+<div class="stickybar">
+  <div class="sb-info">
+    <div class="sb-mini"><img src="./index_files/product-1000x1000.png" alt="WEGO6"></div>
+    <div>
+      <div class="sb-title">WEGO6 <span class="dose-pill">387mg</span></div>
+      <div class="sb-timer" id="sbTimer">Verzending vandaag · <b id="clockSticky">--:--:--</b></div>
+    </div>
+  </div>
+  <a class="btn-sticky" href="https://trk.validchoice.online/click">Bestel nu <span>→</span></a>
+</div>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', function() {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+    });
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', function() {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.classList.remove('nav-open');
+        });
+    });
+
+    (function(){
+      function pad(n){ return (n<10?'0':'')+n; }
+      function tick(){
+        var now = new Date();
+        var cut = new Date(now); cut.setHours(17,0,0,0);
+        var today = now < cut;
+        if(!today){ cut.setDate(cut.getDate()+1); }
+        var ms = cut - now;
+        var h = Math.floor(ms/3600000), m = Math.floor(ms%3600000/60000), s = Math.floor(ms%60000/1000);
+        var str = pad(h)+':'+pad(m)+':'+pad(s);
+        var clock = document.getElementById('clockSticky');
+        var sbT = document.getElementById('sbTimer');
+        if(clock) clock.textContent = str;
+        if(sbT){
+          sbT.innerHTML = today
+            ? 'Verzending vandaag · <b id="clockSticky">'+str+'</b>'
+            : 'Verzending morgen · <b id="clockSticky">'+str+'</b>';
+        }
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+</script>
+
+</body>
+</html>

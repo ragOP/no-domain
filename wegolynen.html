@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>This is what the new Wegovy alternative looks like</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index_files/Main.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Open Sans }
+        .bg-danger { background-color: #d9534f !important }
+        .text-danger { color: #d9534f !important }
+        .bg-success { background-color: #c1e2b2 !important }
+        .text-success { color: #c1e2b2 !important }
+        .bg-warning { background-color: #fffdaf !important }
+        .text-warning { color: #fffdaf !important }
+        .bg-info { background-color: #5bc0de !important }
+        .text-info { color: #5bc0de !important }
+        :root {
+            --primary: #003a5a;
+            --secondary: #f18825;
+            --bodyColor: #1d1d1d;
+        }
+        body {
+            background-color: #f9f9f8;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            font-family: "Open Sans", serif;
+        }
+        a { color: var(--bodyColor); text-decoration: none; }
+        a:hover { color: var(--secondary); text-decoration: none; }
+        p { margin-bottom: 1.8rem; color: var(--bodyColor); font-family: "Open Sans", serif; }
+        h1, h2, h3, h4, h5 { color: var(--bodyColor); margin-bottom: 1.8rem; font-family: "Open Sans", serif; }
+        figure { margin: 0 }
+        #content figure { margin-bottom: 1.8rem; }
+        #content .text a { color: var(--secondary); text-decoration: none; }
+        #content .text a:hover { text-decoration: underline; }
+        .page { max-width: 992px; margin: auto; position: relative; z-index: 10; }
+        .page #content { padding: 2rem 10rem }
+        @media all and (max-width: 768px) { .page #content { padding: 1rem 0; } }
+        #header { top: 0; z-index: 999; transition-delay: 1s; transition: transform 0.5s; margin-bottom: 0 !important; }
+        #header .neos-contentcollection figure { padding: 10px; }
+        #content figure > figcaption {
+            background-color: #cee8f7;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+        #content figure > figcaption p { font-size: 0.85rem; font-family: "Open Sans", serif; }
+        #content figure > figcaption p:last-child { margin: 0; }
+        .btn.bg-primary-color {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #E1A600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .bg-primary-color {
+            background: #5ea22e !important;
+            padding: 0.5rem 2rem !important;
+            border-radius: 1.5rem !important;
+            display: block;
+            width: 400px;
+            margin: 0 auto 1.5rem auto;
+            display: block !important;
+        }
+        .main-nav {
+            background: white;
+            border-bottom: 2px #235fa0 solid;
+            top: 0;
+            z-index: 1000;
+            padding: 0;
+        }
+        .nav-container {
+            max-width: 992px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+        .nav-logo { padding: 0.5rem 0; }
+        .nav-logo img { height: 50px; width: auto; }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 0.5rem;
+        }
+        .nav-menu a {
+            color: black;
+            text-decoration: none;
+            padding: 1rem 0.75rem;
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        .nav-menu a:hover { background: var(--secondary); color: white; }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .nav-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #235fa0;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-toggle.active span:nth-child(2) { opacity: 0; }
+        .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+        @media (max-width: 768px) {
+            .nav-toggle { display: block; }
+            .nav-menu {
+                position: fixed;
+                top: 66px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 66px);
+                background: white;
+                flex-direction: column;
+                padding: 1rem 0;
+                transition: left 0.3s ease;
+                gap: 0;
+            }
+            .nav-menu.active { left: 0; }
+            .nav-menu a { padding: 1rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 1rem; }
+            .nav-logo img { height: 40px; }
+            body.nav-open { overflow: hidden; }
+            .btn.bg-primary-color { width: 100%; padding: 10px; font-size: 17px; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.95rem; }
+            h3 { font-size: 1.6rem; }
+        }
+        html { scroll-behavior: smooth; }
+        section[id] { scroll-margin-top: 70px; }
+        @media (max-width: 576px) {
+            body { font-size: 1rem; }
+            .page #content { padding: 1rem 0.75rem; }
+            h1 { font-size: 1.75rem; line-height: 1.3; }
+            h2 { font-size: 1.5rem; }
+            h3 { font-size: 1.25rem; }
+            p { margin-bottom: 1.2rem; }
+            .bg-primary-color { width: 100%; padding: 0.75rem 1.5rem !important; }
+        }
+
+        body { padding-bottom: 96px; }
+        .btn.bg-primary-color,
+        a.btn.bg-primary-color {
+            background: linear-gradient(180deg, #FF6B33, #C94515) !important;
+            color: #fff !important;
+            box-shadow: 0 10px 26px rgba(232, 90, 44, .42);
+            border: none;
+            font-weight: 800;
+            text-align: center;
+            transition: transform .14s, box-shadow .14s, filter .14s;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn.bg-primary-color:hover,
+        a.btn.bg-primary-color:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+            color: #fff !important;
+            box-shadow: 0 14px 32px rgba(232, 90, 44, .55);
+        }
+        #content .text a.cta-inline,
+        #content .text a[href*="trk.toprateddaily"] {
+            color: #C94515;
+            font-weight: 800;
+        }
+
+        .stickybar {
+            position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+            display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            background: rgba(255, 255, 255, .96); backdrop-filter: blur(12px);
+            border-top: 1px solid #D8E4EE;
+            padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+            box-shadow: 0 -6px 22px rgba(30, 58, 82, .10);
+            font-family: "Open Sans", sans-serif;
+        }
+        .stickybar .sb-info { min-width: 0; display: flex; align-items: center; gap: 10px; }
+        .stickybar .sb-mini {
+            flex: none; width: 38px; height: 38px; border-radius: 10px;
+            background: #E8F5F2; display: flex; align-items: center; justify-content: center;
+            overflow: hidden;
+        }
+        .stickybar .sb-mini img { width: 100%; height: 100%; object-fit: cover; }
+        .stickybar .sb-title {
+            font-weight: 800; font-size: 14px; color: #1E3A52;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2;
+            display: inline-flex; align-items: center; gap: 6px;
+        }
+        .stickybar .sb-title .dose-pill {
+            display: inline-flex; align-items: center; justify-content: center;
+            background: #1E3A52; color: #fff;
+            font-size: 10px; font-weight: 800; line-height: 1; padding: 4px 7px; border-radius: 99px;
+        }
+        .stickybar .sb-timer { font-size: 12px; font-weight: 800; color: #5A7085; line-height: 1.2; }
+        .stickybar .sb-timer b { color: #C94515; font-variant-numeric: tabular-nums; }
+        .stickybar .btn-sticky {
+            display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+            flex: none; white-space: nowrap;
+            min-height: 50px; padding: 0 18px; font-size: 15px; font-weight: 800;
+            border-radius: 14px;
+            background: linear-gradient(180deg, #FF6B33, #C94515);
+            color: #fff !important;
+            box-shadow: 0 10px 26px rgba(232, 90, 44, .42);
+            text-decoration: none;
+        }
+        .stickybar .btn-sticky:hover { color: #fff !important; filter: brightness(1.05); }
+        @media (max-width: 420px) { .stickybar .sb-mini { display: none; } }
+    </style>
+</head>
+<body class="">
+
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">
+            <img src="../index_files/logo.png" alt="Feel good living" />
+        </a>
+        <button class="nav-toggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="https://trk.mysmartpick.online/click">Home</a></li>
+            <li><a href="https://trk.mysmartpick.online/click">Doctors</a></li>
+            <li><a href="https://trk.mysmartpick.online/click">Reviews</a></li>
+            <li><a href="https://trk.mysmartpick.online/click">Studies</a></li>
+            <li><a href="https://trk.mysmartpick.online/click">Order</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page container">
+    <section id="content">
+        <div class="neos-contentcollection">
+
+            <div id="intro" class="text">
+                <h2 style="margin-bottom: 0.5rem; font-weight: bold;">No needle, no £&nbsp;1,200:&nbsp;</h2>
+                <h1 style="line-height: 2.3rem; font-weight: bold; margin-bottom: 1rem">This is what the new Wegovy alternative looks like</h1>
+            </div>
+
+            <div class="text">
+                <p><em>2 days ago | By Michaela Fuhrmann, Health &amp; Life editorial</em></p>
+            </div>
+
+            <div class="text">
+                <p>Why this innovative capsule has been among the most popular weight-loss products on the market since October 2025 – as a side-effect-free alternative to Wegovy® injections (semaglutide).</p>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="../index_files/wegolyn/abc.png" alt="">
+                <figcaption>
+                    <p>As a side-effect-free capsule alternative to Wegovy®, Wegolyn is currently being cited.</p>
+                </figcaption>
+            </figure>
+
+            <div class="default"><h3>It started with a few Instagram stories...</h3></div>
+
+            <div class="text">
+                <p>...then the internet exploded: an innovative capsule called “<strong>Wegolyn</strong>” is currently being celebrated as the first real natural <strong>alternative to Wegovy® injections</strong> (semaglutide).</p>
+                <p>No syringe, no prescription, and <strong>without spending thousands of pounds every month.</strong></p>
+            </div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/wegolyn/b.png" alt=""></a>
+            </figure>
+
+            <div class="text">
+                <p>Within just six weeks, the manufacturer’s website is sometimes unreachable for hours.&nbsp;</p>
+                <p>Thousands of users share their results every day: <strong>10, 15, 20 kilos less</strong> – with completely normal eating and <strong>only 1× daily intake.</strong></p>
+            </div>
+
+            <div id="arzt" class="default">
+                <h1>What do doctors say? Can a capsule be an effective alternative to Wegovy® injections?</h1>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="../index_files/wegolyn/c.png" alt="">
+            </figure>
+
+            <div class="text">
+                <p>Endocrinologist Dr. Elias Schwarz has been testing Wegolyn since spring 2025 in his practice with more than 180 patients.<br><br>Results so far (not yet published):</p>
+                <ul>
+                    <li>On average <strong>11.6 kg loss in 12 weeks</strong></li>
+                    <li><strong>9 out of 10 users</strong> report <strong>completely gone</strong> emotional eating and <strong>cravings</strong></li>
+                    <li><strong>No side effects</strong> such as nausea, vomiting, or diarrhea (with Wegovy®, about 1 in 5 users deal with this. With Wegolyn, these side effects do not occur).</li>
+                    <li>Also works with PCOS, a slow thyroid, and people over 55</li>
+                </ul>
+            </div>
+
+            <div class="text">
+                <p>According to Dr. Schwarz, the effect is based on the <strong>patented “MS-Phase Complex”:</strong>&nbsp;</p>
+                <p>The formula <strong>selectively dissolves the outer shell of overfilled fat cells</strong>, so the body can naturally break down and burn stored fat – without slowing metabolism the way Wegovy® injections do.</p>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="../index_files/ratingen/egfrnpic.png" alt="">
+            </figure>
+
+            <div class="text">
+                <p>A second active ingredient blocks ghrelin signals in the brain – <strong>appetite normalizes on its own.</strong><br><br><em>(Ghrelin is the “hunger hormone” produced in an empty stomach, constantly sending the brain the signal “Eat now!”)</em></p>
+            </div>
+
+            <div class="default"><h1>Already over 100,000 users since October 2025</h1></div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/wegolyn/moti.png" alt=""></a>
+                <figcaption><p>The first visible change appeared after just the second week.</p></figcaption>
+            </figure>
+
+            <blockquote class="blockquote"><p>Chloe (24) from London</p></blockquote>
+
+            <div class="text">
+                <p>“For years I fought my weight in vain, until I almost wanted to give up.”</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <figure><img class="img-fluid" src="../index_files/wegolyn/pen.png" alt=""></figure>
+                </div>
+                <div class="col-sm-8">
+                    <p>“Wegolyn was recommended to me as an alternative to Wegovy® injections because it was said to have the same effect, but with far fewer side effects. And because I have a huge fear of needles, the injection was never an option for me.”</p>
+                    <p>“I took <strong>Wegolyn for 3 months</strong> (1× daily) and <strong>lost 24 kilos</strong>. I had no side effects at all.”</p>
+                </div>
+            </div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/wegolyn/ang.png" alt=""></a>
+                <figcaption><p>Chloe after 3 months of Wegolyn</p></figcaption>
+            </figure>
+
+            <div class="default"><h1>Why is Wegolyn considered a natural alternative to Wegovy®?</h1></div>
+
+            <div class="text">
+                <p>Because it activates exactly the same satiety and fat-burning mechanisms as semaglutide (Wegovy®), but naturally – without synthetic injections, without a prescription, and <strong>without</strong> the typical strong side effects.</p>
+                <p>Instead of injecting into your stomach every week, <strong>1 capsule a day</strong> is enough. A one-month pack currently costs only £&nbsp;55 – instead of £&nbsp;1,200+ with Wegovy®.</p>
+                <p>→ <a href="https://trk.mysmartpick.online/click"><strong>To the Wegolyn manufacturer page</strong></a></p>
+            </div>
+
+            <div class="default"><h1>Why this capsule outperforms everything – according to studies</h1></div>
+
+            <div class="text">
+                <p>Clinical studies with a total of 1,800 participants were published in summer 2025.</p>
+                <p>In another study with more than 500 people, Wegolyn users lost an average of <strong>7.5 kg more per month</strong> than the control group.</p>
+            </div>
+
+            <figure><img class="img-fluid" src="../index_files/max4-1282x858.jpg" alt=""></figure>
+
+            <div class="text">
+                <p>Danish studies with 1,300 participants also showed an average reduction of <strong>8.3 kg per month</strong> with regular use.</p>
+            </div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/wegolyn/jeans.png" alt=""></a>
+                <figcaption><p>Amy (Manchester) – 22 kg</p></figcaption>
+            </figure>
+
+            <div class="default"><h3>Social media is full of real before-and-after photos</h3></div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/ASPRY-NWWMNIMGFRWEB-V7-700x700.jpg" alt=""></a>
+                <figcaption><p>Anna (London) – 21 kg</p></figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/ASPRY-NWWMNIMGFRWEB-V8-700x700.jpg" alt=""></a>
+                <figcaption><p>Maria (Birmingham) – 21 kg</p></figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/NSLIM-NWWMNIMGFRWEB-V9-700x700.jpg" alt=""></a>
+                <figcaption><p>Victoria (Leeds) – 24 kg</p></figcaption>
+            </figure>
+
+            <div class="default"><h2>Wegolyn is available without a prescription in the UK</h2></div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <figure>
+                        <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/wegolyn/lastwego.png" alt=""></a>
+                    </figure>
+                </div>
+                <div class="col-sm-6">
+                    <figure><img class="img-fluid" src="../index_files/ratingen/rating.png" alt=""></figure>
+                    <a href="https://trk.mysmartpick.online/click" class="btn bg-primary-color btn-lg">To the manufacturer →</a>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>Currently from <strong>£&nbsp;36.95</strong> per month → <a href="https://trk.mysmartpick.online/click"><strong>directly from the Wegolyn manufacturer</strong></a></p>
+                <p>No prescription needed.<br><em>As of: March 2026</em></p>
+            </div>
+
+            <div id="facebook-comments">
+                <div class="facebook-comments-top">
+                    <strong>13 comments</strong>
+                    <a href="https://trk.mysmartpick.online/click">Add a comment</a>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/0-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Amy Miller</span>
+                        <p>Recently read in Marie Claire that an actress didn’t want Wegovy injections because of needle fear and tried Wegolyn instead. It really worked well for her.</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 12 · 01/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/7-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Sophie Taylor</span>
+                        <p>Got Wegolyn from a friend 3 days ago – you notice it right away: no more cravings and clearly less hunger all day. ❤️</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 15 · 02/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/19-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Emma Fisher</span>
+                        <p>6 kg gone in one month – and I definitely forgot to take it 4× 😂</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 6 · 03/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/3 (1)-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Megan Weaver</span>
+                        <p>Just ordered… curious to see what happens…</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 2 · 03/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/38-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Tanya Harris</span>
+                        <p>Do you have to avoid certain foods during the course?</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 1 · 04/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/407.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Chloe Baker</span>
+                        <p>I took Wegolyn and lost 19 kg. Didn’t gain it back afterward – really great!</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 4 · 05/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/82-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Michelle Myers</span>
+                        <p>Recommended by a friend – super happy. No side effects, easy to take.</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 8 · 05/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/65-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Victoria Warren</span>
+                        <p>15 days in now – already 4 kg gone without exercise. With more movement it’ll be even easier.</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 2 · 06/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/32-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Thomas Clark</span>
+                        <p>Can a man take this too?</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 1 · 06/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/94-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Lisa Smith</span>
+                        <p>Sure – my boyfriend uses it too and it worked great for him. Now I’m taking it myself as well.</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 1 · 06/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/93-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Jessi Moore</span>
+                        <p>I can’t swallow pills and needles even less… but Wegolyn is easy and I’ve already lost 3 kg.</p>
+                        <p class="facebook-comment-bottom">Reply · <i class="thumbs-up"></i> 1 · 06/03/2026</p>
+                    </div>
+                </div>
+
+                <a class="facebook-comments-footer" href="https://developers.facebook.com/docs/plugins/" target="_blank">
+                    Facebook Social Plugin
+                </a>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<!-- Sticky order bar -->
+<div class="stickybar">
+  <div class="sb-info">
+    <div class="sb-mini"><img src="../index_files/wegolyn/lastwego.png" alt="Wegolyn"></div>
+    <div>
+      <div class="sb-title">Wegolyn <span class="dose-pill">387mg</span></div>
+      <div class="sb-timer" id="sbTimer">Ships today · <b id="clockSticky">--:--:--</b></div>
+    </div>
+  </div>
+  <a class="btn-sticky" href="https://trk.mysmartpick.online/click">Order now <span>→</span></a>
+</div>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', function() {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+    });
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', function() {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.classList.remove('nav-open');
+        });
+    });
+
+    (function(){
+      function pad(n){ return (n<10?'0':'')+n; }
+      function tick(){
+        var now = new Date();
+        var cut = new Date(now); cut.setHours(17,0,0,0);
+        var today = now < cut;
+        if(!today){ cut.setDate(cut.getDate()+1); }
+        var ms = cut - now;
+        var h = Math.floor(ms/3600000), m = Math.floor(ms%3600000/60000), s = Math.floor(ms%60000/1000);
+        var str = pad(h)+':'+pad(m)+':'+pad(s);
+        var clock = document.getElementById('clockSticky');
+        var sbT = document.getElementById('sbTimer');
+        if(clock) clock.textContent = str;
+        if(sbT){
+          sbT.innerHTML = today
+            ? 'Ships today · <b id="clockSticky">'+str+'</b>'
+            : 'Ships tomorrow · <b id="clockSticky">'+str+'</b>';
+        }
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+</script>
+
+</body>
+</html>

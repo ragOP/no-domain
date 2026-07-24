@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Así es la nueva alternativa a Wegovy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index_files/Main.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Open Sans }
+        .bg-danger { background-color: #d9534f !important }
+        .text-danger { color: #d9534f !important }
+        .bg-success { background-color: #c1e2b2 !important }
+        .text-success { color: #c1e2b2 !important }
+        .bg-warning { background-color: #fffdaf !important }
+        .text-warning { color: #fffdaf !important }
+        .bg-info { background-color: #5bc0de !important }
+        .text-info { color: #5bc0de !important }
+        :root {
+            --primary: #003a5a;
+            --secondary: #f18825;
+            --bodyColor: #1d1d1d;
+        }
+        body {
+            background-color: #f9f9f8;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            font-family: "Open Sans", serif;
+        }
+        a { color: var(--bodyColor); text-decoration: none; }
+        a:hover { color: var(--secondary); text-decoration: none; }
+        p { margin-bottom: 1.8rem; color: var(--bodyColor); font-family: "Open Sans", serif; }
+        h1, h2, h3, h4, h5 { color: var(--bodyColor); margin-bottom: 1.8rem; font-family: "Open Sans", serif; }
+        figure { margin: 0 }
+        #content figure { margin-bottom: 1.8rem; }
+        #content .text a { color: var(--secondary); text-decoration: none; }
+        #content .text a:hover { text-decoration: underline; }
+        .page { max-width: 992px; margin: auto; position: relative; z-index: 10; }
+        .page #content { padding: 2rem 10rem }
+        @media all and (max-width: 768px) { .page #content { padding: 1rem 0; } }
+        #header { top: 0; z-index: 999; transition-delay: 1s; transition: transform 0.5s; margin-bottom: 0 !important; }
+        #header .neos-contentcollection figure { padding: 10px; }
+        #content figure > figcaption {
+            background-color: #cee8f7;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+        #content figure > figcaption p { font-size: 0.85rem; font-family: "Open Sans", serif; }
+        #content figure > figcaption p:last-child { margin: 0; }
+        .btn.bg-primary-color {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #E1A600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .bg-primary-color {
+            background: #5ea22e !important;
+            padding: 0.5rem 2rem !important;
+            border-radius: 1.5rem !important;
+            display: block;
+            width: 400px;
+            margin: 0 auto 1.5rem auto;
+            display: block !important;
+        }
+        .main-nav {
+            background: white;
+            border-bottom: 2px #235fa0 solid;
+            top: 0;
+            z-index: 1000;
+            padding: 0;
+        }
+        .nav-container {
+            max-width: 992px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+        .nav-logo { padding: 0.5rem 0; }
+        .nav-logo img { height: 50px; width: auto; }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 0.5rem;
+        }
+        .nav-menu a {
+            color: black;
+            text-decoration: none;
+            padding: 1rem 0.75rem;
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        .nav-menu a:hover { background: var(--secondary); color: white; }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .nav-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #235fa0;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-toggle.active span:nth-child(2) { opacity: 0; }
+        .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+        @media (max-width: 768px) {
+            .nav-toggle { display: block; }
+            .nav-menu {
+                position: fixed;
+                top: 66px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 66px);
+                background: white;
+                flex-direction: column;
+                padding: 1rem 0;
+                transition: left 0.3s ease;
+                gap: 0;
+            }
+            .nav-menu.active { left: 0; }
+            .nav-menu a { padding: 1rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 1rem; }
+            .nav-logo img { height: 40px; }
+            body.nav-open { overflow: hidden; }
+            .btn.bg-primary-color { width: 100%; padding: 10px; font-size: 17px; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.95rem; }
+            h3 { font-size: 1.6rem; }
+        }
+        html { scroll-behavior: smooth; }
+        section[id] { scroll-margin-top: 70px; }
+        @media (max-width: 576px) {
+            body { font-size: 1rem; }
+            .page #content { padding: 1rem 0.75rem; }
+            h1 { font-size: 1.75rem; line-height: 1.3; }
+            h2 { font-size: 1.5rem; }
+            h3 { font-size: 1.25rem; }
+            p { margin-bottom: 1.2rem; }
+            .bg-primary-color { width: 100%; padding: 0.75rem 1.5rem !important; }
+        }
+
+        body { padding-bottom: 96px; }
+        .btn.bg-primary-color,
+        a.btn.bg-primary-color {
+            background: linear-gradient(180deg, #FF6B33, #C94515) !important;
+            color: #fff !important;
+            box-shadow: 0 10px 26px rgba(232, 90, 44, .42);
+            border: none;
+            font-weight: 800;
+            text-align: center;
+            transition: transform .14s, box-shadow .14s, filter .14s;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn.bg-primary-color:hover,
+        a.btn.bg-primary-color:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+            color: #fff !important;
+            box-shadow: 0 14px 32px rgba(232, 90, 44, .55);
+        }
+        #content .text a.cta-inline,
+        #content .text a[href*="trk.toprateddaily"] {
+            color: #C94515;
+            font-weight: 800;
+        }
+
+        .stickybar {
+            position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+            display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            background: rgba(255, 255, 255, .96); backdrop-filter: blur(12px);
+            border-top: 1px solid #D8E4EE;
+            padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+            box-shadow: 0 -6px 22px rgba(30, 58, 82, .10);
+            font-family: "Open Sans", sans-serif;
+        }
+        .stickybar .sb-info { min-width: 0; display: flex; align-items: center; gap: 10px; }
+        .stickybar .sb-mini {
+            flex: none; width: 38px; height: 38px; border-radius: 10px;
+            background: #E8F5F2; display: flex; align-items: center; justify-content: center;
+            overflow: hidden;
+        }
+        .stickybar .sb-mini img { width: 100%; height: 100%; object-fit: cover; }
+        .stickybar .sb-title {
+            font-weight: 800; font-size: 14px; color: #1E3A52;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2;
+            display: inline-flex; align-items: center; gap: 6px;
+        }
+        .stickybar .sb-title .dose-pill {
+            display: inline-flex; align-items: center; justify-content: center;
+            background: #1E3A52; color: #fff;
+            font-size: 10px; font-weight: 800; line-height: 1; padding: 4px 7px; border-radius: 99px;
+        }
+        .stickybar .sb-timer { font-size: 12px; font-weight: 800; color: #5A7085; line-height: 1.2; }
+        .stickybar .sb-timer b { color: #C94515; font-variant-numeric: tabular-nums; }
+        .stickybar .btn-sticky {
+            display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+            flex: none; white-space: nowrap;
+            min-height: 50px; padding: 0 18px; font-size: 15px; font-weight: 800;
+            border-radius: 14px;
+            background: linear-gradient(180deg, #FF6B33, #C94515);
+            color: #fff !important;
+            box-shadow: 0 10px 26px rgba(232, 90, 44, .42);
+            text-decoration: none;
+        }
+        .stickybar .btn-sticky:hover { color: #fff !important; filter: brightness(1.05); }
+        @media (max-width: 420px) { .stickybar .sb-mini { display: none; } }
+    </style>
+</head>
+<body class="">
+
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">
+            <img src="../index_files/logo.png" alt="Bienestar en la vida" />
+        </a>
+        <button class="nav-toggle" aria-label="Abrir el menú">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="https://trk.mysmartpick.online/click">Inicio</a></li>
+            <li><a href="https://trk.mysmartpick.online/click">Médicos</a></li>
+            <li><a href="https://trk.mysmartpick.online/click">Experiencias</a></li>
+            <li><a href="https://trk.mysmartpick.online/click">Estudios</a></li>
+            <li><a href="https://trk.mysmartpick.online/click">Pedir</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page container">
+    <section id="content">
+        <div class="neos-contentcollection">
+
+            <div id="intro" class="text">
+                <h2 style="margin-bottom: 0.5rem; font-weight: bold;">Sin aguja, sin €&nbsp;1.200:&nbsp;</h2>
+                <h1 style="line-height: 2.3rem; font-weight: bold; margin-bottom: 1rem">Así es la nueva alternativa a Wegovy</h1>
+            </div>
+
+            <div class="text">
+                <p><em>hace 2 días | Por Michaela Fuhrmann, redacción Salud &amp; Vida</em></p>
+            </div>
+
+            <div class="text">
+                <p>Por qué esta cápsula innovadora se encuentra desde octubre de 2025 entre los productos adelgazantes más populares del mercado – como alternativa sin efectos secundarios a las inyecciones Wegovy® (semaglutida).</p>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="../index_files/dg/abc.png" alt="">
+                <figcaption>
+                    <p>Como alternativa en cápsula sin efectos secundarios a Wegovy®, actualmente se menciona Osanix.</p>
+                </figcaption>
+            </figure>
+
+            <div class="default"><h3>Todo empezó con unas cuantas stories de Instagram...</h3></div>
+
+            <div class="text">
+                <p>...entonces Internet explotó: una cápsula innovadora llamada «&nbsp;<strong>Osanix</strong>&nbsp;» se celebra actualmente como la primera verdadera <strong>alternativa natural a las inyecciones Wegovy®</strong> (semaglutida).</p>
+                <p>Sin jeringa, sin receta y <strong>sin gastar miles de euros cada mes.</strong></p>
+            </div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/dg/b.png" alt=""></a>
+            </figure>
+
+            <div class="text">
+                <p>En solo seis semanas, el sitio del fabricante a veces no está disponible durante horas.&nbsp;</p>
+                <p>Miles de usuarios comparten sus resultados cada día: <strong>10, 15, 20 kilos menos</strong> – con una alimentación totalmente normal y <strong>solo 1 toma al día.</strong></p>
+            </div>
+
+            <div id="arzt" class="default">
+                <h1>¿Qué dicen los médicos? ¿Puede una cápsula ser una alternativa eficaz a las inyecciones Wegovy®?</h1>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="../index_files/dg/c.png" alt="">
+            </figure>
+
+            <div class="text">
+                <p>El endocrinólogo Dr. Elias Schwarz prueba Osanix desde la primavera de 2025 en su consulta con más de 180 pacientes.<br><br>Resultados hasta ahora (aún no publicados):</p>
+                <ul>
+                    <li>De media <strong>11,6 kg de pérdida en 12 semanas</strong></li>
+                    <li><strong>9 de cada 10 usuarios</strong> reportan una <strong>desaparición total</strong> de la alimentación emocional y de los <strong>antojos</strong></li>
+                    <li><strong>Sin efectos secundarios</strong> como náuseas, vómitos o diarrea (con Wegovy®, aproximadamente 1 de cada 5 usuarios lo sufre. Con Osanix, estos efectos secundarios no aparecen).</li>
+                    <li>También funciona con SOP, tiroides lenta y personas mayores de 55 años</li>
+                </ul>
+            </div>
+
+            <div class="text">
+                <p>Según el Dr. Schwarz, el efecto se basa en el <strong>«complejo MS-Phase» patentado:</strong>&nbsp;</p>
+                <p>La fórmula <strong>disuelve de forma selectiva la capa exterior de las células grasas sobrecargadas</strong>, para que el cuerpo pueda descomponer y quemar de forma natural la grasa almacenada – sin ralentizar el metabolismo, como ocurre con las inyecciones Wegovy®.</p>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="../index_files/egfrnpic.png" alt="">
+            </figure>
+
+            <div class="text">
+                <p>Un segundo principio activo bloquea las señales de grelina en el cerebro – <strong>el apetito se normaliza por sí solo.</strong><br><br><em>(La grelina es la «hormona del hambre» que se produce en el estómago vacío y envía constantemente al cerebro la señal «¡Come ahora!»)</em></p>
+            </div>
+
+            <div class="default"><h1>Ya más de 100.000 usuarios desde octubre de 2025</h1></div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/dg/moti.png" alt=""></a>
+                <figcaption><p>El primer cambio visible apareció ya en la segunda semana.</p></figcaption>
+            </figure>
+
+            <blockquote class="blockquote"><p>Margot (24) de Madrid</p></blockquote>
+
+            <div class="text">
+                <p>«Durante años luché en vano contra mi peso, hasta que casi quise rendirme.»</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <figure><img class="img-fluid" src="../index_files/dg/pen.png" alt=""></figure>
+                </div>
+                <div class="col-sm-8">
+                    <p>«Me recomendaron Osanix como alternativa a las inyecciones Wegovy®, porque debía tener el mismo efecto, pero con muchos menos efectos secundarios. Y como tengo un miedo enorme a las agujas, la inyección nunca fue una opción para mí.»</p>
+                    <p>«Tomé <strong>Osanix durante 3 meses</strong> (1× al día) y <strong>bajé 24 kilos</strong>. No tuve ningún efecto secundario.»</p>
+                </div>
+            </div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/dg/ang.png" alt=""></a>
+                <figcaption><p>Margot tras 3 meses de Osanix</p></figcaption>
+            </figure>
+
+            <div class="default"><h1>¿Por qué se considera Osanix una alternativa natural a Wegovy®?</h1></div>
+
+            <div class="text">
+                <p>Porque activa exactamente los mismos mecanismos de saciedad y quema de grasa que la semaglutida (Wegovy®), pero de forma natural – sin inyecciones sintéticas, sin receta y <strong>sin</strong> los típicos efectos secundarios fuertes.</p>
+                <p>En lugar de inyectarte en el abdomen cada semana, basta con <strong>1 cápsula al día</strong>. Un envase de un mes cuesta actualmente solo €&nbsp;55 – en lugar de €&nbsp;1.200+ como con Wegovy®.</p>
+                <p>→ <a href="https://trk.mysmartpick.online/click"><strong>A la página del fabricante de Osanix</strong></a></p>
+            </div>
+
+            <div class="default"><h1>Por qué esta cápsula lo supera todo – según los estudios</h1></div>
+
+            <div class="text">
+                <p>Se publicaron en el verano de 2025 estudios clínicos con un total de 1.800 participantes.</p>
+                <p>En otro estudio con más de 500 personas, los usuarios de Osanix perdieron de media <strong>7,5 kg más al mes</strong> que el grupo de control.</p>
+            </div>
+
+            <figure><img class="img-fluid" src="../index_files/max4-1282x858.jpg" alt=""></figure>
+
+            <div class="text">
+                <p>Estudios daneses con 1.300 participantes también mostraron una reducción media de <strong>8,3 kg al mes</strong> con un uso regular.</p>
+            </div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/dg/jeans.png" alt=""></a>
+                <figcaption><p>Anne-Marie (Barcelona) – 22 kg</p></figcaption>
+            </figure>
+
+            <div class="default"><h3>Las redes sociales están llenas de fotos reales de antes y después</h3></div>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/ASPRY-NWWMNIMGFRWEB-V7-700x700.jpg" alt=""></a>
+                <figcaption><p>Anna (Madrid) – 21 kg</p></figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/ASPRY-NWWMNIMGFRWEB-V8-700x700.jpg" alt=""></a>
+                <figcaption><p>Maria (Valencia) – 21 kg</p></figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/NSLIM-NWWMNIMGFRWEB-V9-700x700.jpg" alt=""></a>
+                <figcaption><p>Violetta (Sevilla) – 24 kg</p></figcaption>
+            </figure>
+
+            <div class="default"><h2>Osanix está disponible sin receta en España</h2></div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <figure>
+                        <a href="https://trk.mysmartpick.online/click"><img class="img-fluid" src="../index_files/dg/a.png" alt=""></a>
+                    </figure>
+                </div>
+                <div class="col-sm-6">
+                    <figure><img class="img-fluid" src="../index_files/rating-782x396.jpg" alt=""></figure>
+                    <a href="https://trk.mysmartpick.online/click" class="btn bg-primary-color btn-lg">Al fabricante →</a>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>Actualmente desde <strong>€&nbsp;36,95</strong> al mes → <a href="https://trk.mysmartpick.online/click"><strong>directamente en el fabricante de Osanix</strong></a></p>
+                <p>No se necesita receta.<br><em>Actualizado: marzo 2026</em></p>
+            </div>
+
+            <div id="facebook-comments">
+                <div class="facebook-comments-top">
+                    <strong>13 comentarios</strong>
+                    <a href="https://trk.mysmartpick.online/click">Añadir un comentario</a>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/0-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Antonia García</span>
+                        <p>Leí hace poco en Marie Claire que una actriz, por miedo a las agujas, no quería inyecciones de Wegovy y en su lugar probó Osanix. Le funcionó realmente bien.</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 12 · 01/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/7-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Sophie López</span>
+                        <p>Me dieron Osanix de una amiga hace 3 días – se nota enseguida: ya no hay antojos y claramente menos hambre todo el día. ❤️</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 15 · 02/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/19-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Inés Martínez</span>
+                        <p>6 kg menos en un mes – y seguro que me olvidé de tomarlo 4 veces 😂</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 6 · 03/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/3 (1)-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Magdalena Ruiz</span>
+                        <p>Acabo de pedir… tengo curiosidad por ver qué pasa…</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 2 · 03/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/38-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Tanja Sánchez</span>
+                        <p>¿Hay que evitar ciertos alimentos durante el tratamiento?</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 1 · 04/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/407.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Cornelia Fernández</span>
+                        <p>Tomé Osanix y bajé 19 kg. Después no volví a subir – ¡de verdad genial!</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 4 · 05/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/82-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Michelle Pérez</span>
+                        <p>Me lo recomendó una amiga – súper contenta. Sin efectos secundarios, fácil de tomar.</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 8 · 05/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/65-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Victoria Jiménez</span>
+                        <p>Llevo 15 días – ya 4 kg menos sin deporte. Con más movimiento será aún más fácil.</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 2 · 06/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/32-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Thomas Keller</span>
+                        <p>¿También puede tomarlo un hombre?</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 1 · 06/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/94-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Lisa Schmidt</span>
+                        <p>Claro – mi novio también lo usa y le ha ido genial. Ahora yo también lo tomo.</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 1 · 06/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="facebook-comment">
+                    <div class="facebook-comment-image"><img style="width:50px;height:50px;" src="../index_files/93-50x50.jpg"></div>
+                    <div class="facebook-comment-post">
+                        <span class="facebook-comment-author">Jessi Navarro</span>
+                        <p>No consigo tragar pastillas y las agujas aún menos… pero Osanix es fácil y ya he bajado 3 kg.</p>
+                        <p class="facebook-comment-bottom">Responder · <i class="thumbs-up"></i> 1 · 06/03/2026</p>
+                    </div>
+                </div>
+
+                <a class="facebook-comments-footer" href="https://developers.facebook.com/docs/plugins/" target="_blank">
+                    Plugin social de Facebook
+                </a>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<!-- Sticky order bar -->
+<div class="stickybar">
+  <div class="sb-info">
+    <div class="sb-mini"><img src="../index_files/dg/a.png" alt="Osanix"></div>
+    <div>
+      <div class="sb-title">Osanix <span class="dose-pill">387mg</span></div>
+      <div class="sb-timer" id="sbTimer">Envío hoy · <b id="clockSticky">--:--:--</b></div>
+    </div>
+  </div>
+  <a class="btn-sticky" href="https://trk.mysmartpick.online/click">Pedir ahora <span>→</span></a>
+</div>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', function() {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+    });
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', function() {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.classList.remove('nav-open');
+        });
+    });
+
+    (function(){
+      function pad(n){ return (n<10?'0':'')+n; }
+      function tick(){
+        var now = new Date();
+        var cut = new Date(now); cut.setHours(17,0,0,0);
+        var today = now < cut;
+        if(!today){ cut.setDate(cut.getDate()+1); }
+        var ms = cut - now;
+        var h = Math.floor(ms/3600000), m = Math.floor(ms%3600000/60000), s = Math.floor(ms%60000/1000);
+        var str = pad(h)+':'+pad(m)+':'+pad(s);
+        var clock = document.getElementById('clockSticky');
+        var sbT = document.getElementById('sbTimer');
+        if(clock) clock.textContent = str;
+        if(sbT){
+          sbT.innerHTML = today
+            ? 'Envío hoy · <b id="clockSticky">'+str+'</b>'
+            : 'Envío mañana · <b id="clockSticky">'+str+'</b>';
+        }
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+</script>
+
+</body>
+</html>

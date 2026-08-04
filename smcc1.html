@@ -12,103 +12,26 @@
 
 </head><body>
 
-<script>
-    !function (w, d, t) {
-        w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0;n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-        ttq.load('D7LEICJC77U3PUBF168G');
-        ttq.page();
-    }(window, document, 'ttq');
-</script>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '936238979115546');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent', {
-  content_name: 'CoreGLP_Weight_Loss_Landing',
-  content_category: 'Health_Beauty',
-  content_ids: ['CoreGLP-DE']
-});
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-        function getQueryParam(name) {
-            return new URLSearchParams(window.location.search).get(name);
-        }
-
-        let ttcid = getQueryParam('ttclid') ||
-            getQueryParam('clickid') ||
-            getQueryParam('s1') ||
-            '';
-
-        if (ttcid) {
-            sessionStorage.setItem('ttcid', ttcid);
-        } else {
-            ttcid = sessionStorage.getItem('ttcid') || '';
-        }
-
-        function processUrl(url) {
-            if (ttcid && url.includes('{cid}')) {
-                url = url.replace(/\{cid\}/g, ttcid);
-            }
-            return url;
-        }
-
-        const offerDomain = 'domainoftheyear.com';
-        const offerLinks = document.querySelectorAll(`a[href*="${offerDomain}"]`);
-
-        offerLinks.forEach(link => {
-            link.href = processUrl(link.href);
-
-            link.addEventListener('click', function() {
-                if (typeof ttq !== 'undefined') {
-                    ttq.track('InitiateCheckout', {
-                        content_name: 'CoreGLP_Offer',
-                        content_category: 'Weight_Loss',
-                        content_ids: ['CoreGLP-DE'],
-                        value: 70,
-                        currency: 'USD'
-                    });
-                }
-            });
-        });
-
-    });
-</script>
-
 <header class="css-1fezxdr" data-testid="PageHeader" role="banner">
     <div class="css-1x2681d">
         <nav class="css-889j7l">
             <div class="css-1l6c000">
-                <div class="css-kvylio"><a class="css-15b93or" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}" tabindex="0"><span class="css-s5xdrg"><img style="--width:21;--height:21" loading="lazy" src="./smcc1_files/cloudy.84b2cb0e.svg" alt="Teilweise bewölkt" title="Teilweise bewölkt" class="
+                <div class="css-kvylio"><a class="css-15b93or" href="https://www.google.com/" tabindex="0"><span class="css-s5xdrg"><img style="--width:21;--height:21" loading="lazy" src="./smcc1_files/cloudy.84b2cb0e.svg" alt="Teilweise bewölkt" title="Teilweise bewölkt" class="
                     w-[calc(var(--width)_/_16_*_1rem)]
                     h-[calc(var(--height)_/_16_*_1rem)]
                     max-w-none
                     block
                     undefined" decoding="async"><span class="css-1iuj5ih">Wetter</span></span></a></div>
-                <div class="css-kvylio"><a class="css-15b93or" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}" tabindex="0"><span><span>DAX</span><span class="css-1qfbff0" aria-label="Dax Performance loading"></span></span></a></div>
-                <div class="css-kvylio"><a class="css-15b93or" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}" tabindex="0"><span>Telefonverzeichnisse</span></a></div>
-                <div class="css-kvylio"><a class="css-15b93or" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}" tabindex="0"><span>Lotto</span></a></div>
+                <div class="css-kvylio"><a class="css-15b93or" href="https://www.google.com/" tabindex="0"><span><span>DAX</span><span class="css-1qfbff0" aria-label="Dax Performance loading"></span></span></a></div>
+                <div class="css-kvylio"><a class="css-15b93or" href="https://www.google.com/" tabindex="0"><span>Telefonverzeichnisse</span></a></div>
+                <div class="css-kvylio"><a class="css-15b93or" href="https://www.google.com/" tabindex="0"><span>Lotto</span></a></div>
                 <div class="css-kvylio">
                     <div class="css-15apmts">
                         <label class="css-1dnikvo">Telekom Services</label>
-                        <div class="Dropdown__content css-eksh2w"><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Telekom</a><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Hilfe &amp; Service</a><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Frag Magenta</a><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Kundencenter</a><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Freemail</a><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">MagentaCloud</a><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Tarife &amp; Produkte</a></div>
+                        <div class="Dropdown__content css-eksh2w"><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://www.google.com/">Telekom</a><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://www.google.com/">Hilfe &amp; Service</a><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://www.google.com/">Frag Magenta</a><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://www.google.com/">Kundencenter</a><a class="css-tt8e7k" href="https://www.google.com/">Freemail</a><a class="css-tt8e7k" rel="noreferrer nofollow" href="https://www.google.com/">MagentaCloud</a><a class="css-tt8e7k" href="https://www.google.com/">Tarife &amp; Produkte</a></div>
                     </div>
                 </div>
-                <div class="css-kvylio"><a class="css-sd11t3" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}" tabindex="0"><span>PUR-Abo Login</span></a></div>
+                <div class="css-kvylio"><a class="css-sd11t3" href="https://www.google.com/" tabindex="0"><span>PUR-Abo Login</span></a></div>
             </div>
             <div class="css-1l6c000"></div>
         </nav>
@@ -116,7 +39,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
     <hr class="css-1u9j99j">
     <div class="css-ypvv3a">
         <div class="css-19bu6wp" data-testid="StreamLayout.Companion">
-            <a class="css-1mqt6yl" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">
+            <a class="css-1mqt6yl" href="https://www.google.com/">
                 <i>
                     <picture>
                         <source media="(prefers-color-scheme:dark)" srcset="./smcc1_files/t-logo.png" type="image/svg+xml">
@@ -132,13 +55,13 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
         </div>
 
         <div class="css-19bu6wp-mob">
-            <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <a href="https://www.google.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
             </svg></a>
-            <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <a href="https://www.google.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
             </svg></a>
-            <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <a href="https://www.google.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
             </svg></a>
         </div>
@@ -161,7 +84,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
                                     </div>
                                 </div>
                                 <!-- 按钮：点击直接跳转到 SBTI 测试网址 -->
-                                <button class="css-na5faf" type="button" onclick="window.location.href='https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}'">Suchen</button>
+                                <button class="css-na5faf" type="button" onclick="window.location.href='https://www.google.com/'">Suchen</button>
                             </div>
                         </div>
                     </form>
@@ -181,7 +104,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
     <hr class="css-1u9j99j">
     <div class="css-9uu57o" data-testid="Scroller">
         <ul class="css-1ppyx7y">
-            <li class="css-1c1g68d"><a class="w-16 css-1iptnqs" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}"><img style="--height:16" loading="lazy" src="./smcc1_files/home-bold.8653857c.svg" alt="Startseite Icon" title="Startseite Icon" class="
+            <li class="css-1c1g68d"><a class="w-16 css-1iptnqs" href="https://www.google.com/"><img style="--height:16" loading="lazy" src="./smcc1_files/home-bold.8653857c.svg" alt="Startseite Icon" title="Startseite Icon" class="
                 w-[calc(var(--width)_/_16_*_1rem)]
                 h-[calc(var(--height)_/_16_*_1rem)]
                 max-w-none
@@ -189,70 +112,70 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
                 undefined" decoding="async"></a></li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Politik</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Politik</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
-                <div class="css-1d2fdp0"><label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Ukraine</a></label></div>
+                <div class="css-1d2fdp0"><label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Ukraine</a></label></div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Regional</a></label>
-                </div>
-            </li>
-            <li class="css-1c1g68d">
-                <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Sport</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Regional</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Wirtschaft &amp; Finanzen</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Sport</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Unterhaltung</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Wirtschaft &amp; Finanzen</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Panorama</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Unterhaltung</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Gesundheit</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Panorama</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Leben</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Gesundheit</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Spiele</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Leben</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Nachhaltigkeit</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Spiele</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Mobilität</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Nachhaltigkeit</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Digital</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Mobilität</a></label>
                 </div>
             </li>
             <li class="css-1c1g68d">
                 <div class="css-1d2fdp0">
-                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">Heim &amp; Garten</a></label>
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Digital</a></label>
+                </div>
+            </li>
+            <li class="css-1c1g68d">
+                <div class="css-1d2fdp0">
+                    <label class="css-1w4t7ks"><a class="css-tt8e7k" href="https://www.google.com/">Heim &amp; Garten</a></label>
                 </div>
             </li>
         </ul>
@@ -268,7 +191,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
             ganzen Land kaufen sie massenhaft online
         </h1>
         <p class="subhead">
-            <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">CoreGLP®</a> ist eine natürliche prolipolytische Formel, die die
+            <a href="https://www.google.com/">CoreGLP®</a> ist eine natürliche prolipolytische Formel, die die
             Fettverbrennung während des Schlafs aktiviert. Nicht in Apotheken erhältlich. Nicht
             beworben. Aber es funktioniert — zu gut, für den Komfort der Konzerne.
         </p>
@@ -317,7 +240,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
                     vorausgesetzt, der richtige Mechanismus wird aktiviert.
                 </p>
                 <p>
-                    So entstand <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">CoreGLP®</a>. Es aktiviert die Lipolyse: interne
+                    So entstand <a href="https://www.google.com/">CoreGLP®</a>. Es aktiviert die Lipolyse: interne
                     Fettverbrennung, ohne Herzbelastung, ohne Stimulanzien oder Diäten.
                 </p>
                 <p>
@@ -475,7 +398,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
             <li><strong>Libido:</strong> 89% der Anwenderinnen berichten von "erneuter Leidenschaft"</li>
         </ul>
         <p>
-            <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">CoreGLP®</a> ist zertifiziert und sicher — es unterstützt den Körper
+            <a href="https://www.google.com/">CoreGLP®</a> ist zertifiziert und sicher — es unterstützt den Körper
             ohne Belastung oder Risiko.
         </p>
     </div>
@@ -514,7 +437,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
         <div class="precision-content">
             <div class="precision-text">
                 <p>
-                    <strong><a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">CoreGLP®</a> wirkt sanft und gezielt.</strong> Die
+                    <strong><a href="https://www.google.com/">CoreGLP®</a> wirkt sanft und gezielt.</strong> Die
                     Moleküle richten sich <strong>ausschließlich auf Fettzellen</strong>, ohne andere
                     Gewebe zu beeinträchtigen.
                 </p>
@@ -642,7 +565,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
         <h2>Gesundheit ohne Opfer</h2>
         <p>
             Jeder Mensch verdient Gesundheit, Selbstvertrauen und Leichtigkeit.
-            <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">CoreGLP®</a> gibt dies ohne Opfer.
+            <a href="https://www.google.com/">CoreGLP®</a> gibt dies ohne Opfer.
         </p>
         <p>
             Kein Hunger, keine Schuldgefühle, kein Leiden mehr. Sie haben jetzt eine Lösung — sicher,
@@ -655,7 +578,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
     <div class="container">
         <h2>Zeitbegrenztes Angebot — NUR NOCH 47 PACKUNGEN</h2>
         <p>
-            Heute ist <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">CoreGLP®</a> zu einem minimalen Preis erhältlich — mit 50%
+            Heute ist <a href="https://www.google.com/">CoreGLP®</a> zu einem minimalen Preis erhältlich — mit 50%
             Rabatt.
         </p>
         <p>
@@ -679,7 +602,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
     <div class="container">
         <h2>Bestellen Sie das originale CoreGLP®</h2>
         <p>
-            Erhalten Sie die originale <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}">CoreGLP®</a>-Formel mit 50% Rabatt.<br>
+            Erhalten Sie die originale <a href="https://www.google.com/">CoreGLP®</a>-Formel mit 50% Rabatt.<br>
             Unterstützt vom Europäischen Gesundheitsrat.
         </p>
         <p>
@@ -691,7 +614,7 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
 <footer class="footer">
     <div class="container">
         <img class="product__img" src="./smcc1_files/CoreGLP_1.png" alt="Produkt Foto">
-        <a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}" class="btn btn-primary">Rabatt erhalten ➔</a>
+        <a href="https://www.google.com/" class="btn btn-primary">Rabatt erhalten ➔</a>
         <p><strong>Achtung:</strong> Rabatt gültig bis Ende des Tages — <span id="endPromotionTime">
             <script>
                 function addZero(i) {
@@ -760,5 +683,5 @@ src="https://www.facebook.com/tr?id=936238979115546&ev=PageView&noscript=1"/>
 
 
 
-<a href="https://bigtimeperformance.com/?a=3298&c=9167&s1={cid}" style="display: none;"></a>
+<a href="https://www.google.com/" style="display: none;"></a>
 </body></html>

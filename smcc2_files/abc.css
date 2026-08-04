@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6,
 .text4,
 .text5,
 body {
-    font-family: 'abc-modern', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body, .m-menu .m-menu-wrapper {
@@ -28,79 +28,6 @@ h1, h2, h3, h4, h5, h6,
 
 .copy-content  a{
     color: #da074a!important;
-}
-/* Jury 区块 */
-.jury-section {
-  margin: 40px 0;
-  color: #000;
-}
-
-.jury-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-/* 横向滚动容器 */
-.jury-scroll {
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* 强制单行 */
-.jury-list {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 10px;
-  list-style: none;
-  padding: 0 0 12px;
-  margin: 0;
-}
-
-/* 单个人物 */
-.jury-item {
-  flex: 0 0 auto;
-  width: 260px;
-  text-align: center;
-}
-
-/* 头像 */
-.jury-item img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 12px;
-}
-
-/* 姓名 */
-.jury-item .name {
-  font-weight: 600;
-  margin: 0;
-}
-
-/* 身份 */
-.jury-item .role {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 4px;
-}
-
-/* 可选滚动条 */
-.jury-scroll::-webkit-scrollbar {
-  height: 6px;
-}
-
-.jury-scroll::-webkit-scrollbar-thumb {
-  background: #cfcfcf;
-  border-radius: 3px;
-}
-.jury-container {
-  max-width: 1200px;
-  margin: 0 auto;          /* 页面居中 */
-  padding: 0 20px;         /* 小屏留边距 */
 }
 
 .new-action-button {

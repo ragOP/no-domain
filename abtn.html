@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Osanix CTA gallery — 100 button ideas</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #1a1a1a;
+    }
+    header.page {
+      position: sticky; top: 0; z-index: 5;
+      background: #111; color: #fff;
+      padding: 16px 20px;
+    }
+    header.page h1 { margin: 0 0 6px; font-size: 20px; }
+    header.page p { margin: 0; font-size: 13px; color: #bbb; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 18px;
+      padding: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 12px;
+      padding: 14px 14px 18px;
+    }
+    .meta {
+      display: flex; align-items: baseline; gap: 8px;
+      margin-bottom: 12px;
+    }
+    .num {
+      font-weight: 800; font-size: 13px; color: #e2007b;
+    }
+    .name { font-size: 13px; color: #555; }
+    .cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 72px;
+      padding: 10px 18px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 1.15;
+      cursor: default;
+    }
+    .cta .main {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .cta .sub {
+      margin-top: 4px;
+      font-size: 13px;
+      font-style: italic;
+      font-weight: 400;
+    }
+    .s059 .main, .s060 .main, .s065 .main { font-size: 13px; font-weight: 800; }
+    .s066 .main { font-size: 26px; }
+    .s072 .main { font-family: Georgia, serif; }
+    .s075 .main, .s075 .sub { font-family: ui-monospace, Menlo, monospace; font-size: 14px; }
+    .s001{background:#56BC6C;color:#fff;border-radius:30px;}
+.s002{background:#2E7D32;color:#fff;border-radius:30px;}
+.s003{background:#1DB954;color:#fff;border-radius:30px;}
+.s004{background:#7CB342;color:#fff;border-radius:30px;}
+.s005{background:#FF6B33;color:#fff;border-radius:30px;}
+.s006{background:#E65100;color:#fff;border-radius:30px;}
+.s007{background:#E53935;color:#fff;border-radius:30px;}
+.s008{background:#E2007B;color:#fff;border-radius:30px;}
+.s009{background:#C2185B;color:#fff;border-radius:30px;}
+.s010{background:#1565C0;color:#fff;border-radius:30px;}
+.s011{background:#0D47A1;color:#fff;border-radius:30px;}
+.s012{background:#00897B;color:#fff;border-radius:30px;}
+.s013{background:#F9A825;color:#1a1a1a;border-radius:30px;}
+.s014{background:#111;color:#fff;border-radius:30px;}
+.s015{background:#333;color:#fff;border-radius:30px;}
+.s016{background:#6A1B9A;color:#fff;border-radius:30px;}
+.s017{background:#3949AB;color:#fff;border-radius:30px;}
+.s018{background:#00ACC1;color:#fff;border-radius:30px;}
+.s019{background:#FF7043;color:#fff;border-radius:30px;}
+.s020{background:#6D4C41;color:#fff;border-radius:30px;}
+.s021{background:#56BC6C;color:#fff;border-radius:999px;}
+.s022{background:#56BC6C;color:#fff;border-radius:16px;}
+.s023{background:#56BC6C;color:#fff;border-radius:12px;}
+.s024{background:#56BC6C;color:#fff;border-radius:6px;}
+.s025{background:#56BC6C;color:#fff;border-radius:4px;}
+.s026{background:#56BC6C;color:#fff;border-radius:30px 8px 30px 8px;}
+.s027{background:#56BC6C;color:#fff;border-radius:4px;clip-path:polygon(12px 0,100% 0,100% 100%,12px 100%,0 50%);padding-left:36px;}
+.s028{background:#FF6B33;color:#fff;border-radius:8px;transform:skewX(-8deg);}
+.s029{background:linear-gradient(180deg,#6FDB84,#3DAA55);color:#fff;border-radius:30px;}
+.s030{background:linear-gradient(180deg,#FF6B33,#C94515);color:#fff;border-radius:30px;}
+.s031{background:linear-gradient(90deg,#FF6B33,#E2007B);color:#fff;border-radius:30px;}
+.s032{background:linear-gradient(90deg,#1565C0,#00ACC1);color:#fff;border-radius:30px;}
+.s033{background:linear-gradient(90deg,#1B5E20,#66BB6A);color:#fff;border-radius:30px;}
+.s034{background:linear-gradient(180deg,#FFE082,#F9A825 40%,#F57F17);color:#3E2723;border-radius:30px;}
+.s035{background:linear-gradient(135deg,#311B92,#7E57C2);color:#fff;border-radius:30px;}
+.s036{background:linear-gradient(90deg,#FF4081,#7C4DFF);color:#fff;border-radius:999px;}
+.s037{background:repeating-linear-gradient(135deg,#56BC6C 0 12px,#4eaf64 12px 24px);color:#fff;border-radius:16px;}
+.s038{background:linear-gradient(90deg,#111 0 28%,#56BC6C 28%);color:#fff;border-radius:12px;}
+.s039{background:#fff;color:#2E7D32;border:3px solid #56BC6C;border-radius:30px;}
+.s040{background:#fff;color:#E65100;border:3px solid #FF6B33;border-radius:30px;}
+.s041{background:transparent;color:#0D47A1;border:3px solid #0D47A1;border-radius:30px;}
+.s042{background:#fff;color:#E2007B;border:2px solid #E2007B;border-radius:999px;}
+.s043{background:#fff;color:#2E7D32;border:3px dashed #56BC6C;border-radius:16px;}
+.s044{background:#56BC6C;color:#fff;border:4px solid #fff;outline:3px solid #56BC6C;border-radius:16px;}
+.s045{background:#E8F5E9;color:#1B5E20;border:2px solid #A5D6A7;border-radius:30px;}
+.s046{background:#fff;color:#111;border:2px solid #111;border-radius:8px;}
+.s047{background:#56BC6C;color:#fff;border-radius:12px;box-shadow:0 6px 0 #2E7D32;}
+.s048{background:#FF6B33;color:#fff;border-radius:12px;box-shadow:0 6px 0 #C94515;}
+.s049{background:#E53935;color:#fff;border-radius:12px;box-shadow:0 6px 0 #B71C1C;}
+.s050{background:#56BC6C;color:#fff;border-radius:16px;box-shadow:0 10px 24px rgba(46,125,50,.35);}
+.s051{background:#1E88E5;color:#fff;border-radius:8px;box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);}
+.s052{background:#56BC6C;color:#fff;border-radius:16px;box-shadow:inset 0 -6px 0 rgba(0,0,0,.18);}
+.s053{background:#56BC6C;color:#fff;border-radius:16px;box-shadow:inset 0 2px 0 rgba(255,255,255,.45),0 4px 0 #2E7D32;}
+.s054{background:#eef3ee;color:#1B5E20;border-radius:20px;box-shadow:8px 8px 16px #cfd6cf,-8px -8px 16px #fff;}
+.s055{background:#111;color:#F9A825;border:2px solid #F9A825;border-radius:4px;letter-spacing:.04em;}
+.s056{background:#111;color:#fff;border-radius:0;border-bottom:4px solid #F9A825;}
+.s057{background:#0a0a0a;color:#39FF14;border:2px solid #39FF14;border-radius:8px;text-shadow:0 0 8px #39FF14;}
+.s058{background:#120012;color:#FF3CAC;border:2px solid #FF3CAC;border-radius:8px;}
+.s059{background:rgba(86,188,108,.22);color:#14532d;border:1px solid rgba(255,255,255,.55);border-radius:20px;backdrop-filter:blur(8px);}
+.s060{background:rgba(13,71,161,.15);color:#0D47A1;border:1px solid rgba(13,71,161,.35);border-radius:20px;}
+.s061{background:#fff;color:#1565C0;border:2px solid #90CAF9;border-radius:12px;box-shadow:0 2px 8px rgba(21,101,192,.12);}
+.s062{background:#F1F8E9;color:#33691E;border-left:8px solid #7CB342;border-radius:8px;}
+.s063{background:#56BC6C;color:#fff;border-radius:10px;text-transform:uppercase;}
+.s064{background:#111;color:#fff;border-radius:30px;letter-spacing:.12em;}
+.s065{background:#56BC6C;color:#fff;border-radius:30px;height:56px;padding:6px 16px;}
+.s066{background:#FF6B33;color:#fff;border-radius:18px;height:96px;}
+.s067{background:#56BC6C;color:#fff;border-radius:0;max-width:none;width:100%;}
+.s068{background:#fff;color:#1B5E20;border-radius:12px;border:1px solid #C8E6C9;border-left:10px solid #56BC6C;}
+.s069{background:#fff;color:#E65100;border-radius:12px;border:1px solid #FFCCBC;border-bottom:6px solid #FF6B33;}
+.s070{background:#56BC6C;color:#fff;border-radius:999px;box-shadow:0 8px 20px rgba(86,188,108,.4);}
+.s071{background:#111;color:#fff;border-radius:8px;font-family:Georgia,serif;}
+.s072{background:#E53935;color:#fff;border-radius:6px;font-weight:900;}
+.s073{background:#fff;color:#111;border:1px solid #111;border-radius:0;font-weight:400;}
+.s074{background:#111;color:#7CFC00;border-radius:4px;font-family:ui-monospace,Menlo,monospace;}
+.s075{background:#6A1B9A;color:#fff;border-radius:20px;letter-spacing:.08em;text-transform:uppercase;font-size:13px;}
+.s076{background:#FF9900;color:#111;border-radius:8px;}
+.s077{background:#25D366;color:#fff;border-radius:24px;}
+.s078{background:#00B67A;color:#fff;border-radius:4px;}
+.s079{background:#003087;color:#fff;border-radius:24px;}
+.s080{background:#FFD600;color:#111;border-radius:8px;}
+.s081{background:#fff;color:#C62828;border:3px solid #C62828;border-radius:8px;}
+.s082{background:#fff;color:#2E7D32;border:3px solid #2E7D32;border-radius:8px;}
+.s083{background:#81D4FA;color:#01579B;border-radius:30px;}
+.s084{background:#B39DDB;color:#311B92;border-radius:30px;}
+.s085{background:#FFAB91;color:#BF360C;border-radius:30px;}
+.s086{background:#9E9D24;color:#fff;border-radius:30px;}
+.s087{background:#546E7A;color:#fff;border-radius:30px;}
+.s088{background:#E2007B;color:#fff;border-radius:0;transform:rotate(-1.2deg);}
+.s089{background:#fff;color:#C62828;border:4px solid #C62828;border-radius:8px;transform:rotate(-2deg);}
+.s090{background:#FFF8E1;color:#E65100;border:2px dashed #FF9800;border-radius:12px;}
+.s091{background:#000;color:#fff;border-radius:14px;}
+.s092{background:#007AFF;color:#fff;border-radius:14px;}
+.s093{background:#3DDC84;color:#073042;border-radius:22px;}
+.s094{background:#FCE4EC;color:#AD1457;border-radius:999px;}
+.s095{background:#E3F2FD;color:#0D47A1;border-radius:999px;}
+.s096{background:linear-gradient(#56BC6C 50%,#2E7D32 50%);color:#fff;border-radius:16px;}
+.s097{background:linear-gradient(90deg,#FF6B33 50%,#C94515 50%);color:#fff;border-radius:16px;}
+.s098{background:#56BC6C;color:#fff;border:6px solid #C8E6C9;border-radius:30px;}
+.s099{background:#FFD600;color:#111;border:5px solid #111;border-radius:12px;}
+.s100{background:#fff;color:#2E7D32;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.12);}
+  </style>
+</head>
+<body>
+  <header class="page">
+    <h1>100 Osanix CTA ideas</h1>
+    <p>Same text on every button. Pick a number (#01–#100) and tell me which to use.</p>
+  </header>
+  <div class="grid">
+    <article class="card" id="b1">
+      <div class="meta"><span class="num">#01</span><span class="name">Live green</span></div>
+      <a class="cta s001" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b2">
+      <div class="meta"><span class="num">#02</span><span class="name">Forest</span></div>
+      <a class="cta s002" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b3">
+      <div class="meta"><span class="num">#03</span><span class="name">Mint</span></div>
+      <a class="cta s003" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b4">
+      <div class="meta"><span class="num">#04</span><span class="name">Lime</span></div>
+      <a class="cta s004" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b5">
+      <div class="meta"><span class="num">#05</span><span class="name">Orange</span></div>
+      <a class="cta s005" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b6">
+      <div class="meta"><span class="num">#06</span><span class="name">Deep orange</span></div>
+      <a class="cta s006" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b7">
+      <div class="meta"><span class="num">#07</span><span class="name">Red urgent</span></div>
+      <a class="cta s007" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b8">
+      <div class="meta"><span class="num">#08</span><span class="name">Femail pink</span></div>
+      <a class="cta s008" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b9">
+      <div class="meta"><span class="num">#09</span><span class="name">Magenta</span></div>
+      <a class="cta s009" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b10">
+      <div class="meta"><span class="num">#10</span><span class="name">Royal blue</span></div>
+      <a class="cta s010" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b11">
+      <div class="meta"><span class="num">#11</span><span class="name">Navy</span></div>
+      <a class="cta s011" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b12">
+      <div class="meta"><span class="num">#12</span><span class="name">Teal</span></div>
+      <a class="cta s012" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b13">
+      <div class="meta"><span class="num">#13</span><span class="name">Gold</span></div>
+      <a class="cta s013" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b14">
+      <div class="meta"><span class="num">#14</span><span class="name">Black</span></div>
+      <a class="cta s014" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b15">
+      <div class="meta"><span class="num">#15</span><span class="name">Charcoal</span></div>
+      <a class="cta s015" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b16">
+      <div class="meta"><span class="num">#16</span><span class="name">Purple</span></div>
+      <a class="cta s016" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b17">
+      <div class="meta"><span class="num">#17</span><span class="name">Indigo</span></div>
+      <a class="cta s017" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b18">
+      <div class="meta"><span class="num">#18</span><span class="name">Cyan</span></div>
+      <a class="cta s018" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b19">
+      <div class="meta"><span class="num">#19</span><span class="name">Coral</span></div>
+      <a class="cta s019" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b20">
+      <div class="meta"><span class="num">#20</span><span class="name">Brown</span></div>
+      <a class="cta s020" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b21">
+      <div class="meta"><span class="num">#21</span><span class="name">Pill full</span></div>
+      <a class="cta s021" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b22">
+      <div class="meta"><span class="num">#22</span><span class="name">Soft 16px</span></div>
+      <a class="cta s022" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b23">
+      <div class="meta"><span class="num">#23</span><span class="name">Soft 12px</span></div>
+      <a class="cta s023" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b24">
+      <div class="meta"><span class="num">#24</span><span class="name">Sharp 6px</span></div>
+      <a class="cta s024" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b25">
+      <div class="meta"><span class="num">#25</span><span class="name">Almost square</span></div>
+      <a class="cta s025" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b26">
+      <div class="meta"><span class="num">#26</span><span class="name">Asymmetric</span></div>
+      <a class="cta s026" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b27">
+      <div class="meta"><span class="num">#27</span><span class="name">Ticket cut</span></div>
+      <a class="cta s027" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b28">
+      <div class="meta"><span class="num">#28</span><span class="name">Skew</span></div>
+      <a class="cta s028" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b29">
+      <div class="meta"><span class="num">#29</span><span class="name">Green shine</span></div>
+      <a class="cta s029" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b30">
+      <div class="meta"><span class="num">#30</span><span class="name">Orange shine</span></div>
+      <a class="cta s030" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b31">
+      <div class="meta"><span class="num">#31</span><span class="name">Sunset</span></div>
+      <a class="cta s031" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b32">
+      <div class="meta"><span class="num">#32</span><span class="name">Ocean</span></div>
+      <a class="cta s032" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b33">
+      <div class="meta"><span class="num">#33</span><span class="name">Forest fade</span></div>
+      <a class="cta s033" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b34">
+      <div class="meta"><span class="num">#34</span><span class="name">Gold metal</span></div>
+      <a class="cta s034" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b35">
+      <div class="meta"><span class="num">#35</span><span class="name">Night purple</span></div>
+      <a class="cta s035" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b36">
+      <div class="meta"><span class="num">#36</span><span class="name">Candy</span></div>
+      <a class="cta s036" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b37">
+      <div class="meta"><span class="num">#37</span><span class="name">Diag stripe</span></div>
+      <a class="cta s037" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b38">
+      <div class="meta"><span class="num">#38</span><span class="name">Black to green</span></div>
+      <a class="cta s038" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b39">
+      <div class="meta"><span class="num">#39</span><span class="name">Green ghost</span></div>
+      <a class="cta s039" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b40">
+      <div class="meta"><span class="num">#40</span><span class="name">Orange ghost</span></div>
+      <a class="cta s040" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b41">
+      <div class="meta"><span class="num">#41</span><span class="name">Navy ghost</span></div>
+      <a class="cta s041" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b42">
+      <div class="meta"><span class="num">#42</span><span class="name">Pink ghost</span></div>
+      <a class="cta s042" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b43">
+      <div class="meta"><span class="num">#43</span><span class="name">Dashed green</span></div>
+      <a class="cta s043" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b44">
+      <div class="meta"><span class="num">#44</span><span class="name">Double border</span></div>
+      <a class="cta s044" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b45">
+      <div class="meta"><span class="num">#45</span><span class="name">White on green wash</span></div>
+      <a class="cta s045" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b46">
+      <div class="meta"><span class="num">#46</span><span class="name">Invert dark</span></div>
+      <a class="cta s046" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b47">
+      <div class="meta"><span class="num">#47</span><span class="name">3D green</span></div>
+      <a class="cta s047" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b48">
+      <div class="meta"><span class="num">#48</span><span class="name">3D orange</span></div>
+      <a class="cta s048" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b49">
+      <div class="meta"><span class="num">#49</span><span class="name">3D red</span></div>
+      <a class="cta s049" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b50">
+      <div class="meta"><span class="num">#50</span><span class="name">Soft lift</span></div>
+      <a class="cta s050" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b51">
+      <div class="meta"><span class="num">#51</span><span class="name">Material blue</span></div>
+      <a class="cta s051" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b52">
+      <div class="meta"><span class="num">#52</span><span class="name">Inset press</span></div>
+      <a class="cta s052" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b53">
+      <div class="meta"><span class="num">#53</span><span class="name">Top highlight</span></div>
+      <a class="cta s053" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b54">
+      <div class="meta"><span class="num">#54</span><span class="name">Neumorph</span></div>
+      <a class="cta s054" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b55">
+      <div class="meta"><span class="num">#55</span><span class="name">Luxury gold</span></div>
+      <a class="cta s055" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b56">
+      <div class="meta"><span class="num">#56</span><span class="name">Luxury white</span></div>
+      <a class="cta s056" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b57">
+      <div class="meta"><span class="num">#57</span><span class="name">Neon green</span></div>
+      <a class="cta s057" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b58">
+      <div class="meta"><span class="num">#58</span><span class="name">Neon pink</span></div>
+      <a class="cta s058" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b59">
+      <div class="meta"><span class="num">#59</span><span class="name">Glass</span></div>
+      <a class="cta s059" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b60">
+      <div class="meta"><span class="num">#60</span><span class="name">Frost navy</span></div>
+      <a class="cta s060" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b61">
+      <div class="meta"><span class="num">#61</span><span class="name">Medical white</span></div>
+      <a class="cta s061" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b62">
+      <div class="meta"><span class="num">#62</span><span class="name">Clinic green</span></div>
+      <a class="cta s062" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b63">
+      <div class="meta"><span class="num">#63</span><span class="name">Uppercase tight</span></div>
+      <a class="cta s063" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b64">
+      <div class="meta"><span class="num">#64</span><span class="name">Wide tracking</span></div>
+      <a class="cta s064" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b65">
+      <div class="meta"><span class="num">#65</span><span class="name">Compact</span></div>
+      <a class="cta s065" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b66">
+      <div class="meta"><span class="num">#66</span><span class="name">Chunky</span></div>
+      <a class="cta s066" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b67">
+      <div class="meta"><span class="num">#67</span><span class="name">Full bar</span></div>
+      <a class="cta s067" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b68">
+      <div class="meta"><span class="num">#68</span><span class="name">Left accent</span></div>
+      <a class="cta s068" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b69">
+      <div class="meta"><span class="num">#69</span><span class="name">Bottom bar</span></div>
+      <a class="cta s069" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b70">
+      <div class="meta"><span class="num">#70</span><span class="name">Shadow pill</span></div>
+      <a class="cta s070" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b71">
+      <div class="meta"><span class="num">#71</span><span class="name">Georgia serif</span></div>
+      <a class="cta s071" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b72">
+      <div class="meta"><span class="num">#72</span><span class="name">Impact-ish</span></div>
+      <a class="cta s072" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b73">
+      <div class="meta"><span class="num">#73</span><span class="name">Thin elegant</span></div>
+      <a class="cta s073" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b74">
+      <div class="meta"><span class="num">#74</span><span class="name">Mono</span></div>
+      <a class="cta s074" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b75">
+      <div class="meta"><span class="num">#75</span><span class="name">Small caps look</span></div>
+      <a class="cta s075" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b76">
+      <div class="meta"><span class="num">#76</span><span class="name">Amazon orange</span></div>
+      <a class="cta s076" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b77">
+      <div class="meta"><span class="num">#77</span><span class="name">WhatsApp</span></div>
+      <a class="cta s077" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b78">
+      <div class="meta"><span class="num">#78</span><span class="name">Trustpilot</span></div>
+      <a class="cta s078" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b79">
+      <div class="meta"><span class="num">#79</span><span class="name">PayPal blue</span></div>
+      <a class="cta s079" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b80">
+      <div class="meta"><span class="num">#80</span><span class="name">Sale yellow</span></div>
+      <a class="cta s080" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b81">
+      <div class="meta"><span class="num">#81</span><span class="name">Danger outline</span></div>
+      <a class="cta s081" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b82">
+      <div class="meta"><span class="num">#82</span><span class="name">Success outline</span></div>
+      <a class="cta s082" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b83">
+      <div class="meta"><span class="num">#83</span><span class="name">Sky</span></div>
+      <a class="cta s083" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b84">
+      <div class="meta"><span class="num">#84</span><span class="name">Lavender</span></div>
+      <a class="cta s084" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b85">
+      <div class="meta"><span class="num">#85</span><span class="name">Peach</span></div>
+      <a class="cta s085" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b86">
+      <div class="meta"><span class="num">#86</span><span class="name">Olive</span></div>
+      <a class="cta s086" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b87">
+      <div class="meta"><span class="num">#87</span><span class="name">Slate</span></div>
+      <a class="cta s087" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b88">
+      <div class="meta"><span class="num">#88</span><span class="name">Ribbon</span></div>
+      <a class="cta s088" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b89">
+      <div class="meta"><span class="num">#89</span><span class="name">Stamp</span></div>
+      <a class="cta s089" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b90">
+      <div class="meta"><span class="num">#90</span><span class="name">Coupon</span></div>
+      <a class="cta s090" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b91">
+      <div class="meta"><span class="num">#91</span><span class="name">App store</span></div>
+      <a class="cta s091" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b92">
+      <div class="meta"><span class="num">#92</span><span class="name">iOS blue</span></div>
+      <a class="cta s092" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b93">
+      <div class="meta"><span class="num">#93</span><span class="name">Android green</span></div>
+      <a class="cta s093" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b94">
+      <div class="meta"><span class="num">#94</span><span class="name">Soft pink fill</span></div>
+      <a class="cta s094" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b95">
+      <div class="meta"><span class="num">#95</span><span class="name">Soft blue fill</span></div>
+      <a class="cta s095" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b96">
+      <div class="meta"><span class="num">#96</span><span class="name">Two-tone vertical</span></div>
+      <a class="cta s096" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b97">
+      <div class="meta"><span class="num">#97</span><span class="name">Two-tone horizontal</span></div>
+      <a class="cta s097" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b98">
+      <div class="meta"><span class="num">#98</span><span class="name">Inner white ring</span></div>
+      <a class="cta s098" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b99">
+      <div class="meta"><span class="num">#99</span><span class="name">Black ring</span></div>
+      <a class="cta s099" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+    <article class="card" id="b100">
+      <div class="meta"><span class="num">#100</span><span class="name">Shadow only</span></div>
+      <a class="cta s100" href="javascript:void(0)">
+        <span class="main">Try Osanix Now →</span>
+        <span class="sub">With 100% Money Back Guarantee</span>
+      </a>
+    </article>
+  </div>
+</body>
+</html>

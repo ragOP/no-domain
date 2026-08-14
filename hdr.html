@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Osanix header gallery — 100 mobile ideas</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#eef1f4; color:#111; }
+    header.page {
+      position: sticky; top:0; z-index:5;
+      background:#111; color:#fff; padding:16px 20px;
+    }
+    header.page h1 { margin:0 0 6px; font-size:20px; }
+    header.page p { margin:0; font-size:13px; color:#bbb; }
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap:18px; padding:20px; max-width:1400px; margin:0 auto;
+    }
+    .card {
+      background:#fff; border:1px solid #e5e5e5; border-radius:14px;
+      padding:12px 12px 16px;
+    }
+    .meta { display:flex; gap:8px; align-items:baseline; margin-bottom:10px; }
+    .num { font-weight:800; font-size:13px; color:#e2007b; }
+    .name { font-size:13px; color:#555; }
+    .phone {
+      width:100%; max-width:390px; margin:0 auto;
+      background:#ddd; border-radius:12px; overflow:hidden;
+      min-height:88px;
+    }
+    .bar {
+      display:flex; align-items:stretch; width:100%; min-height:52px;
+      color:#fff; position:relative;
+    }
+    .menu {
+      width:48px; flex:none; display:flex; flex-direction:column;
+      align-items:center; justify-content:center; gap:4px;
+    }
+    .menu span { display:block; width:18px; height:2px; background:#fff; border-radius:2px; }
+    .brand {
+      display:flex; align-items:center; padding:0 10px; white-space:nowrap;
+    }
+    .mail {
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic; font-weight:700; font-size:22px; line-height:1;
+    }
+    .online {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight:800; font-size:16px; margin-left:2px; line-height:1;
+    }
+    .sec {
+      display:flex; align-items:center; padding:0 14px;
+      font-weight:800; font-size:15px; letter-spacing:.03em;
+    }
+    .live {
+      margin-left:auto; align-self:center; margin-right:8px;
+      background:#e53935; color:#fff; font-size:10px; font-weight:800;
+      padding:3px 7px; border-radius:4px; letter-spacing:.08em;
+    }
+    .extra { display:flex; align-items:center; }
+    .row2 {
+      font-size:12px; padding:8px 12px; color:#fff;
+    }
+    .row2.chips { display:flex; gap:8px; background:#1c1c1c; }
+    .row2.chips span { background:#333; padding:4px 10px; border-radius:999px; }
+    .row2.chips .on { background:#e2007b; }
+    .row2.nav { background:#1c1c1c; color:#ddd; }
+    .row2.pink { background:#e2007b; }
+    .row2.femail { background:#e2007b; font-weight:800; }
+    .row2.ticker { background:#c8102e; white-space:nowrap; overflow:hidden; }
+    .h001{background:#111;color:#fff;}
+.h001 .menu{background:#000}
+.h001 .sec{background:#e2007b;color:#fff;margin-left:auto}
+.h002{background:#e2007b;color:#fff;}
+.h002 .menu{background:#c10068}
+.h002 .sec{background:#fff;color:#e2007b;margin-left:auto;font-weight:800}
+.h003{background:#000;color:#fff;}
+.h003 .menu{background:#111}
+.h003 .sec{color:#e2007b;margin-left:auto}
+.h004{background:#fff;color:#111;border-bottom:2px solid #e2007b;}
+.h004 .menu span{background:#111}
+.h004 .brand{color:#111}
+.h004 .sec{color:#e2007b;margin-left:auto}
+.h005{background:#fff;color:#111;border-bottom:1px solid #ddd;}
+.h005 .menu span{background:#111}
+.h005 .sec{background:#111;color:#fff;margin-left:auto}
+.h006{background:#0b1c3f;color:#fff;}
+.h006 .menu{background:#07142e}
+.h006 .sec{background:#e2007b;margin-left:auto}
+.h007{background:#c8102e;color:#fff;}
+.h007 .menu{background:#9b0c22}
+.h007 .sec{background:#111;margin-left:auto}
+.h008{background:#2b2b2b;color:#fff;}
+.h008 .menu{background:#1a1a1a}
+.h008 .sec{background:#e2007b;margin-left:auto}
+.h009{background:#9b1b6b;color:#fff;}
+.h009 .menu{background:#7a1454}
+.h009 .sec{background:#111;margin-left:auto}
+.h010{background:#00695c;color:#fff;}
+.h010 .menu{background:#004d40}
+.h010 .sec{background:#fff;color:#00695c;margin-left:auto}
+.h011{background:#111;color:#fff;}
+.h011 .brand{flex:1}
+.h011 .sec{background:#e2007b;width:38%;justify-content:center;margin-left:0}
+.h012{background:#111;color:#fff;}
+.h012 .brand{flex:1;justify-content:center}
+.h012 .sec{flex:1;background:#e2007b;justify-content:center;margin:0}
+.h013{background:#111;color:#fff;position:relative;justify-content:center;}
+.h013 .menu{position:absolute;left:0;top:0;bottom:0}
+.h013 .sec{position:absolute;right:0;top:0;bottom:0;background:#e2007b;padding:0 16px}
+.h014{background:#111;color:#fff;justify-content:center;}
+.h014 .menu{position:absolute;left:0}
+.h014 .sec{display:none}
+.h015{background:#e2007b;color:#fff;justify-content:center;}
+.h015 .brand{display:none}
+.h015 .sec{margin:0;font-size:22px;background:transparent}
+.h016{background:#111;color:#fff;min-height:44px;height:44px;}
+.h016 .mail{font-size:18px}.online{font-size:14px}.sec{background:#e2007b;font-size:13px;margin-left:auto}
+.h017{background:#111;color:#fff;min-height:64px;height:64px;}
+.h017 .mail{font-size:30px}.online{font-size:22px}.sec{background:#e2007b;margin-left:auto;font-size:20px}
+.h018{background:#111;color:#fff;border-radius:0 0 18px 18px;}
+.h018 .sec{background:#e2007b;margin-left:auto;border-radius:0 0 18px 0}
+.h019{background:transparent;padding:8px;}
+.h019 .bar{background:#111;border-radius:999px;overflow:hidden}
+.h019 .sec{background:#e2007b;margin-left:auto}
+.h020{background:#111;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.35);}
+.h020 .sec{background:#e2007b;margin-left:auto}
+.h021{background:#111;color:#fff;border-bottom:4px solid #e2007b;}
+.h021 .sec{color:#e2007b;margin-left:auto;background:transparent}
+.h022{background:#fff;color:#111;border-bottom:4px solid #c8102e;}
+.h022 .menu span{background:#111}.sec{color:#c8102e;margin-left:auto}
+.h023{background:#111;color:#f5d76e;}
+.h023 .menu span{background:#f5d76e}
+.h023 .sec{background:#f5d76e;color:#111;margin-left:auto}
+.h024{background:#1b5e20;color:#fff;}
+.h024 .menu{background:#124116}
+.h024 .sec{background:#56BC6C;margin-left:auto}
+.h025{background:#e65100;color:#fff;}
+.h025 .menu{background:#bf360c}
+.h025 .sec{background:#111;margin-left:auto}
+.h026{background:linear-gradient(90deg,#e2007b,#ff6b9d);color:#fff;}
+.h026 .menu{background:rgba(0,0,0,.2)}
+.h026 .sec{background:#111;margin-left:auto}
+.h027{background:linear-gradient(90deg,#000,#333);color:#fff;}
+.h027 .sec{background:#e2007b;margin-left:auto}
+.h028{background:rgba(17,17,17,.82);color:#fff;backdrop-filter:blur(10px);}
+.h028 .sec{background:#e2007b;margin-left:auto}
+.h029{background:#fff;color:#111;border:2px solid #111;}
+.h029 .menu span{background:#111}
+.h029 .sec{background:#111;color:#fff;margin-left:auto}
+.h030{background:#111;color:#fff;}
+.h030 .sec{background:#e2007b;margin-left:auto}
+.h031{background:#111;color:#fff;}
+.h031 .sec{background:#e2007b;margin-left:auto}
+.h032{background:#111;color:#fff;}
+.h032 .sec{display:none}
+.h032 .extra{margin-left:auto;padding:0 16px;opacity:.9}
+.h033{background:#111;color:#fff;}
+.h033 .sec{background:#e2007b;margin-left:auto}
+.h034{background:#111;color:#fff;}
+.h034 .sec{background:#e2007b;margin-left:auto}
+.h035{background:#e2007b;color:#fff;}
+.h035 .menu{background:#c10068}
+.h035 .sec{margin-left:auto}
+.h036{background:#111;color:#fff;}
+.h036 .sec{order:-1;background:#e2007b;margin:0;margin-right:auto}
+.h036 .brand{margin-left:8px}
+.h037{background:#111;color:#fff;min-height:58px;}
+.h037 .brand{flex-direction:column;align-items:flex-start;gap:1px}
+.h037 .mail{font-size:16px}.online{font-size:11px;margin:0;letter-spacing:.18em;text-transform:uppercase}
+.h037 .sec{background:#e2007b;margin-left:auto}
+.h038{background:#111;color:#fff;}
+.h038 .mail{font-size:32px}.online{font-size:18px;font-weight:400;font-style:italic}
+.h038 .sec{background:#e2007b;margin-left:auto}
+.h039{background:#000;color:#fff;}
+.h039 .brand{letter-spacing:.14em;text-transform:uppercase;font-size:13px;font-weight:800}
+.h039 .mail,.online{font-size:13px;font-style:normal;font-family:Arial,sans-serif}
+.h039 .sec{background:#e2007b;margin-left:auto;letter-spacing:.1em}
+.h040{background:#111;color:#9aff9a;}
+.h040 .mail,.online,.sec{font-family:ui-monospace,Menlo,monospace}
+.h040 .sec{margin-left:auto;color:#9aff9a}
+.h041{background:#f2f2f7;color:#111;}
+.h041 .menu span{background:#111}
+.h041 .brand{color:#111;flex:1;justify-content:center}
+.h041 .sec{color:#e2007b;padding-right:14px}
+.h042{background:#1c1c1e;color:#fff;}
+.h042 .brand{flex:1;justify-content:center}
+.h042 .sec{color:#ff375f;padding-right:14px}
+.h043{background:#6200ee;color:#fff;box-shadow:0 2px 6px rgba(0,0,0,.25);}
+.h043 .menu{background:transparent}
+.h043 .sec{margin-left:auto;opacity:.95}
+.h044{background:#005eb8;color:#fff;}
+.h044 .menu{background:#003d73}
+.h044 .sec{background:#fff;color:#005eb8;margin-left:auto}
+.h045{background:#006b3f;color:#fff;}
+.h045 .sec{background:#fff;color:#006b3f;margin-left:auto}
+.h046{background:#fbf7f0;color:#1a1a1a;border-bottom:1px solid #e6dccb;}
+.h046 .menu span{background:#1a1a1a}
+.h046 .mail{color:#1a1a1a}.online{color:#1a1a1a}
+.h046 .sec{color:#e2007b;margin-left:auto}
+.h047{background:#ffd600;color:#111;}
+.h047 .menu span{background:#111}
+.h047 .mail,.online{color:#111}
+.h047 .sec{background:#111;color:#ffd600;margin-left:auto}
+.h048{background:#ff0090;color:#fff;}
+.h048 .menu{background:#cc0073}
+.h048 .sec{background:#fff;color:#ff0090;margin-left:auto}
+.h049{background:#fce4ec;color:#880e4f;}
+.h049 .menu span{background:#880e4f}
+.h049 .mail,.online{color:#880e4f}
+.h049 .sec{background:#e2007b;color:#fff;margin-left:auto}
+.h050{background:#e3f2fd;color:#0d47a1;}
+.h050 .menu span{background:#0d47a1}
+.h050 .mail,.online{color:#0d47a1}
+.h050 .sec{background:#0d47a1;color:#fff;margin-left:auto}
+.h051{background:#111;color:#fff;}
+.h051 .sec{display:none}
+.h052{background:#000;color:#fff;}
+.h052 .sec{background:#e2007b;margin-left:auto}
+.h053{background:#fff;color:#111;border-bottom:0;}
+.h053 .menu span{background:#111}.mail,.online{color:#111}
+.h053 .sec{display:none}
+.h054{background:#111;color:#fff;min-height:46px;height:46px;}
+.h054 .mail{font-size:18px}.online{font-size:14px}
+.h054 .sec{display:none}
+.h055{background:#111;color:#fff;}
+.h055 .sec{display:none}
+.h056{background:#111;color:#fff;}
+.h056 .sec{background:#e2007b;margin-left:auto}
+.h057{background:#111;color:#fff;}
+.h057 .menu{order:3;margin-left:auto;background:#000}
+.h057 .sec{background:#e2007b;order:2}
+.h058{background:#111;color:#fff;}
+.h058 .menu{display:none}
+.h058 .sec{background:#e2007b;margin-left:auto}
+.h059{background:#e2007b;color:#fff;}
+.h059 .menu{width:64px;background:#b00060}
+.h059 .menu span{width:22px;height:3px}
+.h059 .sec{margin-left:auto}
+.h060{background:#111;color:#fff;}
+.h060 .menu{width:56px;background:conic-gradient(#e53935,#1e88e5,#43a047,#fdd835,#e53935)}
+.h060 .menu span{background:#fff;box-shadow:0 0 0 4px rgba(0,0,0,.25)}
+.h060 .sec{background:#e2007b;margin-left:auto}
+.h061{background:#fff;color:#111;min-height:48px;}
+.h061 .menu span{background:#111}
+.h061 .mail{font-size:20px}.online{font-size:16px}
+.h061 .sec{margin-left:auto;font-size:14px;color:#e2007b}
+.h062{background:#fff;color:#111;}
+.h062 .menu span{background:#111}
+.h062 .sec{margin-left:auto;border-bottom:3px solid #e2007b;background:transparent;color:#111}
+.h063{background:#111;color:#fff;}
+.h063 .sec{margin-left:auto;margin-right:10px;background:#e2007b;border-radius:999px;height:32px;align-self:center;padding:0 14px;font-size:13px}
+.h064{background:#111;color:#fff;}
+.h064 .sec{margin-left:auto;margin-right:10px;border:2px solid #e2007b;color:#e2007b;background:transparent;border-radius:8px;height:32px;align-self:center;padding:0 12px;font-size:13px}
+.h065{background:#050505;color:#39ff14;}
+.h065 .menu span{background:#39ff14}
+.h065 .mail,.online{color:#39ff14}
+.h065 .sec{color:#ff3cac;margin-left:auto;text-shadow:0 0 8px #ff3cac}
+.h066{background:#1e1e1e;color:#eee;border-top:3px solid #e2007b;}
+.h066 .sec{background:#e2007b;margin-left:auto}
+.h067{background:#fff;color:#111;border-bottom:3px double #111;justify-content:center;}
+.h067 .menu{position:absolute;left:0}
+.h067 .menu span{background:#111}
+.h067 .mail{font-size:26px}.online{font-size:16px}
+.h067 .sec{display:none}
+.h068{background:#e2007b;color:#fff;justify-content:center;}
+.h068 .menu{position:absolute;left:0;background:#c10068}
+.h068 .sec{display:none}
+.h069{background:#111;color:#fff;}
+.h069 .sec{position:absolute;right:8px;font-size:34px;opacity:.18;background:transparent;margin:0}
+.h070{background:#111;color:#fff;padding-top:18px;min-height:70px;}
+.h070 .sec{background:#e2007b;margin-left:auto}
+.h071{background:#4a0e2b;color:#fff;}
+.h071 .sec{background:#e2007b;margin-left:auto}
+.h072{background:#6b1e3c;color:#fbf7f0;}
+.h072 .sec{background:#fbf7f0;color:#6b1e3c;margin-left:auto}
+.h073{background:#1a237e;color:#fff;}
+.h073 .sec{background:#e2007b;margin-left:auto}
+.h074{background:#0a0a12;color:#fff;}
+.h074 .sec{background:#7c4dff;margin-left:auto}
+.h075{background:#2c2c2c;color:#fff;}
+.h075 .sec{color:#ff80ab;margin-left:auto;background:transparent}
+.h076{background:#fff;color:#111;}
+.h076 .menu span{background:#e2007b}
+.h076 .sec{background:#e2007b;color:#fff;margin-left:auto}
+.h077{background:#000;color:#fff;}
+.h077 .sec{background:#fff;color:#000;margin-left:auto}
+.h078{background:#fff;color:#e2007b;}
+.h078 .menu span{background:#e2007b}
+.h078 .mail,.online{color:#e2007b}
+.h078 .sec{background:#e2007b;color:#fff;margin-left:auto}
+.h079{background:#111;color:#fff;border-top:6px solid #e2007b;}
+.h079 .sec{margin-left:auto;color:#e2007b}
+.h080{background:#111;color:#fff;border-top:3px solid #e2007b;border-bottom:3px solid #e2007b;}
+.h080 .sec{margin-left:auto}
+.h081{background:linear-gradient(90deg,#111,rgba(226,0,123,.85));color:#fff;}
+.h081 .sec{background:#000;margin-left:auto}
+.h082{background:#fff;color:#111;box-shadow:0 6px 18px rgba(0,0,0,.08);}
+.h082 .menu span{background:#111}
+.h082 .sec{color:#e2007b;margin-left:auto}
+.h083{background:rgba(255,255,255,.92);color:#111;backdrop-filter:blur(12px);border-bottom:1px solid #eee;}
+.h083 .menu span{background:#111}
+.h083 .sec{background:#e2007b;color:#fff;margin-left:auto}
+.h084{background:#111;color:#fff;}
+.h084 .mail,.online{font-style:normal;text-transform:lowercase;font-family:Arial,sans-serif;font-weight:800}
+.h084 .sec{background:#e2007b;margin-left:auto;text-transform:lowercase}
+.h085{background:#111;color:#fff;}
+.h085 .brand{letter-spacing:-.06em}
+.h085 .sec{background:#e2007b;margin-left:auto;letter-spacing:.2em;font-size:12px}
+.h086{background:#111;color:#fff;}
+.h086 .brand{letter-spacing:.12em}
+.h086 .mail,.online{font-style:normal;font-size:14px;font-family:Arial,sans-serif}
+.h086 .sec{margin-left:auto;letter-spacing:.2em}
+.h087{background:#111;color:#fff;}
+.h087 .sec{background:#56BC6C;margin-left:auto;font-size:12px}
+.h088{background:#111;color:#fff;}
+.h088 .sec{background:#56BC6C;margin-left:auto;border-radius:999px;height:34px;align-self:center;margin-right:8px;padding:0 12px;font-size:12px}
+.h089{background:#fff;color:#111;border-bottom:1px solid #eee;}
+.h089 .menu span{background:#111}
+.h089 .sec{background:#56BC6C;color:#fff;margin-left:auto;margin-right:8px;border-radius:8px;height:32px;align-self:center;padding:0 10px;font-size:12px}
+.h090{background:#111;color:#fff;}
+.h090 .sec{background:#56BC6C;margin-left:auto}
+.h091{background:#111;color:#fff;}
+.h091 .sec{background:#e2007b;margin-left:auto}
+.h092{background:#111;color:#fff;border-radius:0 0 24px 24px;}
+.h092 .sec{background:#e2007b;margin-left:auto;border-radius:0 0 24px 0}
+.h093{background:#111;color:#fff;padding:10px 0 0;}
+.h093 .sec{background:#e2007b;margin-left:auto}
+.h094{background:#e2007b;color:#fff;min-height:40px;height:40px;}
+.h094 .mail{font-size:16px}.online{font-size:13px}.sec{font-size:12px;margin-left:auto}
+.h095{background:#111;color:#fff;min-height:72px;height:72px;}
+.h095 .mail{font-size:34px}.online{font-size:24px}
+.h095 .sec{background:#e2007b;margin-left:auto;font-size:22px}
+.h096{background:#111;color:#fff;border-left:8px solid #e2007b;}
+.h096 .sec{margin-left:auto;color:#e2007b}
+.h097{background:#111;color:#fff;border-right:8px solid #e2007b;}
+.h097 .sec{margin-left:auto}
+.h098{background:linear-gradient(115deg,#111 62%,#e2007b 62%);color:#fff;}
+.h098 .sec{margin-left:auto;background:transparent}
+.h099{background:linear-gradient(90deg,#111 50%,#e2007b 50%);color:#fff;}
+.h099 .sec{margin-left:auto;background:transparent}
+.h100{background:#f8bbd0;color:#880e4f;}
+.h100 .menu span{background:#880e4f}
+.h100 .mail,.online{color:#880e4f}
+.h100 .sec{background:#880e4f;color:#fff;margin-left:auto}
+
+  </style>
+</head>
+<body>
+  <header class="page">
+    <h1>100 mobile header ideas</h1>
+    <p>MailOnline / Femail, phone-width. Pick a number (#01–#100) and tell me which to use on enguk.html.</p>
+  </header>
+  <div class="grid">
+    <article class="card" id="h1">
+      <div class="meta"><span class="num">#01</span><span class="name">Live black + Femail</span></div>
+      <div class="phone"><div class="bar h001">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h2">
+      <div class="meta"><span class="num">#02</span><span class="name">Full Femail pink</span></div>
+      <div class="phone"><div class="bar h002">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h3">
+      <div class="meta"><span class="num">#03</span><span class="name">Full black</span></div>
+      <div class="phone"><div class="bar h003">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h4">
+      <div class="meta"><span class="num">#04</span><span class="name">White clean</span></div>
+      <div class="phone"><div class="bar h004">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h5">
+      <div class="meta"><span class="num">#05</span><span class="name">White + black Femail</span></div>
+      <div class="phone"><div class="bar h005">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h6">
+      <div class="meta"><span class="num">#06</span><span class="name">Navy news</span></div>
+      <div class="phone"><div class="bar h006">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h7">
+      <div class="meta"><span class="num">#07</span><span class="name">Red tabloid</span></div>
+      <div class="phone"><div class="bar h007">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h8">
+      <div class="meta"><span class="num">#08</span><span class="name">Grey Daily</span></div>
+      <div class="phone"><div class="bar h008">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h9">
+      <div class="meta"><span class="num">#09</span><span class="name">Magenta bar</span></div>
+      <div class="phone"><div class="bar h009">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h10">
+      <div class="meta"><span class="num">#10</span><span class="name">Teal health</span></div>
+      <div class="phone"><div class="bar h010">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h11">
+      <div class="meta"><span class="num">#11</span><span class="name">Split 60/40</span></div>
+      <div class="phone"><div class="bar h011">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h12">
+      <div class="meta"><span class="num">#12</span><span class="name">Equal split</span></div>
+      <div class="phone"><div class="bar h012">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h13">
+      <div class="meta"><span class="num">#13</span><span class="name">Centered brand</span></div>
+      <div class="phone"><div class="bar h013">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h14">
+      <div class="meta"><span class="num">#14</span><span class="name">Brand only</span></div>
+      <div class="phone"><div class="bar h014">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h15">
+      <div class="meta"><span class="num">#15</span><span class="name">Femail as title</span></div>
+      <div class="phone"><div class="bar h015">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h16">
+      <div class="meta"><span class="num">#16</span><span class="name">Tiny 44px</span></div>
+      <div class="phone"><div class="bar h016">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h17">
+      <div class="meta"><span class="num">#17</span><span class="name">Tall 64px</span></div>
+      <div class="phone"><div class="bar h017">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h18">
+      <div class="meta"><span class="num">#18</span><span class="name">Rounded bottom</span></div>
+      <div class="phone"><div class="bar h018">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h19">
+      <div class="meta"><span class="num">#19</span><span class="name">Floating pill</span></div>
+      <div class="phone"><div class="bar h019">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h20">
+      <div class="meta"><span class="num">#20</span><span class="name">Shadow heavy</span></div>
+      <div class="phone"><div class="bar h020">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h21">
+      <div class="meta"><span class="num">#21</span><span class="name">Bottom pink line</span></div>
+      <div class="phone"><div class="bar h021">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h22">
+      <div class="meta"><span class="num">#22</span><span class="name">Bottom red line</span></div>
+      <div class="phone"><div class="bar h022">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h23">
+      <div class="meta"><span class="num">#23</span><span class="name">Gold luxury</span></div>
+      <div class="phone"><div class="bar h023">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h24">
+      <div class="meta"><span class="num">#24</span><span class="name">Green health</span></div>
+      <div class="phone"><div class="bar h024">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h25">
+      <div class="meta"><span class="num">#25</span><span class="name">Orange energy</span></div>
+      <div class="phone"><div class="bar h025">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h26">
+      <div class="meta"><span class="num">#26</span><span class="name">Gradient pink</span></div>
+      <div class="phone"><div class="bar h026">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h27">
+      <div class="meta"><span class="num">#27</span><span class="name">Gradient dark</span></div>
+      <div class="phone"><div class="bar h027">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h28">
+      <div class="meta"><span class="num">#28</span><span class="name">Glass dark</span></div>
+      <div class="phone"><div class="bar h028">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h29">
+      <div class="meta"><span class="num">#29</span><span class="name">Outline white</span></div>
+      <div class="phone"><div class="bar h029">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h30">
+      <div class="meta"><span class="num">#30</span><span class="name">News ticker under</span></div>
+      <div class="phone"><div class="bar h030">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div><div class="row2 ticker">Breaking · Dragons' Den miracle pill sells out</div>
+      </div>
+    </article>
+    <article class="card" id="h31">
+      <div class="meta"><span class="num">#31</span><span class="name">Chips under</span></div>
+      <div class="phone"><div class="bar h031">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div><div class="row2 chips"><span>Home</span><span class="on">Femail</span><span>Health</span><span>Fashion</span></div>
+      </div>
+    </article>
+    <article class="card" id="h32">
+      <div class="meta"><span class="num">#32</span><span class="name">Search right</span></div>
+      <div class="phone"><div class="bar h032">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        <span class="extra">⌕</span>
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h33">
+      <div class="meta"><span class="num">#33</span><span class="name">Bell + Femail</span></div>
+      <div class="phone"><div class="bar h033">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h34">
+      <div class="meta"><span class="num">#34</span><span class="name">LIVE badge</span></div>
+      <div class="phone"><div class="bar h034">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        <span class="live">LIVE</span>
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h35">
+      <div class="meta"><span class="num">#35</span><span class="name">Dot menu</span></div>
+      <div class="phone"><div class="bar h035">
+        <span class="menu"><span style="width:4px;height:4px;border-radius:50%"></span><span style="width:4px;height:4px;border-radius:50%"></span><span style="width:4px;height:4px;border-radius:50%"></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h36">
+      <div class="meta"><span class="num">#36</span><span class="name">Left Femail tab</span></div>
+      <div class="phone"><div class="bar h036">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h37">
+      <div class="meta"><span class="num">#37</span><span class="name">Stacked two-line brand</span></div>
+      <div class="phone"><div class="bar h037">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h38">
+      <div class="meta"><span class="num">#38</span><span class="name">Serif huge</span></div>
+      <div class="phone"><div class="bar h038">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h39">
+      <div class="meta"><span class="num">#39</span><span class="name">All caps brand</span></div>
+      <div class="phone"><div class="bar h039">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h40">
+      <div class="meta"><span class="num">#40</span><span class="name">Mono news</span></div>
+      <div class="phone"><div class="bar h040">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h41">
+      <div class="meta"><span class="num">#41</span><span class="name">App iOS</span></div>
+      <div class="phone"><div class="bar h041">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h42">
+      <div class="meta"><span class="num">#42</span><span class="name">App dark</span></div>
+      <div class="phone"><div class="bar h042">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h43">
+      <div class="meta"><span class="num">#43</span><span class="name">Material</span></div>
+      <div class="phone"><div class="bar h043">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h44">
+      <div class="meta"><span class="num">#44</span><span class="name">NHS style</span></div>
+      <div class="phone"><div class="bar h044">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h45">
+      <div class="meta"><span class="num">#45</span><span class="name">UK green</span></div>
+      <div class="phone"><div class="bar h045">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h46">
+      <div class="meta"><span class="num">#46</span><span class="name">Paper cream</span></div>
+      <div class="phone"><div class="bar h046">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h47">
+      <div class="meta"><span class="num">#47</span><span class="name">Tabloid yellow</span></div>
+      <div class="phone"><div class="bar h047">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h48">
+      <div class="meta"><span class="num">#48</span><span class="name">Hot magenta</span></div>
+      <div class="phone"><div class="bar h048">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h49">
+      <div class="meta"><span class="num">#49</span><span class="name">Soft pink</span></div>
+      <div class="phone"><div class="bar h049">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h50">
+      <div class="meta"><span class="num">#50</span><span class="name">Sky</span></div>
+      <div class="phone"><div class="bar h050">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h51">
+      <div class="meta"><span class="num">#51</span><span class="name">Two-row classic</span></div>
+      <div class="phone"><div class="bar h051">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div><div class="row2 femail">Femail</div>
+      </div>
+    </article>
+    <article class="card" id="h52">
+      <div class="meta"><span class="num">#52</span><span class="name">Black + thin nav</span></div>
+      <div class="phone"><div class="bar h052">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div><div class="row2 nav">Home · News · Femail · Health · Fashion</div>
+      </div>
+    </article>
+    <article class="card" id="h53">
+      <div class="meta"><span class="num">#53</span><span class="name">White + pink nav</span></div>
+      <div class="phone"><div class="bar h053">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div><div class="row2 pink">Latest · Femail · Beauty · Fashion</div>
+      </div>
+    </article>
+    <article class="card" id="h54">
+      <div class="meta"><span class="num">#54</span><span class="name">Compact + chips</span></div>
+      <div class="phone"><div class="bar h054">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div><div class="row2 chips"><span>Home</span><span class="on">Femail</span><span>Health</span><span>Fashion</span></div>
+      </div>
+    </article>
+    <article class="card" id="h55">
+      <div class="meta"><span class="num">#55</span><span class="name">Date right</span></div>
+      <div class="phone"><div class="bar h055">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        <span class="extra" style="margin-left:auto;padding:0 12px;font-size:11px;opacity:.8">15 Aug</span>
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h56">
+      <div class="meta"><span class="num">#56</span><span class="name">UK flag chip</span></div>
+      <div class="phone"><div class="bar h056">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        <span class="extra" style="margin-left:8px;font-size:11px;opacity:.7">UK</span>
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h57">
+      <div class="meta"><span class="num">#57</span><span class="name">Hamburger right</span></div>
+      <div class="phone"><div class="bar h057">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h58">
+      <div class="meta"><span class="num">#58</span><span class="name">No hamburger</span></div>
+      <div class="phone"><div class="bar h058">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h59">
+      <div class="meta"><span class="num">#59</span><span class="name">Big hamburger</span></div>
+      <div class="phone"><div class="bar h059">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h60">
+      <div class="meta"><span class="num">#60</span><span class="name">Icon grid</span></div>
+      <div class="phone"><div class="bar h060">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h61">
+      <div class="meta"><span class="num">#61</span><span class="name">Minimal line</span></div>
+      <div class="phone"><div class="bar h061">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h62">
+      <div class="meta"><span class="num">#62</span><span class="name">Underline Femail</span></div>
+      <div class="phone"><div class="bar h062">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h63">
+      <div class="meta"><span class="num">#63</span><span class="name">Pill section</span></div>
+      <div class="phone"><div class="bar h063">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h64">
+      <div class="meta"><span class="num">#64</span><span class="name">Outline section</span></div>
+      <div class="phone"><div class="bar h064">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h65">
+      <div class="meta"><span class="num">#65</span><span class="name">Neon</span></div>
+      <div class="phone"><div class="bar h065">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h66">
+      <div class="meta"><span class="num">#66</span><span class="name">Carbon</span></div>
+      <div class="phone"><div class="bar h066">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h67">
+      <div class="meta"><span class="num">#67</span><span class="name">Newspaper masthead</span></div>
+      <div class="phone"><div class="bar h067">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h68">
+      <div class="meta"><span class="num">#68</span><span class="name">Centered pink wordmark</span></div>
+      <div class="phone"><div class="bar h068">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h69">
+      <div class="meta"><span class="num">#69</span><span class="name">Femail watermark</span></div>
+      <div class="phone"><div class="bar h069">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h70">
+      <div class="meta"><span class="num">#70</span><span class="name">Safe area tall</span></div>
+      <div class="phone"><div class="bar h070">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h71">
+      <div class="meta"><span class="num">#71</span><span class="name">Maroon</span></div>
+      <div class="phone"><div class="bar h071">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h72">
+      <div class="meta"><span class="num">#72</span><span class="name">Burgundy + cream</span></div>
+      <div class="phone"><div class="bar h072">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h73">
+      <div class="meta"><span class="num">#73</span><span class="name">Royal</span></div>
+      <div class="phone"><div class="bar h073">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h74">
+      <div class="meta"><span class="num">#74</span><span class="name">Midnight</span></div>
+      <div class="phone"><div class="bar h074">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h75">
+      <div class="meta"><span class="num">#75</span><span class="name">Charcoal pink text</span></div>
+      <div class="phone"><div class="bar h075">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h76">
+      <div class="meta"><span class="num">#76</span><span class="name">White pink fill</span></div>
+      <div class="phone"><div class="bar h076">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h77">
+      <div class="meta"><span class="num">#77</span><span class="name">Black white Femail</span></div>
+      <div class="phone"><div class="bar h077">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h78">
+      <div class="meta"><span class="num">#78</span><span class="name">Inverse pink</span></div>
+      <div class="phone"><div class="bar h078">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h79">
+      <div class="meta"><span class="num">#79</span><span class="name">Stripe top</span></div>
+      <div class="phone"><div class="bar h079">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h80">
+      <div class="meta"><span class="num">#80</span><span class="name">Dual stripe</span></div>
+      <div class="phone"><div class="bar h080">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h81">
+      <div class="meta"><span class="num">#81</span><span class="name">Blurred photo bar</span></div>
+      <div class="phone"><div class="bar h081">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h82">
+      <div class="meta"><span class="num">#82</span><span class="name">Soft shadow white</span></div>
+      <div class="phone"><div class="bar h082">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h83">
+      <div class="meta"><span class="num">#83</span><span class="name">Sticky look</span></div>
+      <div class="phone"><div class="bar h083">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h84">
+      <div class="meta"><span class="num">#84</span><span class="name">Lowercase brand</span></div>
+      <div class="phone"><div class="bar h084">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h85">
+      <div class="meta"><span class="num">#85</span><span class="name">Tight tracking</span></div>
+      <div class="phone"><div class="bar h085">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h86">
+      <div class="meta"><span class="num">#86</span><span class="name">Wide tracking</span></div>
+      <div class="phone"><div class="bar h086">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h87">
+      <div class="meta"><span class="num">#87</span><span class="name">Badge 50% off</span></div>
+      <div class="phone"><div class="bar h087">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">50% OFF</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h88">
+      <div class="meta"><span class="num">#88</span><span class="name">CTA in header</span></div>
+      <div class="phone"><div class="bar h088">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h89">
+      <div class="meta"><span class="num">#89</span><span class="name">Try now chip</span></div>
+      <div class="phone"><div class="bar h089">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h90">
+      <div class="meta"><span class="num">#90</span><span class="name">Osanix instead</span></div>
+      <div class="phone"><div class="bar h090">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Osanix</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h91">
+      <div class="meta"><span class="num">#91</span><span class="name">Two badges</span></div>
+      <div class="phone"><div class="bar h091">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        <span class="extra" style="background:#56BC6C;padding:0 10px;font-size:11px;font-weight:800">50% OFF</span>
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h92">
+      <div class="meta"><span class="num">#92</span><span class="name">Map pin style</span></div>
+      <div class="phone"><div class="bar h092">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h93">
+      <div class="meta"><span class="num">#93</span><span class="name">Notch fake</span></div>
+      <div class="phone"><div class="bar h093">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h94">
+      <div class="meta"><span class="num">#94</span><span class="name">Thin 40</span></div>
+      <div class="phone"><div class="bar h094">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h95">
+      <div class="meta"><span class="num">#95</span><span class="name">Chunky 72</span></div>
+      <div class="phone"><div class="bar h095">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h96">
+      <div class="meta"><span class="num">#96</span><span class="name">Left color rail</span></div>
+      <div class="phone"><div class="bar h096">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h97">
+      <div class="meta"><span class="num">#97</span><span class="name">Right color rail</span></div>
+      <div class="phone"><div class="bar h097">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h98">
+      <div class="meta"><span class="num">#98</span><span class="name">Diagonal</span></div>
+      <div class="phone"><div class="bar h098">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h99">
+      <div class="meta"><span class="num">#99</span><span class="name">Hard split color</span></div>
+      <div class="phone"><div class="bar h099">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+    <article class="card" id="h100">
+      <div class="meta"><span class="num">#100</span><span class="name">Pastel bar</span></div>
+      <div class="phone"><div class="bar h100">
+        <span class="menu"><span></span><span></span><span></span></span>
+        <span class="brand"><span class="mail">Mail</span><span class="online">Online</span></span>
+        
+        <span class="sec">Femail</span>
+      </div>
+      </div>
+    </article>
+  </div>
+</body>
+</html>

@@ -87,65 +87,132 @@
         margin-top: 0;
         margin-bottom: 0px !important;
       }
-      .show-desk {
-        display: block !important;
+      .dm-header {
+        width: 100%;
+        background: #111;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
       }
-      .show-tab,
-      .show-mob {
-        display: none !important;
+      .dm-header a {
+        text-decoration: none !important;
+        color: inherit;
+      }
+      .dm-header__top {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        min-height: 56px;
+        background: #111;
+      }
+      .dm-header__menu {
+        display: none;
+        width: 52px;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        gap: 5px;
+        flex-direction: column;
+      }
+      .dm-header__menu span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #fff;
+        border-radius: 2px;
+      }
+      .dm-header__brand {
+        display: flex;
+        align-items: center;
+        padding: 0 18px;
+        color: #fff;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+      }
+      .dm-mail {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 28px;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1;
+      }
+      .dm-online {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        margin-left: 2px;
+        line-height: 1;
+      }
+      .dm-header__section {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        padding: 0 22px;
+        background: #e2007b;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+      .dm-header__nav {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        overflow-x: auto;
+        background: #1c1c1c;
+        border-top: 1px solid #333;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .dm-header__nav::-webkit-scrollbar { display: none; }
+      .dm-header__nav a {
+        flex: none;
+        padding: 10px 14px;
+        color: #fff !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1.2;
+        white-space: nowrap;
+      }
+      .dm-header__nav a.is-active,
+      .dm-header__nav a:hover {
+        background: #e2007b;
+        color: #fff !important;
+      }
+      .dm-header__sub {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 8px 18px;
+        background: #e2007b;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+      }
+      .dm-header__sub::-webkit-scrollbar { display: none; }
+      .dm-header__sub span + span::before {
+        content: "·";
+        margin-right: 18px;
+        opacity: 0.7;
       }
       @media (max-width: 768px) {
-        .show-tab {
-          display: block !important;
+        .dm-header__menu { display: flex; }
+        .dm-header__top { min-height: 50px; }
+        .dm-mail { font-size: 22px; }
+        .dm-online { font-size: 17px; }
+        .dm-header__brand { padding: 0 12px; }
+        .dm-header__section {
+          font-size: 15px;
+          padding: 0 16px;
         }
-
-        .show-desk,
-        .show-mob {
-          display: none !important;
-        }
-
-        .content h1 {
-          margin-top: 5px !important;
-        }
-      }
-      @media (max-width: 480px) {
-        .show-mob {
-          display: block !important;
-        }
-
-        .show-desk,
-        .show-tab {
-          display: none !important;
-        }
-
-        .content h1 {
-          margin-top: 5px !important;
-        }
-      }
-      .navbar {
-        position: static !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        min-height: 0 !important;
-        border: none !important;
-        background: #fff;
-      }
-      .navbar > .container {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-      }
-      .navbar a {
-        margin: 0;
-        padding: 0;
-        line-height: 0;
-        font-size: 0;
-      }
-      .navbar a.show-desk,
-      .navbar a.show-tab,
-      .navbar a.show-mob {
-        width: 100%;
+        .dm-header__nav { display: none; }
+        .dm-header__sub { display: none; }
       }
       html, body {
         max-width: 100%;
@@ -156,13 +223,6 @@
       img, video, iframe {
         max-width: 100% !important;
         height: auto !important;
-      }
-      .navbar img.img-responsive {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        margin: 0 !important;
-        display: block;
       }
       .content.container .container {
         width: auto;
@@ -326,17 +386,34 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <a class="show-desk" href="https://trk.smartselecttoday.online/click"
-        ><img src="enguk_files/header.png" class="img-responsive" alt=""
-      /></a>
-      <a class="show-tab" href="https://trk.smartselecttoday.online/click"
-        ><img src="enguk_files/header_768.png" class="img-responsive" alt=""
-      /></a>
-      <a class="show-mob" href="https://trk.smartselecttoday.online/click"
-        ><img src="enguk_files/header_480.png" class="img-responsive" alt=""
-      /></a>
-    </nav>
+    <header class="dm-header">
+      <a class="dm-header__top" href="https://trk.smartselecttoday.online/click">
+        <span class="dm-header__menu" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="dm-header__brand"><span class="dm-mail">Mail</span><span class="dm-online">Online</span></span>
+        <span class="dm-header__section">Femail</span>
+      </a>
+      <nav class="dm-header__nav">
+        <a href="https://trk.smartselecttoday.online/click">Home</a>
+        <a href="https://trk.smartselecttoday.online/click">News</a>
+        <a href="https://trk.smartselecttoday.online/click">U.S.</a>
+        <a href="https://trk.smartselecttoday.online/click">Sport</a>
+        <a href="https://trk.smartselecttoday.online/click">TV&amp;Showbiz</a>
+        <a class="is-active" href="https://trk.smartselecttoday.online/click">Femail</a>
+        <a href="https://trk.smartselecttoday.online/click">Health</a>
+        <a href="https://trk.smartselecttoday.online/click">Science</a>
+        <a href="https://trk.smartselecttoday.online/click">Money</a>
+        <a href="https://trk.smartselecttoday.online/click">Travel</a>
+        <a href="https://trk.smartselecttoday.online/click">Fashion</a>
+      </nav>
+      <div class="dm-header__sub">
+        <span>Latest Headlines</span>
+        <span>Femail</span>
+        <span>Food</span>
+        <span>Beauty</span>
+        <span>Fashion</span>
+        <span>Health</span>
+      </div>
+    </header>
     <section class="content-box">
       <div class="container content">
         <div class="row">
@@ -1795,7 +1872,7 @@
           var top = window.pageYOffset || el.scrollTop || document.body.scrollTop || 0;
           var scrollable = (el.scrollHeight || document.body.scrollHeight) - window.innerHeight;
           var pct = scrollable > 0 ? top / scrollable : 0;
-          var show = pct >= 0.5;
+          var show = pct >= 0.25;
           bar.classList.toggle("is-visible", show);
           document.body.style.paddingBottom = show ? "88px" : "24px";
         }

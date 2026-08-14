@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#ffffff">
+<title>osanix on Instagram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff;
+  --text:#000;
+  --muted:#737373;
+  --line:#dbdbdb;
+  --blue:#0095f6;
+  --blue-press:#1877f2;
+  --heart:#ff3040;
+  --green:#56bc6c;
+  --green-deep:#3e9a52;
+  --nav-h:50px;
+  --composer-h:52px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:#000;
+  color:var(--text);
+  font-size:14px;
+  line-height:1.4;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;background:none;border:0;padding:0;color:inherit;cursor:pointer}
+img{display:block;max-width:100%}
+.app{
+  max-width:430px;
+  margin:0 auto;
+  min-height:100dvh;
+  background:var(--bg);
+  position:relative;
+  padding-bottom:calc(var(--nav-h) + var(--composer-h) + var(--safe-b) + 8px);
+}
+.app.has-shop{
+  padding-bottom:calc(var(--nav-h) + var(--composer-h) + var(--safe-b) + 76px);
+}
+
+/* top bar */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  display:flex;align-items:center;justify-content:space-between;
+  height:48px;padding:0 12px 0 16px;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(16px) saturate(1.4);
+  -webkit-backdrop-filter:blur(16px) saturate(1.4);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.wordmark{font-family:"Grand Hotel",cursive;font-size:32px;line-height:1;padding-top:4px;letter-spacing:.2px}
+.top-actions{display:flex;align-items:center;gap:18px}
+.top-actions svg{display:block}
+
+/* stories */
+.stories{
+  display:flex;gap:14px;padding:10px 12px 12px;
+  overflow-x:auto;scrollbar-width:none;
+  border-bottom:1px solid var(--line);
+}
+.stories::-webkit-scrollbar{display:none}
+.story{flex:none;width:68px;text-align:center}
+.story__ring{
+  width:66px;height:66px;border-radius:50%;padding:2px;margin:0 auto 6px;
+  background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+}
+.story.is-seen .story__ring{background:#dbdbdb}
+.story.is-live .story__ring{background:linear-gradient(45deg,#c32aad,#ff0040,#ff7a00)}
+.story__av{
+  width:100%;height:100%;border-radius:50%;border:2px solid #fff;object-fit:cover;background:#efefef;
+}
+.story__add{
+  position:relative;
+}
+.story__plus{
+  position:absolute;right:2px;bottom:6px;width:18px;height:18px;border-radius:50%;
+  background:var(--blue);color:#fff;border:2px solid #fff;
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;line-height:1;
+}
+.story span{
+  display:block;font-size:11.5px;color:#000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.story.is-live span{font-weight:600}
+
+/* post */
+.post{background:#fff}
+.post-head{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 12px;min-height:52px;
+}
+.post-head__av-wrap{
+  width:36px;height:36px;border-radius:50%;padding:1.5px;
+  background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);flex:none;
+}
+.post-head__av{width:100%;height:100%;border-radius:50%;border:1.5px solid #fff;object-fit:cover;background:#eee}
+.post-head__meta{min-width:0;flex:1}
+.post-head__row{display:flex;align-items:center;gap:4px}
+.post-head__name{font-size:14px;font-weight:600;letter-spacing:.01em}
+.verified{
+  width:12px;height:12px;flex:none;
+}
+.post-head__loc{font-size:12px;color:#000;margin-top:1px}
+.follow{
+  margin-left:4px;color:var(--blue);font-weight:600;font-size:14px;
+}
+.follow.is-on{color:var(--muted);pointer-events:none}
+.more{padding:8px 4px 8px 8px}
+
+/* media */
+.media{
+  position:relative;background:#000;aspect-ratio:4/5;overflow:hidden;touch-action:pan-y;
+}
+.media__track{
+  display:flex;height:100%;width:100%;
+  transition:transform .28s cubic-bezier(.22,.8,.3,1);
+}
+.media__slide{
+  min-width:100%;height:100%;position:relative;
+  display:flex;align-items:center;justify-content:center;background:#111;
+}
+.media__slide img{
+  width:100%;height:100%;object-fit:cover;
+}
+.media__slide.is-product{
+  background:#0d0d12;
+}
+.media__slide.is-product img{
+  width:78%;height:auto;object-fit:contain;max-height:88%;
+  filter:drop-shadow(0 18px 30px rgba(0,0,0,.45));
+}
+.heart-burst{
+  position:absolute;left:50%;top:50%;width:92px;height:92px;
+  transform:translate(-50%,-50%) scale(.4);
+  opacity:0;pointer-events:none;z-index:5;color:#fff;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,.25));
+}
+.heart-burst.pop{animation:burst .85s ease forwards}
+@keyframes burst{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}
+  18%{opacity:1;transform:translate(-50%,-50%) scale(1.12)}
+  55%{opacity:1;transform:translate(-50%,-50%) scale(1)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1.05)}
+}
+.shop-tag{
+  position:absolute;left:12px;bottom:14px;z-index:4;
+  display:flex;align-items:center;gap:8px;
+  background:rgba(0,0,0,.72);color:#fff;backdrop-filter:blur(10px);
+  border-radius:20px;padding:7px 12px 7px 8px;
+  font-size:12.5px;font-weight:600;
+}
+.shop-tag i{
+  width:22px;height:22px;border-radius:50%;background:var(--green);
+  display:flex;align-items:center;justify-content:center;
+}
+.dots{
+  position:absolute;left:0;right:0;bottom:10px;z-index:3;
+  display:flex;justify-content:center;gap:4px;pointer-events:none;
+}
+.dots b{
+  width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.45);
+}
+.dots b.on{background:#fff;transform:scale(1.15)}
+.media.has-tag .dots{bottom:48px}
+
+/* actions */
+.actions{
+  display:flex;align-items:center;padding:8px 12px 4px;gap:16px;
+}
+.actions .spacer{margin-left:auto}
+.ico-btn{display:flex;align-items:center}
+.ico-btn svg{display:block}
+.ico-btn.liked svg path{fill:var(--heart);stroke:var(--heart)}
+.ico-btn.saved svg path{fill:#000}
+.like-pop{animation:likebump .28s ease}
+@keyframes likebump{0%{transform:scale(1)}40%{transform:scale(1.25)}100%{transform:scale(1)}}
+
+.likes{
+  display:flex;align-items:center;gap:8px;
+  padding:2px 14px 8px;font-size:14px;
+}
+.likes__avs{display:flex}
+.likes__avs img{
+  width:18px;height:18px;border-radius:50%;object-fit:cover;border:1.5px solid #fff;margin-left:-6px;background:#eee;
+}
+.likes__avs img:first-child{margin-left:0}
+.likes b{font-weight:600}
+
+.caption{padding:0 14px 6px;font-size:14px;word-wrap:break-word}
+.caption b.user{font-weight:600;margin-right:4px}
+.caption .more-cap{color:var(--muted);cursor:pointer}
+.caption .rest{display:none}
+.caption.is-open .rest{display:inline}
+.caption.is-open .more-cap{display:none}
+.hash{color:#00376b}
+.time{
+  padding:4px 14px 2px;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.02em;
+}
+.view-all{
+  display:block;padding:6px 14px 14px;color:var(--muted);font-size:14px;
+}
+
+/* comments */
+.comments{
+  border-top:1px solid var(--line);
+  background:#fff;
+}
+.comments-head{
+  position:sticky;top:48px;z-index:20;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 14px;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.handle{
+  width:36px;height:4px;border-radius:4px;background:#dbdbdb;
+  position:absolute;left:50%;top:6px;transform:translateX(-50%);
+}
+.comments-head h2{font-size:16px;font-weight:600;margin:8px 0 0}
+.sort{
+  margin-top:8px;font-size:13px;color:var(--muted);font-weight:600;display:flex;align-items:center;gap:4px;
+}
+
+.comment{
+  display:flex;gap:12px;padding:12px 14px;align-items:flex-start;
+  opacity:0;transform:translateY(10px);
+  animation:rise .45s ease forwards;
+}
+.comment.is-in{opacity:1;transform:none}
+@keyframes rise{to{opacity:1;transform:none}}
+.comment__av{
+  width:32px;height:32px;border-radius:50%;object-fit:cover;flex:none;background:#eee;
+}
+.comment__body{flex:1;min-width:0}
+.comment__top{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.comment__name{font-weight:600;font-size:13.5px}
+.comment__text{font-size:14px;margin-top:2px}
+.comment__meta{
+  display:flex;align-items:center;gap:12px;margin-top:6px;
+  font-size:12px;color:var(--muted);font-weight:600;
+}
+.comment__heart{
+  flex:none;padding:4px 0 0 8px;color:#000;
+}
+.comment__heart.is-on{color:var(--heart)}
+.comment__heart svg{display:block}
+.pin{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:12px;color:var(--muted);font-weight:600;margin-top:4px;
+}
+.cta-chip{
+  display:inline-flex;flex-direction:column;align-items:flex-start;
+  margin-top:8px;padding:10px 12px;border-radius:12px;
+  background:#f2f2f2;border:1px solid #efefef;
+}
+.cta-chip strong{font-size:13px}
+.cta-chip em{font-style:normal;font-size:12px;color:var(--muted);margin-top:2px}
+.cta-chip .go{
+  margin-top:8px;background:var(--green);color:#fff;font-weight:700;
+  font-size:13px;padding:8px 14px;border-radius:8px;
+}
+.replies{margin:8px 0 0 44px}
+.view-replies{
+  display:flex;align-items:center;gap:10px;
+  font-size:12px;font-weight:600;color:var(--muted);padding:6px 14px 4px 58px;
+}
+.view-replies::before{content:"";width:24px;height:1px;background:#dbdbdb}
+.reply-block{display:none}
+.reply-block.is-open{display:block}
+.comment.reply{padding-left:58px}
+.comment.reply .comment__av{width:24px;height:24px}
+
+/* composer + shop bar + tabbar */
+.dock{
+  position:fixed;left:50%;transform:translateX(-50%);
+  width:100%;max-width:430px;bottom:0;z-index:50;
+  background:#fff;
+}
+.shopbar{
+  display:none;
+  padding:8px 12px calc(8px);
+  border-top:1px solid var(--line);
+  background:#fff;
+}
+.shopbar.is-on{display:block}
+.shopbar a{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  height:52px;border-radius:14px;background:var(--green);color:#fff;
+  text-align:center;line-height:1.15;
+}
+.shopbar a:active{background:var(--green-deep)}
+.shopbar .main{font-size:16px;font-weight:800}
+.shopbar .sub{margin-top:2px;font-size:11.5px;font-weight:600;opacity:.95}
+.composer{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 12px;border-top:1px solid var(--line);background:#fff;
+  min-height:var(--composer-h);
+}
+.composer img{width:32px;height:32px;border-radius:50%;object-fit:cover;flex:none}
+.composer input{
+  flex:1;border:0;outline:0;font-size:14px;background:transparent;min-width:0;
+}
+.composer input::placeholder{color:#9a9a9a}
+.emojis{display:flex;gap:6px;font-size:18px;line-height:1}
+.tabbar{
+  display:flex;align-items:center;justify-content:space-around;
+  height:calc(var(--nav-h) + var(--safe-b));
+  padding-bottom:var(--safe-b);
+  border-top:1px solid var(--line);background:#fff;
+}
+.tabbar a,.tabbar span{display:flex;align-items:center;justify-content:center;width:48px;height:44px}
+.tab-av{width:24px;height:24px;border-radius:50%;object-fit:cover;border:1.5px solid #000}
+
+.legal{
+  padding:18px 16px 12px;text-align:center;color:#8e8e8e;font-size:11px;line-height:1.55;
+}
+
+@media(min-width:480px){
+  body{background:#1a1a1a}
+  .app{box-shadow:0 0 0 1px #222,0 20px 60px rgba(0,0,0,.5);min-height:100dvh}
+}
+</style>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "y2e4l0dnh1");
+</script>
+</head>
+<body>
+<div class="app">
+
+<header class="topbar">
+  <div class="wordmark">Instagram</div>
+  <div class="top-actions">
+    <a href="https://trk.smartselecttoday.online/click" aria-label="Notifications">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg>
+    </a>
+    <a href="https://trk.smartselecttoday.online/click" aria-label="Messages">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+    </a>
+  </div>
+</header>
+
+<div class="stories" id="stories">
+  <div class="story">
+    <div class="story__ring story__add" style="background:#dbdbdb">
+      <img class="story__av" src="enguk_files/lewis.jpg" alt="">
+      <span class="story__plus">+</span>
+    </div>
+    <span>Your story</span>
+  </div>
+  <a class="story is-live" href="https://trk.smartselecttoday.online/click">
+    <div class="story__ring"><img class="story__av" src="bal.png" alt="osanix"></div>
+    <span>osanix</span>
+  </a>
+  <div class="story"><div class="story__ring"><img class="story__av" src="enguk_files/lewis.jpg" alt=""></div><span>sylvie.e</span></div>
+  <div class="story"><div class="story__ring"><img class="story__av" src="enguk_files/tanya.jpg" alt=""></div><span>karin.b</span></div>
+  <div class="story"><div class="story__ring"><img class="story__av" src="enguk_files/jenni.jpg" alt=""></div><span>barbara</span></div>
+  <div class="story is-seen"><div class="story__ring"><img class="story__av" src="enguk_files/katy.jpg" alt=""></div><span>june.m</span></div>
+  <div class="story is-seen"><div class="story__ring"><img class="story__av" src="enguk_files/celia.jpg" alt=""></div><span>laura.t</span></div>
+  <div class="story is-seen"><div class="story__ring"><img class="story__av" src="enguk_files/kirs.jpg" alt=""></div><span>emily.s</span></div>
+</div>
+
+<article class="post" id="post">
+  <div class="post-head">
+    <a class="post-head__av-wrap" href="https://trk.smartselecttoday.online/click">
+      <img class="post-head__av" src="bal.png" alt="osanix">
+    </a>
+    <div class="post-head__meta">
+      <div class="post-head__row">
+        <a class="post-head__name" href="https://trk.smartselecttoday.online/click">osanix</a>
+        <svg class="verified" viewBox="0 0 40 40" aria-label="Verified"><circle cx="20" cy="20" r="20" fill="#0095f6"/><path d="M17.2 27.2 9.8 19.8l2.3-2.3 5.1 5.1 10.7-10.7 2.3 2.3z" fill="#fff"/></svg>
+        <span aria-hidden="true" style="color:#737373">·</span>
+        <button class="follow" id="follow" type="button">Follow</button>
+      </div>
+      <div class="post-head__loc">London, United Kingdom</div>
+    </div>
+    <button class="more" type="button" aria-label="More">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#000"><circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/></svg>
+    </button>
+  </div>
+
+  <div class="media has-tag" id="media">
+    <div class="media__track" id="track">
+      <a class="media__slide" href="https://trk.smartselecttoday.online/click"><img src="enguk_files/aba1.jpg" alt="Osanix results"></a>
+      <a class="media__slide" href="https://trk.smartselecttoday.online/click"><img src="enguk_files/aba4.jpg" alt="Mum of two results"></a>
+      <a class="media__slide" href="https://trk.smartselecttoday.online/click"><img src="enguk_files/aba2.jpg" alt="Before and after"></a>
+      <a class="media__slide is-product" href="https://trk.smartselecttoday.online/click"><img src="bal.png" alt="Osanix bottle"></a>
+      <a class="media__slide" href="https://trk.smartselecttoday.online/click"><img src="enguk_files/weight7.jpg" alt="Transformation"></a>
+    </div>
+    <svg class="heart-burst" id="burst" viewBox="0 0 24 24"><path fill="#fff" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+    <a class="shop-tag" href="https://trk.smartselecttoday.online/click">
+      <i>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      </i>
+      Osanix · 50% off UK
+    </a>
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <div class="actions">
+    <button class="ico-btn" id="likeBtn" type="button" aria-label="Like">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg>
+    </button>
+    <a class="ico-btn" href="#comments" aria-label="Comment">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.66 10.44A8.66 8.66 0 1 1 12 3.1a8.6 8.6 0 0 1 4.18 1.08L21 3.1l-1.4 4.66a8.6 8.6 0 0 1 1.06 2.68z"/></svg>
+    </a>
+    <a class="ico-btn" href="https://trk.smartselecttoday.online/click" aria-label="Share">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+    </a>
+    <button class="ico-btn spacer" id="saveBtn" type="button" aria-label="Save">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8" stroke-linejoin="round"><path d="M6.5 3.5h11a1 1 0 0 1 1 1v16l-6.5-4.2L5.5 20.5v-16a1 1 0 0 1 1-1z"/></svg>
+    </button>
+  </div>
+
+  <div class="likes">
+    <div class="likes__avs">
+      <img src="enguk_files/lewis.jpg" alt="">
+      <img src="enguk_files/tanya.jpg" alt="">
+      <img src="enguk_files/celia.jpg" alt="">
+    </div>
+    <div>Liked by <b>sylvie.earl</b> and <b id="likeCount">18,492</b> others</div>
+  </div>
+
+  <div class="caption" id="caption">
+    <b class="user">osanix</b>The quiet alternative to the £1,200 injection.
+    <span class="more-cap" id="moreCap">… more</span>
+    <span class="rest">
+      One capsule each morning. Metabolism support, energy &amp; focus, burn fat faster — no clinic, no needle, no prescription.<br><br>
+      60-day supply · Free UK shipping · 100% money-back.<br><br>
+      Tap the tag (or the comments) for the reader offer before it ends.
+      <a class="hash" href="https://trk.smartselecttoday.online/click">#osanix</a>
+      <a class="hash" href="https://trk.smartselecttoday.online/click">#uk</a>
+      <a class="hash" href="https://trk.smartselecttoday.online/click">#weightloss</a>
+      <a class="hash" href="https://trk.smartselecttoday.online/click">#nomoreinjections</a>
+    </span>
+  </div>
+  <div class="time">3 hours ago</div>
+  <a class="view-all" href="#comments">View all 248 comments</a>
+</article>
+
+<section class="comments" id="comments">
+  <div class="comments-head">
+    <div class="handle"></div>
+    <h2>Comments</h2>
+    <button class="sort" type="button">For you
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+  </div>
+
+  <article class="comment">
+    <img class="comment__av" src="bal.png" alt="">
+    <div class="comment__body">
+      <div class="comment__top">
+        <span class="comment__name">osanix</span>
+        <svg class="verified" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0095f6"/><path d="M17.2 27.2 9.8 19.8l2.3-2.3 5.1 5.1 10.7-10.7 2.3 2.3z" fill="#fff"/></svg>
+      </div>
+      <div class="comment__text">Pinned for anyone asking — 50% off + free UK shipping on the 60-capsule bottle. One a day. 100% money-back if it isn’t for you.</div>
+      <div class="cta-chip">
+        <strong>Osanix · 60 capsules</strong>
+        <em>In stock · discreet UK delivery</em>
+        <a class="go" href="https://trk.smartselecttoday.online/click">Try Osanix Now →</a>
+      </div>
+      <div class="pin">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#737373"><path d="M16 3v7.5l2 2V14h-5v7l-1 1-1-1v-7H6v-1.5l2-2V3h8z"/></svg>
+        Pinned
+      </div>
+      <div class="comment__meta"><span>3h</span><span>1,204 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button" aria-label="Like comment">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg>
+    </button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/lewis.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">sylvie.earl</div>
+      <div class="comment__text">4 weeks in and I’ve lost 1.2 stone. Tummy and arm fat melting more every day 😭</div>
+      <div class="comment__meta"><span>12m</span><span>13 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart is-on" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/tanya.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">karin.brooker</div>
+      <div class="comment__text">Saw this after Dragons’ Den and I’m still on it 6 weeks later. Honestly… WOW.</div>
+      <div class="comment__meta"><span>13m</span><span>6 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/jenni.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">barbara.clark</div>
+      <div class="comment__text">Only a few days in — hasn’t upset my system, no side effects so far.</div>
+      <div class="comment__meta"><span>25m</span><span>19 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <button class="view-replies" type="button" data-replies="r1">View 1 reply</button>
+  <div class="reply-block" id="r1">
+    <article class="comment reply">
+      <img class="comment__av" src="enguk_files/cash.jpg" alt="">
+      <div class="comment__body">
+        <div class="comment__name">kristy.cash</div>
+        <div class="comment__text">Wish I’d known before bariatric surgery. Would’ve saved a heck of a lot of money.</div>
+        <div class="comment__meta"><span>46m</span><span>Reply</span></div>
+      </div>
+      <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+    </article>
+  </div>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/katy.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">june.munn</div>
+      <div class="comment__text">Works wonderfully on my appetite. Hoping I can stay on it and see more.</div>
+      <div class="comment__meta"><span>1h</span><span>43 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart is-on" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/amanda.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">liza.parker</div>
+      <div class="comment__text">Order page seemed down earlier — is it just me?? Please fix 😩</div>
+      <div class="comment__meta"><span>1h</span><span>3 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <button class="view-replies" type="button" data-replies="r2">View 1 reply</button>
+  <div class="reply-block" id="r2">
+    <article class="comment reply">
+      <img class="comment__av" src="bal.png" alt="">
+      <div class="comment__body">
+        <div class="comment__top">
+          <span class="comment__name">osanix</span>
+          <svg class="verified" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0095f6"/><path d="M17.2 27.2 9.8 19.8l2.3-2.3 5.1 5.1 10.7-10.7 2.3 2.3z" fill="#fff"/></svg>
+        </div>
+        <div class="comment__text">It’s live — tap here and you’ll get the 50% reader offer + free shipping 💚</div>
+        <a class="go" href="https://trk.smartselecttoday.online/click" style="display:inline-block;margin-top:8px;background:#56bc6c;color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:8px">Try Osanix Now →</a>
+        <div class="comment__meta"><span>58m</span><span>Reply</span></div>
+      </div>
+      <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+    </article>
+  </div>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/julie.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">christine.pyatt</div>
+      <div class="comment__text">Probably a bit older than most of you lot… worked for me too 😂 thanks for the inspiration.</div>
+      <div class="comment__meta"><span>2h</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/sarah.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">stephanie.rooney</div>
+      <div class="comment__text">My sister did this months ago. I waited, then the trial vanished 🙃 glad it’s back — not making that mistake again.</div>
+      <div class="comment__meta"><span>2h</span><span>12 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/kirs.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">emily.siddiqi</div>
+      <div class="comment__text">Giving it a chance. I’ve tried everything and nothing’s stuck. This feels different.</div>
+      <div class="comment__meta"><span>2h</span><span>30 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/celia.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">laura.taylor</div>
+      <div class="comment__text">Worked for me! Easy enough — just want others to know when something actually works.</div>
+      <div class="comment__meta"><span>2h</span><span>53 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart is-on" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/alanna.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">sarah.twomey</div>
+      <div class="comment__text">Thanks for the info, just started mine.</div>
+      <div class="comment__meta"><span>2h</span><span>16 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/alice.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">caroline.webster</div>
+      <div class="comment__text">Gives you energy and helps you lose weight. Will buy again. Highly recommend.</div>
+      <div class="comment__meta"><span>2h</span><span>2 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/mark.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">margaret.witty</div>
+      <div class="comment__text">Do they ship to the US? Also — did anyone see real results?</div>
+      <div class="comment__meta"><span>2h</span><span>11 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/ashley.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">gillian.driver</div>
+      <div class="comment__text">Yes this stuff is amazing. Years of belly fat and nothing worked. Ordered after seeing Gina on it — daughter’s wedding coming up 💍</div>
+      <div class="comment__meta"><span>2h</span><span>33 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/hick.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">amanda.hickam</div>
+      <div class="comment__text">Gone ahead and ordered. Can’t wait to get started.</div>
+      <div class="comment__meta"><span>3h</span><span>23 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/brit.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">catherine.bowman</div>
+      <div class="comment__text">Only been 4 days so I don’t know yet. Staying on it after everything I’ve heard.</div>
+      <div class="comment__meta"><span>3h</span><span>6 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/shel.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">gillian.allan</div>
+      <div class="comment__text">I was sceptical — diet &amp; exercise only, right? Friend used it. Missed a whole week travelling and still dropped 6lbs. Motivational even on the lazy days.</div>
+      <div class="comment__meta"><span>3h</span><span>2 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/jill.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">sharon.green</div>
+      <div class="comment__text">Wasn’t sure about ordering online but this deal seals it. Pages are encrypted. Looking forward to my new looks.</div>
+      <div class="comment__meta"><span>4h</span><span>17 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/molly.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">annette.collett</div>
+      <div class="comment__text">Can someone verify that it works?</div>
+      <div class="comment__meta"><span>6h</span><span>8 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/jenna.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">suzanne.cousins</div>
+      <div class="comment__text">Felt it on the first dose — wasn’t hungry at all. Keeps the munchies at bay. Lost 1 stone in 3 weeks.</div>
+      <div class="comment__meta"><span>8h</span><span>20 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart is-on" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/laura.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">alexis.murphy</div>
+      <div class="comment__text">I’ve tried so much of this kind of stuff… someone please reassure me it works 🙈</div>
+      <div class="comment__meta"><span>8h</span><span>10 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/sara.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">susan.louise</div>
+      <div class="comment__text">I’m interested. How do I get this?</div>
+      <div class="comment__meta"><span>8h</span><span>13 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <button class="view-replies" type="button" data-replies="r3">View 1 reply</button>
+  <div class="reply-block" id="r3">
+    <article class="comment reply">
+      <img class="comment__av" src="bal.png" alt="">
+      <div class="comment__body">
+        <div class="comment__top">
+          <span class="comment__name">osanix</span>
+          <svg class="verified" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0095f6"/><path d="M17.2 27.2 9.8 19.8l2.3-2.3 5.1 5.1 10.7-10.7 2.3 2.3z" fill="#fff"/></svg>
+        </div>
+        <div class="comment__text">One capsule in the morning with water. Tap below — 50% off + free UK shipping, 100% money-back.</div>
+        <a class="go" href="https://trk.smartselecttoday.online/click" style="display:inline-block;margin-top:8px;background:#56bc6c;color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:8px">Try Osanix Now →</a>
+        <div class="comment__meta"><span>7h</span><span>Reply</span></div>
+      </div>
+      <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+    </article>
+  </div>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/silver.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">anna.meier</div>
+      <div class="comment__text">For once I did something nice for myself without feeling guilty about the cost.</div>
+      <div class="comment__meta"><span>8h</span><span>3 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+
+  <article class="comment">
+    <img class="comment__av" src="enguk_files/got.jpg" alt="">
+    <div class="comment__body">
+      <div class="comment__name">joyce.warrender</div>
+      <div class="comment__text">How does it work? Do you take it orally?</div>
+      <div class="comment__meta"><span>9h</span><span>5 likes</span><span>Reply</span></div>
+    </div>
+    <button class="comment__heart" type="button"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c-1.74 0-3.41.81-4.5 2.09C10.91 4.31 9.24 3.5 7.5 3.5 4.42 3.5 2 5.78 2 9.05c0 3.4 3.4 6.16 8.55 10.84L12 21.35l1.45-1.44C18.6 15.21 22 12.45 22 9.05 22 5.78 19.58 3.5 16.5 3.5z"/></svg></button>
+  </article>
+</section>
+
+<p class="legal">Food supplement. Not a substitute for a varied diet and healthy lifestyle. Results vary. 18+ only. Not for pregnancy or breastfeeding. Speak to your GP if you take medication.<br>© <span id="year"></span> Osanix. This page is an independent presentation and is not affiliated with Instagram or Meta.</p>
+</div>
+
+<div class="dock">
+  <div class="shopbar" id="shopbar">
+    <a href="https://trk.smartselecttoday.online/click">
+      <span class="main">Try Osanix Now →</span>
+      <span class="sub">With 100% Money Back Guarantee</span>
+    </a>
+  </div>
+  <form class="composer" action="https://trk.smartselecttoday.online/click" method="get">
+    <img src="enguk_files/lewis.jpg" alt="">
+    <input type="text" placeholder="Add a comment for osanix…" readonly onclick="location.href='https://trk.smartselecttoday.online/click'">
+    <div class="emojis">❤️🔥👏</div>
+  </form>
+  <nav class="tabbar">
+    <span aria-label="Home">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#000"><path d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z"/></svg>
+    </span>
+    <a href="https://trk.smartselecttoday.online/click" aria-label="Search">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    </a>
+    <a href="https://trk.smartselecttoday.online/click" aria-label="New post">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></svg>
+    </a>
+    <a href="https://trk.smartselecttoday.online/click" aria-label="Reels">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M3 8.5h18"/><path d="M8.5 3 12 8.5 15.5 3"/><path d="m10 13 5 3-5 3v-6z" fill="#000" stroke="none"/></svg>
+    </a>
+    <a href="https://trk.smartselecttoday.online/click" aria-label="Profile">
+      <img class="tab-av" src="enguk_files/lewis.jpg" alt="">
+    </a>
+  </nav>
+</div>
+
+<script>
+(function(){
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  var slides = document.querySelectorAll(".media__slide");
+  var track = document.getElementById("track");
+  var dots = document.getElementById("dots");
+  var i = 0, startX = 0, dx = 0, down = false;
+  slides.forEach(function(_, n){
+    var b = document.createElement("b");
+    if(n===0) b.className = "on";
+    dots.appendChild(b);
+  });
+  function go(n){
+    i = (n + slides.length) % slides.length;
+    track.style.transform = "translateX(" + (-i*100) + "%)";
+    Array.prototype.forEach.call(dots.children, function(d, k){ d.classList.toggle("on", k===i); });
+  }
+  var media = document.getElementById("media");
+  media.addEventListener("touchstart", function(e){ down=true; startX=e.touches[0].clientX; dx=0; track.style.transition="none"; }, {passive:true});
+  media.addEventListener("touchmove", function(e){ if(!down) return; dx=e.touches[0].clientX-startX; track.style.transform="translateX(" + ((-i*media.offsetWidth)+dx) + "px)"; }, {passive:true});
+  media.addEventListener("touchend", function(){
+    down=false; track.style.transition="";
+    if(dx < -50) go(i+1); else if(dx > 50) go(i-1); else go(i);
+  });
+
+  var liked = false, likes = 18492;
+  var likeBtn = document.getElementById("likeBtn");
+  var burst = document.getElementById("burst");
+  var likeCount = document.getElementById("likeCount");
+  function setLike(on){
+    liked = on;
+    likeBtn.classList.toggle("liked", on);
+    likeBtn.classList.remove("like-pop");
+    void likeBtn.offsetWidth;
+    likeBtn.classList.add("like-pop");
+    likes = on ? 18493 : 18492;
+    likeCount.textContent = likes.toLocaleString("en-GB");
+  }
+  likeBtn.addEventListener("click", function(){ setLike(!liked); });
+  var lastTap = 0;
+  media.addEventListener("click", function(e){
+    var now = Date.now();
+    if(now - lastTap < 280){
+      e.preventDefault();
+      e.stopPropagation();
+      setLike(true);
+      burst.classList.remove("pop");
+      void burst.offsetWidth;
+      burst.classList.add("pop");
+    }
+    lastTap = now;
+  }, true);
+
+  document.getElementById("saveBtn").addEventListener("click", function(){
+    this.classList.toggle("saved");
+  });
+  document.getElementById("follow").addEventListener("click", function(){
+    this.textContent = "Following";
+    this.classList.add("is-on");
+  });
+  document.getElementById("moreCap").addEventListener("click", function(){
+    document.getElementById("caption").classList.add("is-open");
+  });
+
+  document.querySelectorAll(".view-replies").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var box = document.getElementById(btn.getAttribute("data-replies"));
+      var open = box.classList.toggle("is-open");
+      btn.textContent = open ? "Hide replies" : btn.textContent.replace("Hide replies", "View 1 reply");
+      if(!open) btn.textContent = "View 1 reply";
+    });
+  });
+
+  document.querySelectorAll(".comment__heart").forEach(function(h){
+    h.addEventListener("click", function(){
+      h.classList.toggle("is-on");
+      var svg = h.querySelector("svg");
+      if(h.classList.contains("is-on")){
+        svg.setAttribute("fill","currentColor");
+      } else {
+        svg.setAttribute("fill","none");
+      }
+    });
+  });
+
+  var bar = document.getElementById("shopbar");
+  var comments = document.getElementById("comments");
+  var app = document.querySelector(".app");
+  function onScroll(){
+    var r = comments.getBoundingClientRect();
+    var show = r.top < window.innerHeight * 0.72;
+    bar.classList.toggle("is-on", show);
+    app.classList.toggle("has-shop", show);
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Osanix — Natural weight-loss support · 1 capsule a day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1A2744;
+  --navy-soft:#2A3B5C;
+  --blush:#E08A78;
+  --blush-deep:#C96B5C;
+  --green:#56BC6C;
+  --green-deep:#3E9A52;
+  --ink:#1A2744;
+  --muted:#5C6B82;
+  --line:#E4E8F0;
+  --bg:#F6F3F0;
+  --shadow:0 10px 32px rgba(26,39,68,.09);
+  --shadow-lift:0 22px 48px rgba(26,39,68,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Manrope',system-ui,sans-serif;
+  background:
+    radial-gradient(1000px 480px at 80% -80px,#F4E0DA 0%,transparent 55%),
+    radial-gradient(800px 400px at 10% 10%,#E8EEF6 0%,transparent 50%),
+    var(--bg);
+  color:var(--ink);font-size:16px;line-height:1.65;
+  padding-bottom:24px;overflow-x:hidden;
+}
+h1,h2,h3{font-family:'Sora',sans-serif;letter-spacing:-.035em;color:var(--navy);line-height:1.08;font-weight:800}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.hl{color:var(--blush-deep);position:relative;white-space:nowrap}
+.hl::after{
+  content:"";position:absolute;left:0;right:0;bottom:.04em;height:.28em;
+  background:rgba(224,138,120,.28);border-radius:4px;z-index:-1;
+}
+
+.usp{
+  background:var(--navy);color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em;overflow:hidden;
+}
+.usp__track{display:flex;gap:40px;padding:10px 16px;white-space:nowrap;justify-content:center}
+.usp__track span{opacity:.92}
+@media(max-width:720px){.usp__track{justify-content:flex-start;animation:tick 18s linear infinite;width:max-content}}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+.header{
+  position:sticky;top:0;z-index:40;
+  background:rgba(255,255,255,.86);backdrop-filter:blur(18px) saturate(1.4);
+  border-bottom:1px solid rgba(228,232,240,.8);
+}
+.header__in{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:12px 20px;max-width:1080px;margin:0 auto;min-height:64px;
+}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.mark{
+  width:36px;height:36px;border-radius:11px;flex:none;
+  background:linear-gradient(160deg,var(--navy),#2E4568);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-family:'Sora';font-weight:800;font-size:16px;letter-spacing:-.06em;
+  box-shadow:0 8px 18px rgba(26,39,68,.22);
+}
+.logo{font-family:'Sora';font-weight:800;font-size:22px;letter-spacing:-.05em;line-height:1}
+.logo em{font-style:normal;color:var(--blush)}
+.logo small{display:block;margin-top:3px;font-family:'Manrope';font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hnav{display:none;gap:22px;font-size:13.5px;font-weight:800;color:var(--muted)}
+.hnav a:hover{color:var(--navy)}
+@media(min-width:760px){.hnav{display:flex}}
+.minicta{
+  display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
+  background:var(--green);color:#fff !important;
+  padding:8px 16px;border-radius:18px;min-width:132px;line-height:1.15;
+  box-shadow:0 8px 18px rgba(86,188,108,.28);
+  transition:transform .14s,background .14s;
+}
+.minicta:hover{background:var(--green-deep);transform:translateY(-1px)}
+.minicta b{font-family:'Sora';font-size:12.5px;font-weight:800}
+.minicta i{font-style:normal;font-size:9.5px;font-weight:700;opacity:.92;letter-spacing:.02em}
+
+.hero{padding:36px 0 12px}
+@media(min-width:900px){.hero{padding:52px 0 20px}}
+.hero__grid{display:grid;gap:36px;align-items:center}
+@media(min-width:900px){.hero__grid{grid-template-columns:1.05fr .95fr;gap:56px}}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--blush-deep);margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:22px;height:1.5px;background:var(--blush);border-radius:2px}
+.hero h1{font-size:clamp(32px,7vw,54px);margin-bottom:16px}
+.lead{color:var(--muted);font-weight:650;font-size:clamp(15.5px,3.4vw,18px);max-width:500px;margin-bottom:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;
+  background:#fff;border:1px solid var(--line);border-radius:99px;
+  padding:8px 13px;font-size:12.5px;font-weight:800;color:var(--navy);box-shadow:var(--shadow);
+}
+
+.cta{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  width:100%;max-width:460px;height:70px;padding:8px 22px;
+  background:var(--green);color:#fff !important;border-radius:22px;
+  text-align:center;box-shadow:0 12px 28px rgba(86,188,108,.28);
+  transition:transform .14s,background .14s,box-shadow .14s;
+}
+.cta:hover{background:var(--green-deep);transform:translateY(-2px);box-shadow:0 16px 32px rgba(86,188,108,.34)}
+.cta__main{font-family:'Sora';font-size:18px;font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.cta__sub{margin-top:4px;font-size:12px;font-weight:700;opacity:.92}
+.under{display:flex;align-items:center;gap:7px;margin-top:12px;font-size:12.5px;font-weight:800;color:var(--muted)}
+.under i{color:var(--green-deep);font-style:normal}
+.deadline{
+  display:inline-flex;align-items:center;gap:10px;margin-top:16px;
+  background:#fff;border:1px solid var(--line);
+  border-radius:16px;padding:11px 16px;font-weight:800;font-size:13.5px;
+  box-shadow:var(--shadow);
+}
+.deadline b{font-family:'Sora';color:var(--blush-deep);font-variant-numeric:tabular-nums;font-size:15px}
+
+.stage{
+  position:relative;display:flex;align-items:center;justify-content:center;
+  min-height:420px;
+}
+.stage__glow{
+  position:absolute;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(224,138,120,.28),rgba(26,39,68,.06) 55%,transparent 70%);
+}
+.stage__ring{
+  position:absolute;width:300px;height:300px;border-radius:50%;
+  border:1.5px dashed rgba(26,39,68,.12);
+}
+.stage__pod{
+  position:absolute;bottom:42px;width:210px;height:28px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(26,39,68,.22),transparent 70%);
+  filter:blur(2px);
+}
+.stage img{
+  position:relative;z-index:2;width:min(78%,280px);
+  filter:drop-shadow(0 28px 40px rgba(26,39,68,.28));
+}
+.float{
+  position:absolute;z-index:3;background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:8px 12px;font-size:12px;font-weight:800;
+  color:var(--navy);box-shadow:var(--shadow);white-space:nowrap;
+}
+.float b{color:var(--blush-deep)}
+.f1{top:18%;left:0}
+.f2{top:46%;right:0}
+.f3{bottom:16%;left:8%}
+@media(max-width:520px){
+  .stage{min-height:360px}
+  .float{font-size:11px;padding:6px 10px}
+  .f1{left:4%} .f2{right:2%}
+}
+
+.metrics{
+  background:#fff;border-radius:22px;box-shadow:var(--shadow);
+  padding:20px 12px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;
+}
+.metric{text-align:center;position:relative}
+.metric + .metric::before{content:"";position:absolute;left:0;top:18%;bottom:18%;width:1px;background:var(--line)}
+.metric strong{display:block;font-family:'Sora';font-size:clamp(20px,5vw,28px);letter-spacing:-.03em}
+.metric span{display:block;margin-top:4px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+.section{padding:48px 0}
+@media(min-width:860px){.section{padding:64px 0}}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 28px}
+.sec-head h2{font-size:clamp(26px,5.8vw,38px)}
+.sec-head p{margin-top:10px;color:var(--muted);font-weight:650}
+
+.trio{display:grid;gap:14px}
+@media(min-width:760px){.trio{grid-template-columns:repeat(3,1fr)}}
+.tcard{
+  background:#fff;border-radius:22px;padding:24px 22px;box-shadow:var(--shadow);
+  border-top:3px solid var(--blush);transition:transform .2s,box-shadow .2s;
+}
+.tcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift)}
+.tcard h3{font-size:18px;margin:12px 0 8px}
+.tcard p{font-size:14.5px;color:var(--muted);font-weight:600}
+.ico{
+  width:46px;height:46px;border-radius:14px;background:#F4E0DA;color:var(--blush-deep);
+  display:flex;align-items:center;justify-content:center;font-family:'Sora';font-weight:800;
+}
+
+.reviews{display:grid;gap:14px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+.rev{background:#fff;border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+.stars{color:#00B67A;letter-spacing:2px;font-size:13px;margin-bottom:10px}
+.rev p{font-weight:650;font-size:15px}
+.rev b{display:block;margin-top:14px;font-size:13px;letter-spacing:.02em}
+
+.faq-item{background:#fff;border-radius:16px;margin-bottom:8px;overflow:hidden;box-shadow:var(--shadow)}
+.faq-q{width:100%;display:flex;justify-content:space-between;gap:12px;text-align:left;padding:18px 20px;font-family:'Sora';font-weight:700;font-size:15px;color:var(--navy);background:none;border:0;cursor:pointer}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.faq-a p{padding:0 20px 18px;color:var(--muted);font-weight:600}
+
+.final{text-align:center;padding:8px 0 28px}
+.final h2{font-size:clamp(28px,6vw,42px);margin-bottom:10px}
+.final p{color:var(--muted);font-weight:650;margin-bottom:20px}
+.final .cta{margin:0 auto}
+
+.foot{border-top:1px solid var(--line);padding:26px 18px 40px;text-align:center;color:#8A96A8;font-size:11.5px;font-weight:600;line-height:1.7}
+.foot .logo{display:inline-block;margin-bottom:8px}
+
+.stickybar{
+  position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));
+  z-index:60;transform:translateY(120%);opacity:0;pointer-events:none;
+  transition:transform .3s ease,opacity .3s ease;
+}
+.stickybar.is-visible{transform:translateY(0);opacity:1;pointer-events:auto}
+.stickybar .cta{max-width:none;margin:0;height:64px;border-radius:20px}
+.stickybar .cta__main{font-size:16px}
+.stickybar .cta__sub{font-size:11px}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s cubic-bezier(.22,.8,.3,1)}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<div class="usp"><div class="usp__track">
+  <span>60 capsules</span><span>One a day</span><span>100% money-back</span>
+  <span>Free UK shipping</span><span>No needles</span><span>No prescription</span>
+  <span>60 capsules</span><span>One a day</span><span>100% money-back</span>
+  <span>Free UK shipping</span><span>No needles</span><span>No prescription</span>
+</div></div>
+
+<header class="header">
+  <div class="header__in">
+    <div class="brand">
+      <div class="mark">o</div>
+      <div class="logo">osan<em>ix</em><small>Daily formula</small></div>
+    </div>
+    <nav class="hnav">
+      <a href="#why">Why</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="minicta" href="https://trk.smartselecttoday.online/click">
+      <b>Try Osanix</b>
+      <i>Money-back</i>
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <div class="eyebrow">United Kingdom · Daily capsule</div>
+      <h1>The quiet alternative to the £1,200 <span class="hl">injection</span>.</h1>
+      <p class="lead">One capsule each morning. Metabolism support, focus, and fat-burn — without a clinic, a needle, or a prescription.</p>
+      <div class="chips">
+        <span class="chip">Metabolism support</span>
+        <span class="chip">Energy &amp; focus</span>
+        <span class="chip">Burn fat faster</span>
+        <span class="chip">60-day supply</span>
+      </div>
+      <a class="cta" href="https://trk.smartselecttoday.online/click">
+        <span class="cta__main">Try Osanix Now →</span>
+        <span class="cta__sub">With 100% Money Back Guarantee</span>
+      </a>
+      <div class="under"><i>✓</i> In stock · discreet UK delivery · 60 capsules</div>
+      <div class="deadline">Dispatch today if you order in <b id="clock">--:--:--</b></div>
+    </div>
+    <div class="stage">
+      <div class="stage__glow"></div>
+      <div class="stage__ring"></div>
+      <div class="stage__pod"></div>
+      <div class="float f1"><b>60</b> capsules</div>
+      <div class="float f2"><b>1×</b> daily</div>
+      <div class="float f3">No needles</div>
+      <img src="bal.png" alt="Osanix dietary supplement">
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:8px">
+  <div class="wrap">
+    <div class="metrics reveal">
+      <div class="metric"><strong>1×</strong><span>Capsule a day</span></div>
+      <div class="metric"><strong>60</strong><span>Day supply</span></div>
+      <div class="metric"><strong>100%</strong><span>Money-back</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="why" style="padding-top:12px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow" style="justify-content:center">Why Osanix</div>
+      <h2>Made for people who want it <span class="hl">simple</span>.</h2>
+      <p>No shakes. No injections. A single daily capsule, designed to sit beside your coffee.</p>
+    </div>
+    <div class="trio">
+      <article class="tcard reveal">
+        <div class="ico">01</div>
+        <h3>One capsule</h3>
+        <p>Take it with breakfast. Ten seconds, then on with your day — no clinic diary required.</p>
+      </article>
+      <article class="tcard reveal">
+        <div class="ico">02</div>
+        <h3>Daily support</h3>
+        <p>Formulated for metabolism, energy, and appetite control. A routine you can actually keep.</p>
+      </article>
+      <article class="tcard reveal">
+        <div class="ico">03</div>
+        <h3>Risk-free try</h3>
+        <p>If it isn’t for you, the 100% money-back guarantee is there. No awkward conversation.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow" style="justify-content:center">UK notes</div>
+      <h2>What people notice <span class="hl">first</span>.</h2>
+    </div>
+    <div class="reviews">
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Hunger dropped by day three. I did not expect a capsule to feel this straightforward.”</p>
+        <b>Claire M. · Leeds</b>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>“I wanted the effect without the needle. Osanix is the first thing I’ve actually stuck with.”</p>
+        <b>James T. · Manchester</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow" style="justify-content:center">Questions</div>
+      <h2>Quiet answers.</h2>
+    </div>
+    <div class="faq-item"><button class="faq-q" type="button">How do I take it? <span>+</span></button><div class="faq-a"><p>One capsule daily, in the morning with water. Each bottle is a 60-day supply.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button">Is this an injection? <span>+</span></button><div class="faq-a"><p>No. Osanix is an oral dietary supplement — no needles and no prescription in the UK.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button">What if it doesn’t work for me? <span>+</span></button><div class="faq-a"><p>You’re covered by a 100% money-back guarantee.</p></div></div>
+  </div>
+</section>
+
+<section class="final wrap">
+  <div class="eyebrow" style="justify-content:center">Limited UK stock</div>
+  <h2>Begin with one <span class="hl">bottle</span>.</h2>
+  <p>Free shipping on this offer. Discreet delivery.</p>
+  <a class="cta" href="https://trk.smartselecttoday.online/click">
+    <span class="cta__main">Try Osanix Now →</span>
+    <span class="cta__sub">With 100% Money Back Guarantee</span>
+  </a>
+</section>
+
+<footer class="foot">
+  <div class="logo">osan<em>ix</em></div>
+  <p>Food supplement. Not a substitute for a varied diet and healthy lifestyle. Results vary. 18+ only. Not for pregnancy or breastfeeding. Speak to your GP if you take medication.<br>© <span id="year"></span> Osanix. All rights reserved.</p>
+</footer>
+
+<div class="stickybar" id="stickybar">
+  <a class="cta" href="https://trk.smartselecttoday.online/click">
+    <span class="cta__main">Try Osanix Now →</span>
+    <span class="cta__sub">With 100% Money Back Guarantee</span>
+  </a>
+</div>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function pad(n){ return (n<10?'0':'')+n; }
+  function tick(){
+    var now=new Date(), cut=new Date(now); cut.setHours(17,0,0,0);
+    if(now>=cut) cut.setDate(cut.getDate()+1);
+    var ms=cut-now, h=Math.floor(ms/3600000), m=Math.floor(ms%3600000/60000), s=Math.floor(ms%60000/1000);
+    var el=document.getElementById('clock'); if(el) el.textContent=pad(h)+':'+pad(m)+':'+pad(s);
+  }
+  tick(); setInterval(tick,1000);
+
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    item.querySelector('.faq-q').addEventListener('click', function(){
+      var open=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight='0';
+      });
+      if(!open){ item.classList.add('open'); var a=item.querySelector('.faq-a'); a.style.maxHeight=a.scrollHeight+'px'; }
+    });
+  });
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  var bar=document.getElementById('stickybar');
+  var pageCtas=[].filter.call(document.querySelectorAll('a.cta'), function(el){ return !el.closest('#stickybar'); });
+  function pageCtaInView(){
+    var vh=window.innerHeight;
+    for(var i=0;i<pageCtas.length;i++){
+      var r=pageCtas[i].getBoundingClientRect();
+      if(r.bottom>48 && r.top<vh-48) return true;
+    }
+    return false;
+  }
+  function onScroll(){
+    var el=document.scrollingElement||document.documentElement;
+    var top=window.pageYOffset||el.scrollTop||0;
+    var max=(el.scrollHeight||document.body.scrollHeight)-window.innerHeight;
+    var show=max>0 && (top/max)>=0.25 && !pageCtaInView();
+    bar.classList.toggle('is-visible', show);
+    document.body.style.paddingBottom=show?'92px':'24px';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>
+</body>
+</html>

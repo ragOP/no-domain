@@ -243,49 +243,45 @@
         height: auto !important;
       }
       .cta-btn {
-        display: inline-flex;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 8px;
+        box-sizing: border-box;
         width: 100%;
-        max-width: 460px;
-        min-height: 58px;
-        padding: 0 18px;
-        border-radius: 14px;
-        background: linear-gradient(180deg, #FF6B33, #C94515);
+        max-width: 560px;
+        height: 72px;
+        margin: 14px auto;
+        padding: 10px 24px;
+        border-radius: 30px;
+        background: #56BC6C;
         color: #fff !important;
-        font-family: "Open Sans", Arial, sans-serif;
-        font-size: 18px;
-        font-weight: 800;
-        letter-spacing: 0.02em;
+        font-family: Arial, Helvetica, sans-serif;
         text-decoration: none !important;
         text-align: center;
-        box-shadow: 0 10px 26px rgba(232, 90, 44, 0.42);
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-        transition: transform 0.14s, box-shadow 0.14s, filter 0.14s;
+        line-height: 1.15;
+        box-shadow: none;
+        border: none;
       }
-      .cta-btn::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -80%;
-        width: 50%;
-        height: 100%;
-        background: linear-gradient(100deg, transparent, rgba(255,255,255,.38), transparent);
-        transform: skewX(-20deg);
-        animation: ctaShine 3.2s ease-in-out infinite;
+      .cta-btn__main {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0;
+        color: #fff;
       }
-      @keyframes ctaShine {
-        0%, 55% { left: -80%; }
-        75%, 100% { left: 130%; }
+      .cta-btn__sub {
+        margin-top: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        color: #fff;
       }
       .cta-btn:hover {
         color: #fff !important;
-        transform: translateY(-2px);
-        filter: brightness(1.05);
-        box-shadow: 0 14px 32px rgba(232, 90, 44, 0.55);
+        background: #4eaf64;
       }
       body { padding-bottom: 24px; }
       .stickybar {
@@ -305,29 +301,14 @@
         opacity: 1;
         pointer-events: auto;
       }
-      .stickybar .btn-sticky {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        width: 100%;
-        min-height: 56px;
-        padding: 0 18px;
-        font-family: "Open Sans", Arial, sans-serif;
-        font-size: 18px;
-        font-weight: 800;
-        letter-spacing: 0.02em;
-        border-radius: 14px;
-        background: linear-gradient(180deg, #FF6B33, #C94515);
-        color: #fff !important;
-        box-shadow: 0 10px 26px rgba(232, 90, 44, 0.42);
-        text-decoration: none;
-        white-space: nowrap;
+      .stickybar .cta-btn {
+        max-width: none;
+        margin: 0;
+        height: 72px;
+        padding: 10px 18px;
       }
-      .stickybar .btn-sticky:hover {
-        color: #fff !important;
-        filter: brightness(1.05);
-      }
+      .stickybar .cta-btn__main { font-size: 22px; }
+      .stickybar .cta-btn__sub { font-size: 13px; }
       @media (max-width: 768px) {
         .content h1 {
           font-size: clamp(22px, 6.4vw, 30px) !important;
@@ -358,9 +339,11 @@
           padding-right: 0;
         }
         .cta-btn {
-          font-size: 16px;
-          min-height: 54px;
+          height: 68px;
+          padding: 8px 16px;
         }
+        .cta-btn__main { font-size: 20px; }
+        .cta-btn__sub { font-size: 13px; }
         .revival-box2 img,
         .revival-box img.rev {
           width: 70% !important;
@@ -370,18 +353,12 @@
         }
       }
       @media (max-width: 420px) {
-        .stickybar .btn-sticky {
-          font-size: 16px;
-          min-height: 52px;
-        }
         .cta-btn {
-          font-size: 15px;
-          min-height: 50px;
-          padding: 0 12px;
+          height: 64px;
+          padding: 8px 14px;
         }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .cta-btn::after { animation: none; display: none; }
+        .cta-btn__main { font-size: 18px; }
+        .cta-btn__sub { font-size: 12px; }
       }
     </style>
   </head>
@@ -922,22 +899,15 @@
 
             <div class="row revival-box2" align="center">
               <div>
-                <p class="m-b-5">
-                  <a href="https://trk.smartselecttoday.online/click" target="_blank"
-                    ><strong
-                      >CLICK HERE to clai<span style="display: none"
-                        >($@034</span
-                      >m your discou<span style="display: none">Sh^0*5</span>nt
-                      of<span style="display: none">FfsmOn</span>fer of
-                      Osanix</strong
-                    >
-                  </a>
-                </p>
                 <div style="text-align: center">
                   <a href="https://trk.smartselecttoday.online/click" target="_blank">
                     <img src="bal.png" style="width: 50%" />
                   </a>
                 </div>
+                <a href="https://trk.smartselecttoday.online/click" target="_blank" class="cta-btn">
+                  <span class="cta-btn__main">Try Osanix Now →</span>
+                  <span class="cta-btn__sub">With 100% Money Back Guarantee</span>
+                </a>
               </div>
               <div>
                 discoun<span style="display: none">d$(pk5</span>t offe<span
@@ -1009,9 +979,10 @@
                       ></a
                     >
                   </p>
-                  <a href="https://trk.smartselecttoday.online/click" target="_blank" class="cta-btn"
-                    >GET YOUR Pack <span>→</span></a
-                  >
+                  <a href="https://trk.smartselecttoday.online/click" target="_blank" class="cta-btn">
+                    <span class="cta-btn__main">Try Osanix Now →</span>
+                    <span class="cta-btn__sub">With 100% Money Back Guarantee</span>
+                  </a>
                   <p style="font-size: 14px">
                     This spe<span style="display: none">FBOZs9</span>cial
                     of<span style="display: none">uj&amp;PAw</span>fer
@@ -1861,20 +1832,36 @@
     </script>
 
     <div class="stickybar" id="stickybar">
-      <a class="btn-sticky" href="https://trk.smartselecttoday.online/click">GET YOUR Pack <span>→</span></a>
+      <a class="cta-btn" href="https://trk.smartselecttoday.online/click">
+        <span class="cta-btn__main">Try Osanix Now →</span>
+        <span class="cta-btn__sub">With 100% Money Back Guarantee</span>
+      </a>
     </div>
     <script>
       (function () {
         var bar = document.getElementById("stickybar");
         if (!bar) return;
+        var pageCtas = [];
+        var all = document.querySelectorAll("a.cta-btn");
+        for (var i = 0; i < all.length; i++) {
+          if (!all[i].closest("#stickybar")) pageCtas.push(all[i]);
+        }
+        function pageCtaInView() {
+          var vh = window.innerHeight || 0;
+          for (var i = 0; i < pageCtas.length; i++) {
+            var r = pageCtas[i].getBoundingClientRect();
+            if (r.bottom > 48 && r.top < vh - 48) return true;
+          }
+          return false;
+        }
         function onScroll() {
           var el = document.scrollingElement || document.documentElement;
           var top = window.pageYOffset || el.scrollTop || document.body.scrollTop || 0;
           var scrollable = (el.scrollHeight || document.body.scrollHeight) - window.innerHeight;
           var pct = scrollable > 0 ? top / scrollable : 0;
-          var show = pct >= 0.25;
+          var show = pct >= 0.25 && !pageCtaInView();
           bar.classList.toggle("is-visible", show);
-          document.body.style.paddingBottom = show ? "88px" : "24px";
+          document.body.style.paddingBottom = show ? "96px" : "24px";
         }
         window.addEventListener("scroll", onScroll, { passive: true });
         document.addEventListener("scroll", onScroll, { passive: true });

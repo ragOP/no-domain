@@ -87,6 +87,9 @@
         margin-top: 0;
         margin-bottom: 0px !important;
       }
+      .show-desk {
+        display: block !important;
+      }
       .show-tab,
       .show-mob {
         display: none !important;
@@ -121,6 +124,28 @@
       }
       .navbar {
         position: static !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: 0 !important;
+        border: none !important;
+        background: #fff;
+      }
+      .navbar > .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .navbar a {
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+        font-size: 0;
+      }
+      .navbar a.show-desk,
+      .navbar a.show-tab,
+      .navbar a.show-mob {
+        width: 100%;
       }
       html, body {
         max-width: 100%;
@@ -133,10 +158,11 @@
         height: auto !important;
       }
       .navbar img.img-responsive {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        display: block;
       }
       .content.container .container {
         width: auto;
@@ -256,7 +282,8 @@
           font-size: 15px;
           line-height: 1.55;
         }
-        .container {
+        .content.container,
+        .comments.container {
           width: 100% !important;
           max-width: 100% !important;
           padding-left: 12px;
@@ -300,17 +327,15 @@
   </head>
   <body>
     <nav class="navbar navbar-default">
-      <div class="container" align="center">
-        <a href="https://trk.smartselecttoday.online/click"
-          ><img src="enguk_files/header.png" class="img-responsive show-desk"
-        /></a>
-        <a href="https://trk.smartselecttoday.online/click">
-          <img src="enguk_files/header_768.png" class="img-responsive show-tab"
-        /></a>
-        <a href="https://trk.smartselecttoday.online/click"
-          ><img src="enguk_files/header_480.png" class="img-responsive show-mob"
-        /></a>
-      </div>
+      <a class="show-desk" href="https://trk.smartselecttoday.online/click"
+        ><img src="enguk_files/header.png" class="img-responsive" alt=""
+      /></a>
+      <a class="show-tab" href="https://trk.smartselecttoday.online/click"
+        ><img src="enguk_files/header_768.png" class="img-responsive" alt=""
+      /></a>
+      <a class="show-mob" href="https://trk.smartselecttoday.online/click"
+        ><img src="enguk_files/header_480.png" class="img-responsive" alt=""
+      /></a>
     </nav>
     <section class="content-box">
       <div class="container content">
